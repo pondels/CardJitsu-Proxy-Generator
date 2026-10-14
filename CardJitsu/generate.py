@@ -1,6 +1,16 @@
 from PIL import Image
 import json
 
+sets = {
+    # 1: 0,
+    2: 1,
+    # 3: 0,
+    # 4: 0,
+    5: 5,
+    # 6: 0,
+    # 7: 0,
+}
+
 color_key = {
     'tri_color': {
         'f': None,
@@ -149,7 +159,7 @@ with open('scrape/new_cards.json', 'r') as file:
 
 for card_num, data in cards_json.items():
 
-    if not data.get('description'): continue
+    if data['set_id'] != '6' or not data.get('description'): continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
@@ -169,7 +179,9 @@ for card_num, data in cards_json.items():
     penguin_set = color_key['penguin_set'][data['set_id']].copy()
     image.paste(penguin_set, mask=penguin_set)
 
-    # {'label': 'FLOORING UPGRADE', 'color': 'r', 'flavor_text': '"I\'m rollin\' out some burgundy/a> style," says the interior decorator. "I\'ve got some brand new igloo vibe picked out – a totally awesome empurpled cabin/a> of chic. It\'s gonna be a partay!"'}
+    # {
+    # 'label': 'FLOORING UPGRADE',
+    # flavor_text': '"I\'m rollin\' out some burgundy/a> style," says the interior decorator. "I\'ve got some brand new igloo vibe picked out – a totally awesome empurpled cabin/a> of chic. It\'s gonna be a partay!"'}
 
     # TODO X/Y Set number and total
     # TODO Flavor text black text
@@ -188,13 +200,15 @@ for card_num, data in cards_json.items():
     white_mask.paste(power_mask, mask=power_mask)
 
     # TODO Card title to mask if not snow, otherwise, black text to original
+    if data['element'] == 's': pass
+    else: pass
 
     if data.get('description'):
         # Drawing Black Ability Background
         ability_bg = color_key['basic']['power_bg'].copy()
         image.paste(ability_bg, mask=ability_bg)
 
-        # Adding white ability text
+        # TODO Adding white ability text
 
 
         # Ability white bar to mask
@@ -224,4 +238,3 @@ for card_num, data in cards_json.items():
     image.paste(power_mask, mask=power_mask)
 
     image.show()
-    break

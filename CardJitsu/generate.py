@@ -16,13 +16,13 @@ color_key = {
         'p': None,
     },
     'penguin_set': {
-        1:      Image.open('./files/Set/1.png'),
-        2:      Image.open('./files/Set/2.png'),
-        3:      Image.open('./files/Set/3.png'),
-        4:      Image.open('./files/Set/4.png'),
-        5:      Image.open('./files/Set/5.png'),
-        6:      Image.open('./files/Set/6.png'),
-        7:      Image.open('./files/Set/7.png'),
+        '1':    Image.open('./files/Set/1.png'),
+        '2':    Image.open('./files/Set/2.png'),
+        '3':    Image.open('./files/Set/3.png'),
+        '4':    Image.open('./files/Set/4.png'),
+        '5':    Image.open('./files/Set/5.png'),
+        '6':    Image.open('./files/Set/6.png'),
+        '7':    Image.open('./files/Set/7.png'),
         'rare': Image.open('./files/Set/rare.png'),
     },
     'numbers': {
@@ -66,7 +66,17 @@ color_key = {
         }
     },
     'abilities': {
-        'block': {}
+        'block': {},
+        'convert': {},
+        'discard_all': {},
+        'discard_one': {},
+        'modify': {},
+        '': {},
+    },
+    'basic': {
+        'power_outline': Image.open('./files/Basic/power_card_outline.png'),
+        'card_outline':  Image.open('./files/Basic/card_outline.png'),
+        'power_bg':      Image.open('./files/Basic/power_card_text_background.png'),
     }
 }
 
@@ -108,26 +118,31 @@ setTopLeft('y', (251, 234, 44))
 setTopLeft('b', (16, 72, 160))
 setTopLeft('r', (227, 60, 37))
 
+def getColor(description): pass
+
 def getAbilityImage(description):
-    pass
-    # if 'cannot be played next round' in description:
-    #     print('Block')
-    # elif 'discard one' in description:
-    #     print('Discard One')
-    # elif 'cards become' in description:
-    #     print('Convert')
-    # elif '' in description:
-    #     print('Discard All')
-    # elif '' in description:
-    #     print('Discard Element')
-    # elif '-2' in description:
-    #     print('Modify -2')
-    # elif '+2' in description:
-    #     print('Modify +2')
-    # elif 'lower values win' in description:
-    #     print('Modify reverse')
-    # else:
-    #     print(description)
+    description = description.lower()
+    if 'cannot be played next round' in description:
+        blocked_element = description.split('cannot')[0].split(',')[1].strip()[0]
+        return Image.open(f'./files/Ability/Block/{blocked_element}.png')
+    elif f"discard one" in description:
+        discard_type = description.split('opponent\'s')[1].strip()[0]
+        return Image.open(f'./files/Ability/DiscardOne/{discard_type}.png')
+    elif 'cards become' in description:
+        split_desc = description.split('cards become')
+        first = split_desc[0].strip().split(' ')[-1]
+        second = split_desc[1].strip().split(' ')[0]
+        return Image.open(f'./files/Ability/Convert/{first}_to_{second}.png')
+    elif 'discard all' in description:
+        discard_type = description.split('opponent\'s')[1].strip()[0]
+        return Image.open(f'./files/Ability/DiscardAll/{discard_type}.png')
+    elif '-2' in description:
+        return Image.open(f'./files/Ability/Modify/-2.png')
+    elif '+2' in description:
+        return Image.open(f'./files/Ability/Modify/+2.png')
+    elif 'lower values win' in description:
+        return Image.open(f'./files/Ability/Modify/reverse_value.png')
+    else: print(f'SOMETHING WENT WRONG: {description}')
 
 with open('scrape/new_cards.json', 'r') as file:
     cards_json = json.load(file)
@@ -136,23 +151,77 @@ for card_num, data in cards_json.items():
 
     if not data.get('description'): continue
 
-    if card_num == "349": print(data)
-
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
     card_image = Image.open(f'./generated_cards/{card_num}.png')
     card_image = card_image.resize((850, 850))
-    image.paste(card_image, (-60, -20))
+    image.paste(card_image, (-50, -100))
 
     # Drawing the bottom 3 colors based on the element
     color_background = color_key['tri_color'][data['element']].copy()
     image.paste(color_background, mask=color_background)
 
-    if data.get('description'):
-        ability_image = getAbilityImage(data['description'])
-
     # Top Left Color
     color_top_left = color_key['top_left'][data['color']].copy()
     image.paste(color_top_left, mask=color_top_left)
 
-    color_top_left = color_key['top_left'][data['color']].copy()
+    # Drawing the Set Penguin
+    penguin_set = color_key['penguin_set'][data['set_id']].copy()
+    image.paste(penguin_set, mask=penguin_set)
+
+    # {'label': 'FLOORING UPGRADE', 'color': 'r', 'flavor_text': '"I\'m rollin\' out some burgundy/a> style," says the interior decorator. "I\'ve got some brand new igloo vibe picked out – a totally awesome empurpled cabin/a> of chic. It\'s gonna be a partay!"'}
+
+    # TODO X/Y Set number and total
+    # TODO Flavor text black text
+
+    # Symbol and number shadow to mask
+    white_mask = Image.new('RGBA', (750, 1050))
+
+    # Adding card frame to mask
+    card_outline = color_key['basic']['card_outline'].copy()
+    white_mask.paste(card_outline, mask=card_outline)
+
+    # Adding element and power background to mask
+    element_mask = color_key['symbols']['mask'][data['element']].copy()
+    white_mask.paste(element_mask, mask=element_mask)
+    power_mask = color_key['numbers']['mask'][data['value']].copy()
+    white_mask.paste(power_mask, mask=power_mask)
+
+    # TODO Card title to mask if not snow, otherwise, black text to original
+
+    if data.get('description'):
+        # Drawing Black Ability Background
+        ability_bg = color_key['basic']['power_bg'].copy()
+        image.paste(ability_bg, mask=ability_bg)
+
+        # Adding white ability text
+
+
+        # Ability white bar to mask
+        ability_outline = color_key['basic']['power_outline'].copy()
+        white_mask.paste(ability_outline, mask=ability_outline)
+
+        # TODO Cut mask out from main image if power card, otherwise paste it on
+        mask_data = white_mask.load()
+        for x in range(white_mask.width):
+            for y in range(white_mask.height):
+                # We found pixel data, nuke it from the original
+                if mask_data[x, y][0] != 0 or mask_data[x, y][1] != 0 or mask_data[x, y][2] != 0:
+                    image.putpixel((x, y), (0, 0, 0, 0))
+
+        # Adding ability image in top right
+        ability_image = getAbilityImage(data['description'])
+        image.paste(ability_image, mask=ability_image)
+
+    else:
+        # Pasting the mask on
+        image.paste(white_mask, mask=white_mask)
+
+    # Adding Symbol and Power images
+    element_mask = color_key['symbols']['symbol'][data['element']].copy()
+    image.paste(element_mask, mask=element_mask)
+    power_mask = color_key['numbers']['number'][data['value']].copy()
+    image.paste(power_mask, mask=power_mask)
+
+    image.show()
+    break

@@ -3325,7 +3325,7 @@
         "color": "b",
         "value": "11",
         "asset": "",
-        "description": "When this is scored, discard one Opponent's Red card.",
+        "description": "When this is scored, discard all Opponent's Red cards.",
         "is_active": "1",
         "flavor_text": "One of Gary the Gadget Guy's inventions, this special FX box is found at the Stage. Every switch, button and lever changes the set in a different way."
     },
@@ -3340,7 +3340,7 @@
         "color": "y",
         "value": "10",
         "asset": "",
-        "description": "When this is scored, discard one Opponent's Blue card.",
+        "description": "When this is scored, discard all Opponent's Blue cards.",
         "is_active": "1",
         "flavor_text": "During the Medieval Party penguins discovered dragons, befriended knights and completed heroic quests."
     },
@@ -3370,7 +3370,7 @@
         "color": "o",
         "value": "12",
         "asset": "",
-        "description": "When this is scored, discard one Opponent's Green card.",
+        "description": "When this is scored, discard all Opponent's Green cards.",
         "is_active": "1",
         "flavor_text": "Pick up the  Cloud Wave Bracer/a> from the a href=\"/wiki/Martial_Artworks\" title=\"Martial Artworks\">Martial Artworks/i> catalog in the Ninja Hideout/a>. Wear them and dance to create mysterious clouds before you turn invisible!"
     },
@@ -3400,7 +3400,7 @@
         "color": "g",
         "value": "10",
         "asset": "",
-        "description": "When this is scored, discard one Opponent's Purple card.",
+        "description": "When this is scored, discard all Opponent's Purple cards.",
         "is_active": "1",
         "flavor_text": "The gnarly game can be found in the Mine, where your surf &amp; skate tricks will earn you coins! Hang on for a wild surf ride!"
     },
@@ -3415,7 +3415,7 @@
         "color": "p",
         "value": "9",
         "asset": "",
-        "description": "When this is scored, discard one Opponent's Orange card.",
+        "description": "When this is scored, discard all Opponent's Orange cards.",
         "is_active": "1",
         "flavor_text": "This Treasure Book/a> instrument is a musical masterpiece! It's pretty rare and you just have to put it on and dance to rock!"
     },
@@ -3460,7 +3460,7 @@
         "color": "p",
         "value": "10",
         "asset": "",
-        "description": "When this is scored, discard one Opponent's Yellow card.",
+        "description": "When this is scored, discard all Opponent's Yellow cards.",
         "is_active": "1",
         "flavor_text": "This item is super rare! It's only available once in a while and is usually hidden as a secret in the Penguin Style/i> catalog."
     },
@@ -7495,7 +7495,7 @@
         "color": "b",
         "value": "9",
         "asset": "",
-        "description": "When this is played, Fire cards become Water for this round.",
+        "description": "When this is scored, Fire cannot be played next round.",
         "is_active": "1",
         "flavor_text": "The last step to becoming a Water Ninja/a> is defeating Sensei in battle. Though his skills are legendary, the way to defeating him is dedication. Keep trying, no matter what, and victory will be yours."
     },

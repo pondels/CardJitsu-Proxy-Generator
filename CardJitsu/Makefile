@@ -1,6 +1,7 @@
 SWF_DIR := './files/swf_files'
 SWF_JSON := './scrape/swf_links.json'
 IMAGE_FILE_DIR := './generated_cards'
+SWF_FILE_PATH := $(SWF_DIR)/1.swf
 
 string_filter := $(firstword $(subst "GamesCardIcons", ,$1))
 
@@ -25,14 +26,18 @@ $(IMAGE_FILE_DIR):
 	mkdir $(IMAGE_FILE_DIR)
 
 # .PHONY extract
-extract_png_from_swf: | $(IMAGE_FILE_DIR)
+extract_png_from_swf:# | $(IMAGE_FILE_DIR)
 	cd ./ruffle && \
 	for f in ../$(SWF_DIR)/*; do \
-        echo $$f; \
-		cargo run --release --package=exporter -- --width 1024 --height 1024 $$f; \
+		python3.14 -c 'print("$(SWF_FILE_PATH)")' | \
+		while read -r trunc_path; do \
+			echo $$trunc_path; \
+		done \
     done
-	@echo Hi
+	@echo Hi;
 
+# python3.14 -c 'print(str($($$f)).split("/")[-1].split(".")[0])' | \
+# cargo run --release --package=exporter -- --width 1024 --height 1024 $$f ../$(IMAGE_FILE_DIR)/$().png; \
 
 clean:
 	rm -r ./files/swf_files

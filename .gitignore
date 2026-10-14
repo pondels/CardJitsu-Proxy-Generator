@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 *.*~
 *-autosave*
+ruffle
+*swf_files/
+*generated_cards/
 
 # C extensions
 *.so

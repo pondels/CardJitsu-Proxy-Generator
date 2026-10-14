@@ -1,5 +1,7 @@
 from PIL import Image
 import json
+import requests
+import os
 
 color_key = {
     'tri_color': {
@@ -54,6 +56,14 @@ setTopLeft('g', (98, 184, 71))
 setTopLeft('y', (251, 234, 44))
 setTopLeft('b', (16, 72, 160))
 setTopLeft('r', (227, 60, 37))
+
+# If we don't have a CardImages folder, download the swf files
+# and extract all of the files
+if not os.path.exists('./files/CardImages'):
+    with open('scrape/swf_files.json', 'r') as swf_links:
+        for swf_url in json.load(swf_links):
+            requests.get(swf_url)
+            break
 
 with open('scrape/new_cards.json', 'r') as file:
     cards_json = json.load(file)

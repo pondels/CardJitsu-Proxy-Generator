@@ -29,6 +29,12 @@ Set 6:
     Water Sensei promo card missing
     Water Ninja promo card missing
     Water Video Sketch promo card missing
+Set 7:
+    Water Ninja (688) is missing its texture
+    Yellow Puffle (723) using the wrong image
+    Aqua Grabber missing
+    Puffle Science! missing
+    Puffle Partying missing
 
 References from cardjitsu.co were made to accurately fill in those holes
 Cards needing fixing still

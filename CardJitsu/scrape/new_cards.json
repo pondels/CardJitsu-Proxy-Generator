@@ -6213,165 +6213,6 @@
         "card_id": "660",
         "set_id": "7",
         "power_id": "0",
-        "element": "f",
-        "name": "Master the Elements",
-        "label": "Master the Elements",
-        "prompt": "Master the Elements",
-        "color": "p",
-        "value": "4",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "The opening of the Water Dojo is November 2010 meant a celebration of all elemental skills in Club Penguin. Puffles like the elements, too."
-    },
-    "661": {
-        "rare": true,
-        "card_id": "661",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "f",
-        "name": "Fairy Fables Stage",
-        "label": "Fairy Fables Stage",
-        "prompt": "Fairy Fables Stage",
-        "color": "g",
-        "value": "5",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "Fairy Fables is the tale of Prince Redwood who rides through the forest to take croissants to a princess. Check the Stage for a trunk full of costumes and acting opportunities."
-    },
-    "662": {
-        "rare": true,
-        "card_id": "662",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "f",
-        "name": "Creative Puffles",
-        "label": "Creative Puffles",
-        "prompt": "Creative Puffles",
-        "color": "p",
-        "value": "4",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "First discovered in the Forest in 2007, yellow puffles are artistic pets. Adopt one from the Pet Shop and take it into your igloo. Then watch it get creative!"
-    },
-    "663": {
-        "rare": true,
-        "card_id": "663",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "f",
-        "name": "Goofy Green Puffle",
-        "label": "Goofy Green Puffle",
-        "prompt": "Goofy Green Puffle",
-        "color": "g",
-        "value": "5",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "The green puffle's a great pal for getting silly. Adopt one at the Pet Shop and try taking it into the Jetpack Adventure game at the Beacon."
-    },
-    "664": {
-        "rare": true,
-        "card_id": "664",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "s",
-        "name": "EPF Test Room Sketch",
-        "label": "EPF Test Room Sketch",
-        "prompt": "EPF Test Room Sketch",
-        "color": "r",
-        "value": "3",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "It takes a long time to plan new rooms. Artists sketched the Elite Agent training and testing room in January 2010, way before the Everyday Phoning Facility opened for Elite Agents at the end of May 2010."
-    },
-    "665": {
-        "rare": true,
-        "card_id": "665",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "s",
-        "name": "Snowball Battle",
-        "label": "Snowball Battle",
-        "prompt": "Snowball Battle",
-        "color": "b",
-        "value": "5",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "In Club Penguin Game Day for Wii, winning snowball battles take precision. But it also helps if you know a secret... find the white puffle for some extra snowball action!"
-    },
-    "666": {
-        "rare": true,
-        "card_id": "666",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "s",
-        "name": "Fabulous Purple Puffle",
-        "label": "Fabulous Purple Puffle",
-        "prompt": "Fabulous Purple Puffle",
-        "color": "p",
-        "value": "6",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "It's particular \u2013 except when it's on the dance floor. Then it'll show you some great moves. Adopt one from the Pet Shop and then take it to the Dance Contest game to help you."
-    },
-    "667": {
-        "rare": true,
-        "card_id": "667",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "w",
-        "name": "Water Party Sketch",
-        "label": "Water Party Sketch",
-        "prompt": "Water Party Sketch",
-        "color": "r",
-        "value": "5",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "This early sketch of the Water Dojo had a few more \"polished\" elements than it does now. We wanted the area to be quite rough and even a bit perilous to reflect the challenge of the water game."
-    },
-    "668": {
-        "rare": true,
-        "card_id": "668",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "w",
-        "name": "Zany Orange Puffle",
-        "label": "Zany Orange Puffle",
-        "prompt": "Zany Orange Puffle",
-        "color": "p",
-        "value": "6",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "Known for its willingness to chomp on everything, the orange puffle is a wacky pet. Adopt yours at the Club Penguin Pet Shop \u2013 and keep an eye on your pizza."
-    },
-    "669": {
-        "rare": true,
-        "card_id": "669",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "w",
-        "name": "Sporty Pink Puffle",
-        "label": "Sporty Pink Puffle",
-        "prompt": "Sporty Pink Puffle",
-        "color": "p",
-        "value": "7",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "Pink puffles are sporty creatures \u2013 they also like water. Adopt a pink puffle at the Pet Shop and take it into the Aqua Grabber game to help you!"
-    },
-    "670": {
-        "card_id": "670",
-        "set_id": "7",
-        "power_id": "0",
         "element": "w",
         "name": "Wii Game Day \"Goal!\"",
         "label": "Wii Game Day \"Goal!\"",
@@ -6383,8 +6224,8 @@
         "is_active": "1",
         "flavor_text": "You've picked your team... your skates are laced tight. Now guard your net and shoot pucks for the win! Goal!"
     },
-    "671": {
-        "card_id": "671",
+    "661": {
+        "card_id": "661",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6398,8 +6239,8 @@
         "is_active": "1",
         "flavor_text": "First spotted in the Dojo, the shy, snow-loving white puffle holds extraordinary power. Adopt one from the Club Penguin Pet Shop."
     },
-    "672": {
-        "card_id": "672",
+    "662": {
+        "card_id": "662",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6413,8 +6254,8 @@
         "is_active": "1",
         "flavor_text": "Loyalty is what blue puffles are all about. If you're looking to expand your team with an all-star pet, adopt one in the Pet Shop."
     },
-    "673": {
-        "card_id": "673",
+    "663": {
+        "card_id": "663",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6428,8 +6269,8 @@
         "is_active": "1",
         "flavor_text": "All the puffles are hungry in the Club Penguin Wii \"Feed A Puffle\" Game. But try extra hard to feed a white one \u2013 you can get a Stamp in Club Penguin when you feed one."
     },
-    "674": {
-        "card_id": "674",
+    "664": {
+        "card_id": "664",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6443,8 +6284,8 @@
         "is_active": "1",
         "flavor_text": "Ninjas compete fiercely in the Dojo to improve their Card-Jitsu skills. After earning their Ninja Mask, many continue to battle to keep their senses sharp. New Power Cards can surprise even the most skilled opponents."
     },
-    "675": {
-        "card_id": "675",
+    "665": {
+        "card_id": "665",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6458,9 +6299,8 @@
         "is_active": "1",
         "flavor_text": "Sensei's past is shrouded in mystery. He is the first master of Card-Jitsu, but little else is known about him. He will, however gladly train any student interested in the ways of the ninja. Seek him in the Dojo for training."
     },
-    "676": {
-        "rare": true,
-        "card_id": "676",
+    "666": {
+        "card_id": "666",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6474,8 +6314,8 @@
         "is_active": "1",
         "flavor_text": "Even after you've earned their Ninja Mask, your ninja's training has only begun. The next step of your journey is to master the elements. Search the Ninja Hideout for paths to new Dojos... and new challenges."
     },
-    "677": {
-        "card_id": "677",
+    "667": {
+        "card_id": "667",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6489,8 +6329,8 @@
         "is_active": "1",
         "flavor_text": "The Brown Puffle was first discovered in January 2011. Explorers crossed a hidden bay into the wilds of Club Penguin, and found them in a cave. Many puffles even followed the explorers back. Adopt one today the Pet Shop."
     },
-    "678": {
-        "card_id": "678",
+    "668": {
+        "card_id": "668",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6504,8 +6344,8 @@
         "is_active": "1",
         "flavor_text": "Fire Ninjas who wear all the parts of their Fire Suit can control fire by pressing 'D' on their keyboard. Many used this power to help melt snow and pump water during the Water Dojo construction in November 2010."
     },
-    "679": {
-        "card_id": "679",
+    "669": {
+        "card_id": "669",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6519,8 +6359,8 @@
         "is_active": "1",
         "flavor_text": "In October 2010, black puffles were found exploring the Mine. It was quickly discovered that they were interested in Cart Surfing. To take your black puffle along, just walk to the Mine and start a game."
     },
-    "680": {
-        "card_id": "680",
+    "670": {
+        "card_id": "670",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6534,8 +6374,8 @@
         "is_active": "1",
         "flavor_text": "During August 2010, a Mountain Expedition was organized to climb to the top of Toughest Mountain. Many teams of penguins suited up with new climbing gear, and worked together to face the mountain."
     },
-    "681": {
-        "card_id": "681",
+    "671": {
+        "card_id": "671",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6549,8 +6389,8 @@
         "is_active": "1",
         "flavor_text": "Climbers faced many obstacles during the Mountain Expedition in August 2010. Icy caverns and harsh weather made the climb very tiring. Many stopped to rest at base camp before climbing to the summit."
     },
-    "682": {
-        "card_id": "682",
+    "672": {
+        "card_id": "672",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6564,8 +6404,8 @@
         "is_active": "1",
         "flavor_text": "The final challenge for climbers during the Mountain Expedition in August 2010 was to reach the top. Many who did took a picture to celebrate, which could then be used as a player card background!"
     },
-    "683": {
-        "card_id": "683",
+    "673": {
+        "card_id": "673",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6579,8 +6419,8 @@
         "is_active": "1",
         "flavor_text": "To earn all the Stamps in Cart Surfer, you'll need practice... and a little help. For some of the challenges, surfers will need to bring a black puffle with them. You can adopt one of these from the Pet Shop."
     },
-    "684": {
-        "card_id": "684",
+    "674": {
+        "card_id": "674",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6594,8 +6434,8 @@
         "is_active": "1",
         "flavor_text": "Stamps Books tell YOUR story. Inside you'll find all the pins you've found, the games you've mastered, and the medals you've earned. Customize yours to show others what you like... and what you can do!"
     },
-    "685": {
-        "card_id": "685",
+    "675": {
+        "card_id": "675",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6609,8 +6449,8 @@
         "is_active": "1",
         "flavor_text": "Dark and stormy skies continued to cover the island after the 2010 Halloween Party was over. No one could explain the mysterious weather at first \u2013 even Gary the Gadget Guy was baffled."
     },
-    "686": {
-        "card_id": "686",
+    "676": {
+        "card_id": "676",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6624,8 +6464,8 @@
         "is_active": "1",
         "flavor_text": "What do Water Ninjas look like when they're controlling water? That's the question we asked while working on these sketches. We tried lots of different designs, making the water look 'smooth' and 'froamy', until we found the way we liked best."
     },
-    "687": {
-        "card_id": "687",
+    "677": {
+        "card_id": "677",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6639,8 +6479,8 @@
         "is_active": "1",
         "flavor_text": "When the Halloween Storm arrived in October 2010, Gary the Gadget Guy was puzzled. \"I had never experienced a storm like it before,\" he said. \"I watched it closely through the binoculars at the Cove. It was very intriguing.\""
     },
-    "688": {
-        "card_id": "688",
+    "678": {
+        "card_id": "678",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6654,8 +6494,8 @@
         "is_active": "1",
         "flavor_text": "Card-Jitsu Water is a fast paced battle. It takes quick thinking and fast flippers to master. Those who do will earn their Water Suit, a Water Gem, and the right to call themselves a Water Ninja."
     },
-    "689": {
-        "card_id": "689",
+    "679": {
+        "card_id": "679",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6669,8 +6509,8 @@
         "is_active": "1",
         "flavor_text": "In November 2010, it rained for the first time in Club Penguin history. For days the downpour soaked the island. Weather experts were baffled, and penguins everywhere were spotted with umbrellas and rain gear."
     },
-    "690": {
-        "card_id": "690",
+    "680": {
+        "card_id": "680",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6684,8 +6524,8 @@
         "is_active": "1",
         "flavor_text": "Ninjas must give their all facing one another in battle. Though matches are fierce, Sensei teaches that competition is the best way to improve your skill. Win or lose, ninjas always remain loyal allies, so remember to tell your opponent \"good game!\""
     },
-    "691": {
-        "card_id": "691",
+    "681": {
+        "card_id": "681",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6699,8 +6539,8 @@
         "is_active": "1",
         "flavor_text": "Each part of the Water Ninja Suit is a symbol of skill. They must be earned in order \u2013 first the Water Sandals, then the Waterfall Coat and the Torrent Mask. Once you earn the Helmet of Oceans, you're ready to face Sensei."
     },
-    "692": {
-        "card_id": "692",
+    "682": {
+        "card_id": "682",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6714,8 +6554,8 @@
         "is_active": "1",
         "flavor_text": "A rainstorm drenched the island in November 2010. At Sensei's request, workers set up machines to pump rainwater up to the Dojo. The machines ran on snowballs and Fire Ninja flames!"
     },
-    "693": {
-        "card_id": "693",
+    "683": {
+        "card_id": "683",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6729,8 +6569,8 @@
         "is_active": "1",
         "flavor_text": "During November 2010, everyone helped pump rainwater up to the Dojo. This water was needed to build a new Dojo for Water Ninja training. For a week, much of the island was covered in pipes and water tanks."
     },
-    "694": {
-        "card_id": "694",
+    "684": {
+        "card_id": "684",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6744,8 +6584,8 @@
         "is_active": "1",
         "flavor_text": "The path to the Water Dojo begins in the Ninja Hideout. Once you have an Amulet, touch the stone tablet marked with a sater[4] symbol. A gate will appear and open. Enter it, if you are prepared..."
     },
-    "695": {
-        "card_id": "695",
+    "685": {
+        "card_id": "685",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6759,8 +6599,8 @@
         "is_active": "1",
         "flavor_text": "When a ninja wears all the parts of the Water Suit, they will have the power to control water. Wearing only the suit, press 'D', and a wave of water will surge around you."
     },
-    "696": {
-        "card_id": "696",
+    "686": {
+        "card_id": "686",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6774,8 +6614,8 @@
         "is_active": "1",
         "flavor_text": "The rainstorm in November 2010 was a sign that ninjas were ready to master the element of water. Sensei soon announced the construction of the Water Dojo. It opened on November 25... and Card-Jitsu Water training began."
     },
-    "697": {
-        "card_id": "697",
+    "687": {
+        "card_id": "687",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6789,8 +6629,8 @@
         "is_active": "1",
         "flavor_text": "During construction of the Water Dojo in November 2010, Sensei appeared in the Ninja Hideout. Dressed in his Water Robe, he helped ninjas prepare... and showed them what the power of a Water Ninja could do."
     },
-    "698": {
-        "card_id": "698",
+    "688": {
+        "card_id": "688",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6804,8 +6644,8 @@
         "is_active": "1",
         "flavor_text": "This rough sketch was an idea for a poster, showing all the different parts of the new Card-Jitsu Water game. We wanted to make it feel like the beginning of an ancient legend or story. That's why Sensei is so big \u2013 he's not a giant, it's just for style!"
     },
-    "699": {
-        "card_id": "699",
+    "689": {
+        "card_id": "689",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6819,8 +6659,8 @@
         "is_active": "1",
         "flavor_text": "This sketch of a Water Ninja was created for a membership card design. We wanted to show how it feels to become a Water Ninja \u2013 to have such awesome power and skill. That's why we left off his mask \u2013 we wanted to see his expression!"
     },
-    "700": {
-        "card_id": "700",
+    "690": {
+        "card_id": "690",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6834,8 +6674,8 @@
         "is_active": "1",
         "flavor_text": "When we were designing what Water Ninjas looked like, it helped to sketch them in different battle poses. We really like this early drawing we found in an artist's sketch book."
     },
-    "701": {
-        "card_id": "701",
+    "691": {
+        "card_id": "691",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6849,8 +6689,8 @@
         "is_active": "1",
         "flavor_text": "\"Dude. Soooo loving the shades. They make me even stronger and more silent. Maybe later we can hang out and I'll eat a Puffle O to entertain 'ya.\""
     },
-    "702": {
-        "card_id": "702",
+    "692": {
+        "card_id": "692",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6864,8 +6704,8 @@
         "is_active": "1",
         "flavor_text": "\"You think this is fast? You should see how I move when I get shot from a cannon! It's a riot! And I think, actually, it increases happiness.\""
     },
-    "703": {
-        "card_id": "703",
+    "693": {
+        "card_id": "693",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6879,8 +6719,8 @@
         "is_active": "1",
         "flavor_text": "\"Paints, creativity, and music,\" Chirp replies with whimsy. \"Mix those up with some imagination and you got a masterpiece, my friends, a masterpiece!\""
     },
-    "704": {
-        "card_id": "704",
+    "694": {
+        "card_id": "694",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6894,8 +6734,8 @@
         "is_active": "1",
         "flavor_text": "\"I love bubbles! They're beautiful to blow. Bouncy. Breathtaking. Transparent perfection, I say!\""
     },
-    "705": {
-        "card_id": "705",
+    "695": {
+        "card_id": "695",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6909,8 +6749,8 @@
         "is_active": "1",
         "flavor_text": "When a ninja wears all the parts of the Water Suit, they will have the power to control weather. Wearing only the suit, press 'D', and a wave of water will surge around you.[10]"
     },
-    "706": {
-        "card_id": "706",
+    "696": {
+        "card_id": "696",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -6924,8 +6764,8 @@
         "is_active": "1",
         "flavor_text": "\"Um, nope! Can't touch this propeller hat,\" Flit laughs loudly. \"It takes tons of practice... Even I need it! Recall Christmas 2008 when I got stuck sideways in a tree?!\""
     },
-    "707": {
-        "card_id": "707",
+    "697": {
+        "card_id": "697",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6939,23 +6779,8 @@
         "is_active": "1",
         "flavor_text": "\"It's so cool to bounce around like my ball,\" he declares. \"By the way... it rolled under a ginormous pile of snow and though I'm small, round, and can roll, I'm a bit too puffy. Can you help?\""
     },
-    "708": {
-        "card_id": "708",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "f",
-        "name": "Ed McCool and Destructo",
-        "label": "Ed McCool and Destructo",
-        "prompt": "Ed McCool and Destructo",
-        "color": "b",
-        "value": "4",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "This duplicate of an older card is not present in real-life cards"
-    },
-    "709": {
-        "card_id": "709",
+    "698": {
+        "card_id": "698",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -6969,23 +6794,8 @@
         "is_active": "1",
         "flavor_text": "\"From this snowman emerges the almighty Niblet, the might green puffle! He's been trying to become a white puffle by hiding in the snow.\""
     },
-    "710": {
-        "card_id": "710",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "s",
-        "name": "Snowy Night",
-        "label": "Snowy Night",
-        "prompt": "Snowy Night",
-        "color": "p",
-        "value": "3",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "This duplicate of an older card is not present in real-life cards"
-    },
-    "711": {
-        "card_id": "711",
+    "699": {
+        "card_id": "699",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -6999,23 +6809,8 @@
         "is_active": "1",
         "flavor_text": "Sometimes rounding up puffles feels a little like chasing a rainbow. Lots of colors, but the closer you get the farther away it seems."
     },
-    "712": {
-        "card_id": "712",
-        "set_id": "7",
-        "power_id": "0",
-        "element": "w",
-        "name": "Cadence and the Keeper",
-        "label": "Cadence and the Keeper",
-        "prompt": "Cadence and the Keeper",
-        "color": "g",
-        "value": "3",
-        "asset": "",
-        "description": "",
-        "is_active": "1",
-        "flavor_text": "This duplicate of an older card is not present in real-life cards"
-    },
-    "713": {
-        "card_id": "713",
+    "700": {
+        "card_id": "700",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7029,8 +6824,8 @@
         "is_active": "1",
         "flavor_text": "Such a popular myth, they made a Stage play about it. Does this puffle really live under the 'berg?"
     },
-    "714": {
-        "card_id": "714",
+    "701": {
+        "card_id": "701",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -7044,8 +6839,8 @@
         "is_active": "1",
         "flavor_text": "Swoosh, the mysterious meteor puffle flies through the air with the greatest of ease..."
     },
-    "715": {
-        "card_id": "715",
+    "702": {
+        "card_id": "702",
         "set_id": "7",
         "power_id": "0",
         "element": "w",
@@ -7059,8 +6854,8 @@
         "is_active": "1",
         "flavor_text": "A multi-colored legend, or just a creative little yellow puffle who has been playing with paint?"
     },
-    "716": {
-        "card_id": "716",
+    "703": {
+        "card_id": "703",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7074,8 +6869,8 @@
         "is_active": "1",
         "flavor_text": "\"I'm telling ya, it was huge! Twice the size of a penguin and it had claws like a crab. I was shaking in my snow boots!\""
     },
-    "717": {
-        "card_id": "717",
+    "704": {
+        "card_id": "704",
         "set_id": "7",
         "power_id": "0",
         "element": "f",
@@ -7089,8 +6884,8 @@
         "is_active": "1",
         "flavor_text": "\"Turbo is my black puffle. It rolls its eyes a lot,\" replies the penguin as he feeds his pet a flipper full of Puffle O's. \"It really gets fired up when I take it out for a walk.\""
     },
-    "718": {
-        "card_id": "718",
+    "705": {
+        "card_id": "705",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7104,8 +6899,8 @@
         "is_active": "1",
         "flavor_text": "\"As an employee, I value the blue puffles,\" replies the staff member. \"They are loyal, easy to take care of, and fun to play ball with. You can't go wrong with a blue puffle.\""
     },
-    "719": {
-        "card_id": "719",
+    "706": {
+        "card_id": "706",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7119,8 +6914,8 @@
         "is_active": "1",
         "flavor_text": "\"This is my pink puffle, Cutie! I named it that because I think its eyes are sooo adorable,\" continues the ballet dancer. \"Plus it matches my outfit!\""
     },
-    "720": {
-        "card_id": "720",
+    "707": {
+        "card_id": "707",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7134,8 +6929,8 @@
         "is_active": "1",
         "flavor_text": "\"My puffle Greenie is the silliest puffle I've ever met, which is why we get along so well,\" she giggles. \"I love it when it plays on its unicycle \u2013 it's so funny!\""
     },
-    "721": {
-        "card_id": "721",
+    "708": {
+        "card_id": "708",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7149,8 +6944,8 @@
         "is_active": "1",
         "flavor_text": "\"Oh! Look at that one over there blowing bubbles! That one is sooo cute \u2013 it should be my pet,\" she exclaims. \"I'll make it Princess Purple because I love princesses and purple!\""
     },
-    "722": {
-        "card_id": "722",
+    "709": {
+        "card_id": "709",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7164,8 +6959,8 @@
         "is_active": "1",
         "flavor_text": "\"This is my sidekick on my adventures. I named it Fireball because it's so fast when it goes flying out of its cannon like whooooosh! Look, it's going again!\""
     },
-    "723": {
-        "card_id": "723",
+    "710": {
+        "card_id": "710",
         "set_id": "7",
         "power_id": "0",
         "element": "s",
@@ -7179,8 +6974,168 @@
         "is_active": "1",
         "flavor_text": "\"I knew I wanted a yellow puffle from the moment I saw it in the Forest at Halloween,\" she replies. \"My puffle Lemon likes to paint just like I do.\""
     },
-    "724": {
-        "card_id": "724",
+    "711": {
+        "rare": true,
+        "card_id": "711",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "f",
+        "name": "Master the Elements",
+        "label": "Master the Elements",
+        "prompt": "Master the Elements",
+        "color": "p",
+        "value": "4",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "The opening of the Water Dojo is November 2010 meant a celebration of all elemental skills in Club Penguin. Puffles like the elements, too."
+    },
+    "712": {
+        "rare": true,
+        "card_id": "712",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "f",
+        "name": "Fairy Fables Stage",
+        "label": "Fairy Fables Stage",
+        "prompt": "Fairy Fables Stage",
+        "color": "g",
+        "value": "5",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "Fairy Fables is the tale of Prince Redwood who rides through the forest to take croissants to a princess. Check the Stage for a trunk full of costumes and acting opportunities."
+    },
+    "713": {
+        "rare": true,
+        "card_id": "713",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "f",
+        "name": "Creative Puffles",
+        "label": "Creative Puffles",
+        "prompt": "Creative Puffles",
+        "color": "p",
+        "value": "4",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "First discovered in the Forest in 2007, yellow puffles are artistic pets. Adopt one from the Pet Shop and take it into your igloo. Then watch it get creative!"
+    },
+    "714": {
+        "rare": true,
+        "card_id": "714",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "f",
+        "name": "Goofy Green Puffle",
+        "label": "Goofy Green Puffle",
+        "prompt": "Goofy Green Puffle",
+        "color": "g",
+        "value": "5",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "The green puffle's a great pal for getting silly. Adopt one at the Pet Shop and try taking it into the Jetpack Adventure game at the Beacon."
+    },
+    "715": {
+        "rare": true,
+        "card_id": "715",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "s",
+        "name": "EPF Test Room Sketch",
+        "label": "EPF Test Room Sketch",
+        "prompt": "EPF Test Room Sketch",
+        "color": "r",
+        "value": "3",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "It takes a long time to plan new rooms. Artists sketched the Elite Agent training and testing room in January 2010, way before the Everyday Phoning Facility opened for Elite Agents at the end of May 2010."
+    },
+    "716": {
+        "rare": true,
+        "card_id": "716",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "s",
+        "name": "Snowball Battle",
+        "label": "Snowball Battle",
+        "prompt": "Snowball Battle",
+        "color": "b",
+        "value": "5",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "In Club Penguin Game Day for Wii, winning snowball battles take precision. But it also helps if you know a secret... find the white puffle for some extra snowball action!"
+    },
+    "717": {
+        "rare": true,
+        "card_id": "717",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "s",
+        "name": "Fabulous Purple Puffle",
+        "label": "Fabulous Purple Puffle",
+        "prompt": "Fabulous Purple Puffle",
+        "color": "p",
+        "value": "6",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "It's particular \u2013 except when it's on the dance floor. Then it'll show you some great moves. Adopt one from the Pet Shop and then take it to the Dance Contest game to help you."
+    },
+    "718": {
+        "rare": true,
+        "card_id": "718",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "w",
+        "name": "Water Party Sketch",
+        "label": "Water Party Sketch",
+        "prompt": "Water Party Sketch",
+        "color": "r",
+        "value": "5",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "This early sketch of the Water Dojo had a few more \"polished\" elements than it does now. We wanted the area to be quite rough and even a bit perilous to reflect the challenge of the water game."
+    },
+    "719": {
+        "rare": true,
+        "card_id": "719",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "w",
+        "name": "Zany Orange Puffle",
+        "label": "Zany Orange Puffle",
+        "prompt": "Zany Orange Puffle",
+        "color": "p",
+        "value": "6",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "Known for its willingness to chomp on everything, the orange puffle is a wacky pet. Adopt yours at the Club Penguin Pet Shop \u2013 and keep an eye on your pizza."
+    },
+    "720": {
+        "rare": true,
+        "card_id": "720",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "w",
+        "name": "Sporty Pink Puffle",
+        "label": "Sporty Pink Puffle",
+        "prompt": "Sporty Pink Puffle",
+        "color": "p",
+        "value": "7",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "Pink puffles are sporty creatures \u2013 they also like water. Adopt a pink puffle at the Pet Shop and take it into the Aqua Grabber game to help you!"
+    },
+    "721": {
+        "card_id": "721",
         "set_id": "7",
         "power_id": "5",
         "element": "s",
@@ -7194,8 +7149,8 @@
         "is_active": "1",
         "flavor_text": "\"Okay, I just need to catch a few more for the Pet Shop. Easy now... steady... steady...\" says the penguin, thinking out loud. \"It takes real concentration to do this!\""
     },
-    "725": {
-        "card_id": "725",
+    "722": {
+        "card_id": "722",
         "set_id": "7",
         "power_id": "11",
         "element": "f",
@@ -7209,8 +7164,8 @@
         "is_active": "1",
         "flavor_text": "In November 2010, Fire Ninjas gathered and used their powers to help get the water flowing to the new Water Dojo. To become a ninja, head to the Dojo and play Card-Jitsu."
     },
-    "726": {
-        "card_id": "726",
+    "723": {
+        "card_id": "723",
         "set_id": "7",
         "power_id": "15",
         "element": "s",
@@ -7224,8 +7179,8 @@
         "is_active": "1",
         "flavor_text": "In the  October 2010 Halloween Party, we waddled through mazes. To open the doors into the Dark Chamber, we had to mimic the creepy organ music."
     },
-    "727": {
-        "card_id": "727",
+    "724": {
+        "card_id": "724",
         "set_id": "7",
         "power_id": "17",
         "element": "s",
@@ -7239,8 +7194,8 @@
         "is_active": "1",
         "flavor_text": "Getting a giant pumpkin to the lighthouse was just one part of the 2010 Halloween Party. Penguins got their costumes ready from the October edition of Penguin Style."
     },
-    "728": {
-        "card_id": "728",
+    "725": {
+        "card_id": "725",
         "set_id": "7",
         "power_id": "12",
         "element": "s",
@@ -7254,24 +7209,8 @@
         "is_active": "1",
         "flavor_text": "One of the Captain's favorite snacks is surprising... stinky cheese! Even without cheese, you may find Rockhopper on his Migrator ship, when it docks in Club Penguin."
     },
-    "729": {
-        "rare": true,
-        "card_id": "729",
-        "set_id": "7",
-        "power_id": "5",
-        "element": "s",
-        "name": "Elite Puffle: Flare",
-        "label": "Elite Puffle: Flare",
-        "prompt": "Elite Puffle: Flare",
-        "color": "p",
-        "value": "12",
-        "asset": "",
-        "description": "When this is scored, discard one opponent's Water card.",
-        "is_active": "1",
-        "flavor_text": "Some member penguins entered the Unlock Code from the Club Penguin DS game and got the Elite Puffle, Flare. Its welding skills and blue flames make it intense."
-    },
-    "730": {
-        "card_id": "730",
+    "726": {
+        "card_id": "726",
         "set_id": "7",
         "power_id": "8",
         "element": "w",
@@ -7285,8 +7224,8 @@
         "is_active": "1",
         "flavor_text": "There are many ways to earn coins in Club Penguin. But the clam that holds the giant pearl in Aqua Grabber might be the sparkliest way of all. Tip: Don't wake up the clam!"
     },
-    "731": {
-        "card_id": "731",
+    "727": {
+        "card_id": "727",
         "set_id": "7",
         "power_id": "14",
         "element": "w",
@@ -7300,24 +7239,8 @@
         "is_active": "1",
         "flavor_text": "Ninjas who play Card-Jitsu Water can earn stamps that will show off their ninja skills. Go to the Dojo and challenge your opponents to race towards the gong at the Waterfall."
     },
-    "732": {
-        "rare": true,
-        "card_id": "732",
-        "set_id": "7",
-        "power_id": "6",
-        "element": "w",
-        "name": "EPF Agents",
-        "label": "EPF Agents",
-        "prompt": "EPF Agents",
-        "color": "o",
-        "value": "11",
-        "asset": "",
-        "description": "When this is scored, discard one opponent's Fire card.",
-        "is_active": "1",
-        "flavor_text": "Classified Information: Rookie and Jet Pack Guy are rumored to be Elite Penguin Force Agents. Become a secret agent by responding to  another agent's invite and taking the test."
-    },
-    "733": {
-        "card_id": "733",
+    "728": {
+        "card_id": "728",
         "set_id": "7",
         "power_id": "17",
         "element": "w",
@@ -7331,8 +7254,8 @@
         "is_active": "1",
         "flavor_text": "From the Mine, you can take on the task of rescuing puffles in peril when you play Puffle Rescue. And as you navigate the waters, never forget that creatures like squid and sharks are hot on your flippers."
     },
-    "734": {
-        "card_id": "734",
+    "729": {
+        "card_id": "729",
         "set_id": "7",
         "power_id": "16",
         "element": "f",
@@ -7346,8 +7269,8 @@
         "is_active": "1",
         "flavor_text": "Hone your battle skills by challenging ninja opponents at the Fire Dojo. You'll need patience, practice, power. Also, to master this element and become a Fire Ninja, some hot sauce is recommended."
     },
-    "735": {
-        "card_id": "735",
+    "730": {
+        "card_id": "730",
         "set_id": "7",
         "power_id": "13",
         "element": "f",
@@ -7361,8 +7284,8 @@
         "is_active": "1",
         "flavor_text": "On January 13, 2011, the EPF was attacked by enemy bugs. Agents repelled the attack with a new program called System Defender. Now any agent can train in this game at the Command Room."
     },
-    "736": {
-        "card_id": "736",
+    "731": {
+        "card_id": "731",
         "set_id": "7",
         "power_id": "7",
         "element": "f",
@@ -7376,8 +7299,8 @@
         "is_active": "1",
         "flavor_text": "Originally brought to Club Penguin from Rockhopper Island, adventurous red puffles love cannons. You can adopt a red puffle from the Pet Shop."
     },
-    "737": {
-        "card_id": "737",
+    "732": {
+        "card_id": "732",
         "set_id": "7",
         "power_id": "11",
         "element": "f",
@@ -7391,8 +7314,8 @@
         "is_active": "1",
         "flavor_text": "\"It's incredibly complex. A machine made from all sorts of things around the island.\" During the Wilderness Expedition of January 2011, we were challenged to make the machine work."
     },
-    "738": {
-        "card_id": "738",
+    "733": {
+        "card_id": "733",
         "set_id": "7",
         "power_id": "15",
         "element": "s",
@@ -7406,8 +7329,8 @@
         "is_active": "1",
         "flavor_text": "The  Ultimate Protobot and his minions wreak havoc in System Defender. Luckily, the Elite Penguin Force has strong defenses to counteract their attempts. Agents, your orders are in the Command Room."
     },
-    "739": {
-        "card_id": "739",
+    "734": {
+        "card_id": "734",
         "set_id": "7",
         "power_id": "18",
         "element": "s",
@@ -7421,8 +7344,8 @@
         "is_active": "1",
         "flavor_text": "At the Holiday Party 2010, the island was brightly lit. How many lights, you ask? Over 1000 bulbs shone bright in the  Courtyard alone. Sensei really, really likes decorating."
     },
-    "740": {
-        "card_id": "740",
+    "735": {
+        "card_id": "735",
         "set_id": "7",
         "power_id": "12",
         "element": "s",
@@ -7436,40 +7359,8 @@
         "is_active": "1",
         "flavor_text": "In Club Penguin's  Game Day for Wii, the Rollin' Riot game's challenge is to make the biggest snowball... just make sure your opponents don't take yours!"
     },
-    "741": {
-        "rare": true,
-        "card_id": "741",
-        "set_id": "7",
-        "power_id": "5",
-        "element": "s",
-        "name": "EPF Under Attack",
-        "label": "EPF Under Attack",
-        "prompt": "EPF Under Attack",
-        "color": "p",
-        "value": "12",
-        "asset": "",
-        "description": "When this is scored, discard one opponent's Water card.",
-        "is_active": "1",
-        "flavor_text": "In January 2011, Secret Agents were told to report to System Defender in the Command Room. Specialized skills and honed instinct help the Elite Penguin Force. Join by invitation of someone on the squad."
-    },
-    "742": {
-        "rare": true,
-        "card_id": "742",
-        "set_id": "7",
-        "power_id": "8",
-        "element": "w",
-        "name": "Elite Comm Class Agents",
-        "label": "Elite Comm Class Agents",
-        "prompt": "Elite Comm Class Agents",
-        "color": "p",
-        "value": "9",
-        "asset": "",
-        "description": "When this is scored, discard one opponent's Blue card.",
-        "is_active": "1",
-        "flavor_text": "Comm class agents of the Elite Penguin Force are the eyes and ears of the island's secret agency. They know information wins battles. Join the EPF today by accepting an invitation from an agent and taking the test."
-    },
-    "743": {
-        "card_id": "743",
+    "736": {
+        "card_id": "736",
         "set_id": "7",
         "power_id": "14",
         "element": "w",
@@ -7483,8 +7374,8 @@
         "is_active": "1",
         "flavor_text": "We were excited to go on a Wilderness Expedition in January 2011. Once through the  Tree Maze and onto the boat, we crossed a bay and were faced with cliffs and caves. Then we discovered the inventive brown puffle!"
     },
-    "744": {
-        "card_id": "744",
+    "737": {
+        "card_id": "737",
         "set_id": "7",
         "power_id": "6",
         "element": "w",
@@ -7498,8 +7389,8 @@
         "is_active": "1",
         "flavor_text": "Filling the Lighthouse during  Coins for Change 2010 was an awesome challenge. We did it! And the virtual Club Penguin coins meant real donations went to help kids around the globe."
     },
-    "745": {
-        "card_id": "745",
+    "738": {
+        "card_id": "738",
         "set_id": "7",
         "power_id": "14",
         "element": "w",
@@ -7513,8 +7404,8 @@
         "is_active": "1",
         "flavor_text": "The last step to becoming a Water Ninja is defeating Sensei in battle. Though his skills are legendary, the way to defeating him is dedication. Keep trying, no matter what, and victory will be yours."
     },
-    "746": {
-        "card_id": "746",
+    "739": {
+        "card_id": "739",
         "set_id": "7",
         "power_id": "13",
         "element": "f",
@@ -7528,8 +7419,8 @@
         "is_active": "1",
         "flavor_text": "If you're looking for an edge in the game Jet Pack Adventure, take a green puffle with you. These talented fliers will go around collecting coins, and will look for extra fuel if you start to run out!"
     },
-    "747": {
-        "card_id": "747",
+    "740": {
+        "card_id": "740",
         "set_id": "7",
         "power_id": "7",
         "element": "w",
@@ -7543,8 +7434,8 @@
         "is_active": "1",
         "flavor_text": "The Water Dojo is a place of mist and mystery. Ninjas journey here to train in the ancient art of Card-Jitsu Water. Speak with Sensei to arrange a match. Those who do must be prepared to compete... and to swim."
     },
-    "748": {
-        "card_id": "748",
+    "741": {
+        "card_id": "741",
         "set_id": "7",
         "power_id": "10",
         "element": "s",
@@ -7558,8 +7449,8 @@
         "is_active": "1",
         "flavor_text": "A snowflake. A single sheet of blank paper. A white puffle. Small things can sometimes conceal great power."
     },
-    "749": {
-        "card_id": "749",
+    "742": {
+        "card_id": "742",
         "set_id": "7",
         "power_id": "4",
         "element": "f",
@@ -7573,10 +7464,13 @@
         "is_active": "1",
         "flavor_text": "\"Avast!\" cries Rockhopper. \"What be them flares on the horizon? What's that Yarr? Arr, I think it be a message from me buddies at Club Penguin too.\""
     },
-    "750": {
+    "743": {},
+    "744": {},
+    "745": {},
+    "746": {
         "rare": true,
         "flavor_text": "\"Talk about an incredible job,\" the Keeper exclaims in the middle of a bounce. \"Every day dancing is required...\"",
-        "card_id": "750",
+        "card_id": "746",
         "set_id": "7",
         "power_id": "9",
         "element": "w",
@@ -7588,6 +7482,115 @@
         "asset": "",
         "description": "When this is scored, discard one opponent's Green card.",
         "is_active": "1"
+    },
+    "747": {
+        "rare": true,
+        "card_id": "747",
+        "set_id": "7",
+        "power_id": "5",
+        "element": "s",
+        "name": "EPF Under Attack",
+        "label": "EPF Under Attack",
+        "prompt": "EPF Under Attack",
+        "color": "p",
+        "value": "12",
+        "asset": "",
+        "description": "When this is scored, discard one opponent's Water card.",
+        "is_active": "1",
+        "flavor_text": "In January 2011, Secret Agents were told to report to System Defender in the Command Room. Specialized skills and honed instinct help the Elite Penguin Force. Join by invitation of someone on the squad."
+    },
+    "748": {
+        "rare": true,
+        "card_id": "748",
+        "set_id": "7",
+        "power_id": "8",
+        "element": "w",
+        "name": "Elite Comm Class Agents",
+        "label": "Elite Comm Class Agents",
+        "prompt": "Elite Comm Class Agents",
+        "color": "p",
+        "value": "9",
+        "asset": "",
+        "description": "When this is scored, discard one opponent's Blue card.",
+        "is_active": "1",
+        "flavor_text": "Comm class agents of the Elite Penguin Force are the eyes and ears of the island's secret agency. They know information wins battles. Join the EPF today by accepting an invitation from an agent and taking the test."
+    },
+    "749": {
+        "rare": true,
+        "card_id": "749",
+        "set_id": "7",
+        "power_id": "6",
+        "element": "w",
+        "name": "EPF Agents",
+        "label": "EPF Agents",
+        "prompt": "EPF Agents",
+        "color": "o",
+        "value": "11",
+        "asset": "",
+        "description": "When this is scored, discard one opponent's Fire card.",
+        "is_active": "1",
+        "flavor_text": "Classified Information: Rookie and Jet Pack Guy are rumored to be Elite Penguin Force Agents. Become a secret agent by responding to  another agent's invite and taking the test."
+    },
+    "750": {
+        "rare": true,
+        "card_id": "750",
+        "set_id": "7",
+        "power_id": "5",
+        "element": "s",
+        "name": "Elite Puffle: Flare",
+        "label": "Elite Puffle: Flare",
+        "prompt": "Elite Puffle: Flare",
+        "color": "p",
+        "value": "12",
+        "asset": "",
+        "description": "When this is scored, discard one opponent's Water card.",
+        "is_active": "1",
+        "flavor_text": "Some member penguins entered the Unlock Code from the Club Penguin DS game and got the Elite Puffle, Flare. Its welding skills and blue flames make it intense."
+    },
+    "751": {
+        "card_id": "751",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "f",
+        "name": "Ed McCool and Destructo",
+        "label": "Ed McCool and Destructo",
+        "prompt": "Ed McCool and Destructo",
+        "color": "b",
+        "value": "4",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "This duplicate of an older card is not present in real-life cards"
+    },
+    "752": {
+        "card_id": "752",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "s",
+        "name": "Snowy Night",
+        "label": "Snowy Night",
+        "prompt": "Snowy Night",
+        "color": "p",
+        "value": "3",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "This duplicate of an older card is not present in real-life cards"
+    },
+    "753": {
+        "card_id": "753",
+        "set_id": "7",
+        "power_id": "0",
+        "element": "w",
+        "name": "Cadence and the Keeper",
+        "label": "Cadence and the Keeper",
+        "prompt": "Cadence and the Keeper",
+        "color": "g",
+        "value": "3",
+        "asset": "",
+        "description": "",
+        "is_active": "1",
+        "flavor_text": "This duplicate of an older card is not present in real-life cards"
     },
     "801": {
         "flavor_text": "Sweeping the sands of liberty. Only the truest of sand castles may be thwarted by the mightiest of penguins.",

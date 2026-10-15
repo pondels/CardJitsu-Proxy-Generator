@@ -234,11 +234,28 @@ offset_lookup = {
     '255': med_up,
     '256': low_down,
     '257': med_down,
+
+    # Set 4 custom offsets
+    '302': low_down,
+    '307': low_down,
+    '308': low_down,
+    '312': low_down,
+    '317': low_down,
+    '319': low_down,
+    '321': low_down,
+    '322': low_down,
+    '326': med_down,
+    '328': low_down,
+    '333': low_down,
+    '337': low_down,
+    '339': low_down,
+    '342': low_down,
+    '360': low_down,
 }
 
 for card_num, data in cards_json.items():
 
-    if data['set_id'] != '3': continue
+    if data['set_id'] != '4': continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))

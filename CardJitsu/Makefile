@@ -1,6 +1,6 @@
 SWF_DIR := './files/swf_files'
 SWF_JSON := './scrape/swf_links.json'
-IMAGE_FILE_DIR := './generated_cards'
+IMAGE_FILE_DIR := './downloaded_cards'
 SWF_FILE_PATH := $(SWF_DIR)/1.swf
 
 string_filter := $(firstword $(subst "GamesCardIcons", ,$1))
@@ -8,7 +8,7 @@ string_filter := $(firstword $(subst "GamesCardIcons", ,$1))
 dependencies:
 	git clone https://github.com/ruffle-rs/ruffle.git
 
-download_swf_files: | $(SWF_DIR)
+download_swf_files: #| $(SWF_DIR)
 	cd $(SWF_DIR) && \
 	python3.14 -c 'import json; [print(k, v, v.split("/")[-1]) for k, v in json.load(open("../../$(SWF_JSON)")).items()]' | \
 	while read -r card_number download_link file_name; do \

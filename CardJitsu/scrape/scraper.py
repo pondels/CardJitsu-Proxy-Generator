@@ -30,7 +30,7 @@ def createCardDict():
                     flavor_text = containers.__str__().split('<td>')[-1].split('</td>')[0]
 
                     # Filtering out the nonsense elements within the text
-                    flavor_text = ''.join([c if i % 2 == 0 else c.split('>')[1] for i, c in enumerate(flavor_text.split('<'))])
+                    flavor_text = ''.join([c.split('<')[0] for c in flavor_text.split(">")])
                     if not card_json[str(i)].get('flavor_text'):
                         card_json[str(i)]['flavor_text'] = flavor_text.strip()
 
@@ -57,4 +57,5 @@ def createSWFDict():
     with open('swf_links.json', 'w+') as file:
         json.dump(swf_dict, file)
 
-createSWFDict()
+createCardDict()
+# createSWFDict()

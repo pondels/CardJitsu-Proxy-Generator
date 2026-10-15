@@ -1,14 +1,14 @@
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 import json
 
-sets = {
-    # 1: 0,
-    2: 1,
-    # 3: 0,
-    # 4: 0,
-    5: 5,
-    # 6: 0,
-    # 7: 0,
+set_count = {
+    '1': 110,
+    '2': 19,
+    '3': 68,
+    '4': 68,
+    '5': 28,
+    '6': 110,
+    '7': 150,
 }
 
 color_key = {
@@ -128,8 +128,6 @@ setTopLeft('y', (251, 234, 44))
 setTopLeft('b', (16, 72, 160))
 setTopLeft('r', (227, 60, 37))
 
-def getColor(description): pass
-
 def getAbilityImage(description):
     description = description.lower()
     if 'cannot be played next round' in description:
@@ -154,16 +152,49 @@ def getAbilityImage(description):
         return Image.open(f'./files/Ability/Modify/reverse_value.png')
     else: print(f'SOMETHING WENT WRONG: {description}')
 
+def mapPowerCard(image: Image, white_mask: Image, data: dict):
+    # Drawing Black Ability Background
+    ability_bg = color_key['basic']['power_bg'].copy()
+    image.paste(ability_bg, mask=ability_bg)
+
+    # Ability white bar to mask
+    ability_outline = color_key['basic']['power_outline'].copy()
+    white_mask.paste(ability_outline, mask=ability_outline)
+
+    mask_data = white_mask.load()
+    for x in range(white_mask.width):
+        for y in range(white_mask.height):
+            # We found pixel data, nuke it from the original
+            if mask_data[x, y][0] != 0 or mask_data[x, y][1] != 0 or mask_data[x, y][2] != 0:
+                image.putpixel((x, y), (0, 0, 0, 0))
+
+    # Adding ability image in top right
+    ability_image = getAbilityImage(data['description'])
+    image.paste(ability_image, mask=ability_image)
+
+def getFlavorText(data: dict):
+    final_text = ['']
+    for word in data['flavor_text'].split(' '):
+        if flavor_font.getlength(final_text[-1] + word) > 650:
+            final_text.append('')
+
+        final_text[-1] += f'{word} '
+
+    return '\n'.join(final_text)
+
 with open('scrape/new_cards.json', 'r') as file:
     cards_json = json.load(file)
 
+title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
+flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
+
 for card_num, data in cards_json.items():
 
-    if data['set_id'] != '6' or not data.get('description'): continue
+    if data['element'] != 'w': continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
-    card_image = Image.open(f'./generated_cards/{card_num}.png')
+    card_image = Image.open(f'./downloaded_cards/{card_num}.png')
     card_image = card_image.resize((850, 850))
     image.paste(card_image, (-50, -100))
 
@@ -179,13 +210,6 @@ for card_num, data in cards_json.items():
     penguin_set = color_key['penguin_set'][data['set_id']].copy()
     image.paste(penguin_set, mask=penguin_set)
 
-    # {
-    # 'label': 'FLOORING UPGRADE',
-    # flavor_text': '"I\'m rollin\' out some burgundy/a> style," says the interior decorator. "I\'ve got some brand new igloo vibe picked out – a totally awesome empurpled cabin/a> of chic. It\'s gonna be a partay!"'}
-
-    # TODO X/Y Set number and total
-    # TODO Flavor text black text
-
     # Symbol and number shadow to mask
     white_mask = Image.new('RGBA', (750, 1050))
 
@@ -199,34 +223,33 @@ for card_num, data in cards_json.items():
     power_mask = color_key['numbers']['mask'][data['value']].copy()
     white_mask.paste(power_mask, mask=power_mask)
 
-    # TODO Card title to mask if not snow, otherwise, black text to original
-    if data['element'] == 's': pass
-    else: pass
+    # Card title to mask if not snow, otherwise, black text to original
+    reg_text_drawer = ImageDraw.Draw(image)
+    mask_text_drawer = ImageDraw.Draw(white_mask)
+    text_radius = title_font.getlength(data['label'].upper()) // 2
 
-    if data.get('description'):
-        # Drawing Black Ability Background
-        ability_bg = color_key['basic']['power_bg'].copy()
-        image.paste(ability_bg, mask=ability_bg)
+    # 'description': 'When this is scored, Water cannot be played next round.',
+    flavor_text = getFlavorText(data)
+    if data['element'] == 's':
+        reg_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(0, 0, 0))
+    else:
+        mask_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(255, 255, 255))
 
-        # TODO Adding white ability text
+    reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
+    reg_text_drawer.text((615, 960), f'{data["card_id"] if len(data["card_id"]) < 3 else data["card_id"][1:]}/{set_count[data["set_id"]]}', font=flavor_font, fill=(0, 0, 0))
+    description = data.get('description').upper()
+    if description:
+        if data['element'] == 's':
+            reg_text_drawer.text((560, 925), 'POWER CARD', font=flavor_font, fill=(0, 0, 0))
+        else:
+            mask_text_drawer.text((560, 925), 'POWER CARD', font=flavor_font, fill=(255, 255, 255))
 
-
-        # Ability white bar to mask
-        ability_outline = color_key['basic']['power_outline'].copy()
-        white_mask.paste(ability_outline, mask=ability_outline)
-
-        # TODO Cut mask out from main image if power card, otherwise paste it on
-        mask_data = white_mask.load()
-        for x in range(white_mask.width):
-            for y in range(white_mask.height):
-                # We found pixel data, nuke it from the original
-                if mask_data[x, y][0] != 0 or mask_data[x, y][1] != 0 or mask_data[x, y][2] != 0:
-                    image.putpixel((x, y), (0, 0, 0, 0))
-
-        # Adding ability image in top right
-        ability_image = getAbilityImage(data['description'])
-        image.paste(ability_image, mask=ability_image)
-
+        mapPowerCard(image, white_mask, data)
+        desc_split = description.split(', ')
+        top_radius = flavor_font.getlength(f'{desc_split[0]},') // 2
+        bot_radius = flavor_font.getlength(desc_split[1]) // 2
+        reg_text_drawer.text((375-top_radius, 610), f'{desc_split[0]},', font=flavor_font, fill=(255, 255, 255))
+        reg_text_drawer.text((375-bot_radius, 645), desc_split[1],       font=flavor_font, fill=(255, 255, 255))
     else:
         # Pasting the mask on
         image.paste(white_mask, mask=white_mask)
@@ -237,4 +260,20 @@ for card_num, data in cards_json.items():
     power_mask = color_key['numbers']['number'][data['value']].copy()
     image.paste(power_mask, mask=power_mask)
 
+    # Saving the image to our generated cards
+    # image.save(f'./generated_cards/set_{data["set_id"]}/{card_num}.png')
     image.show()
+    break
+
+
+# Automating placing all the cards on sheets of paper.
+
+# 300 pixels per inch
+width  = int(8.5 * 300)
+height = int(11 * 300)
+while True:
+    sheet = Image.new('RGBA', (width, height))
+    # 50px offset to start
+    x = 50
+    y = 50
+    break

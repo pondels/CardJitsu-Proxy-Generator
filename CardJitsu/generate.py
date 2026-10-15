@@ -401,6 +401,9 @@ for card_num, data in cards_json.items():
     else:
         card_id = data['card_id'][1:]
 
+    # This removes any leading 0's
+    card_id = str(int(card_id))
+
     if data['element'] == 's':
         reg_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(0, 0, 0))
         reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))

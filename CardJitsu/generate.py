@@ -184,183 +184,19 @@ def getFlavorText(data: dict):
 
     return '\n'.join(final_text)
 
-with open('scrape/new_cards.json', 'r') as file:
-    cards_json = json.load(file)
-
-# title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
-# flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
-title_font  = ImageFont.truetype('./fonts/boogaloo.ttf', 44)
-flavor_font = ImageFont.truetype('./fonts/boogaloo.ttf', 30)
-
-# TODO When done generating the cards, make sure they line up with the ones on the website
-
-# NOTE Images that use the wrong cards for whatever reason
-# 668 is completely busted
-# 723 is just the wrong image
-# Puffle partying is not accounted for
-# Puffle science is not accounted for
-
-# Some cards need slight offsets. This is a generic template of those offsets
-tiny_down = 25
-low_down = 50
-med_down = 100
-high_down = 150
-tiny_up = -25
-low_up = -50
-med_up = -100
-high_up = -150
-offset_lookup = {
-    '1': {
-        '2': med_down,
-        '4': low_down,
-        '7': low_down,
-        '13': low_down,
-        '62': low_down,
-        '64': low_down,
-        '71': med_up,
-        '73': low_up,
-        '74': tiny_up,
-        '75': low_up,
-        '76': low_up,
-        '90': low_up,
-    },
-    '2': {
-        '98': med_down,
-    },
-    '3': {
-        '202': low_down,
-        '206': low_down,
-        '211': low_down,
-        '225': low_down,
-        '227': low_down,
-        '228': low_down,
-        '230': low_down,
-        '231': med_down,
-        '232': low_down,
-        '235': low_down,
-        '245': low_down,
-        '246': low_down,
-        '253': med_up,
-        '254': med_up,
-        '255': med_up,
-        '256': low_down,
-        '257': med_down,
-    },
-    '4': {
-        '302': low_down,
-        '307': low_down,
-        '308': low_down,
-        '312': low_down,
-        '317': low_down,
-        '319': low_down,
-        '321': low_down,
-        '322': low_down,
-        '326': med_down,
-        '328': low_down,
-        '333': low_down,
-        '337': low_down,
-        '339': low_down,
-        '342': low_down,
-        '360': low_down,
-    },
-    '5': {
-        '404': low_down,
-        '419': low_down,
-        '423': low_down,
-        '424': low_down,
-        '426': low_down,
-        '427': low_down,
-    },
-    '6': {
-        '508': low_down,
-        '511': med_down,
-        '520': med_down,
-        '523': med_down,
-        '525': med_down,
-        '527': med_down,
-        '528': med_down,
-        '535': low_down,
-        '537': med_down,
-        '538': low_down,
-        '542': low_down,
-        '544': low_down,
-        '548': low_down,
-        '553': low_down,
-        '555': low_down,
-        '556': low_down,
-        '561': low_down,
-        '567': low_down,
-        '570': low_down,
-        '574': low_down,
-        '575': low_down,
-        '577': low_down,
-        '579': low_down,
-        '581': med_up,
-        '587': low_down,
-        '588': low_down,
-        '592': low_down,
-        '594': low_down,
-        '595': low_down,
-    },
-    '7': {
-        '602': low_down,
-        '603': low_down,
-        '605': low_down,
-        '607': med_down,
-        '615': low_down,
-        '617': low_down,
-        '618': low_down,
-        '620': med_down,
-        '622': low_down,
-        '634': low_down,
-        '638': low_down,
-        '642': low_down,
-        '644': low_down,
-        '648': low_down,
-        '649': low_down,
-        '653': low_down,
-        '655': low_down,
-        '657': low_down,
-        '658': low_down,
-        '661': low_down,
-        '663': low_down,
-        '664': med_down,
-        '666': low_down,
-        '668': low_down,
-        '669': low_down,
-        '671': low_down,
-        '674': low_down,
-        '678': low_down,
-        '683': low_down,
-        '684': low_down,
-        # '688': low_down, # BROKEN!
-        '691': low_down,
-        '692': low_down,
-        '695': low_down,
-        '696': low_down,
-        '697': low_down,
-        '698': low_down,
-        '700': low_down,
-        '701': med_down,
-        '720': low_down,
-        # '723': low_down, # WRONG IMAGE
-        '727': low_up,
-        '739': low_down,
-        '740': low_down,
-        '743': med_down,
-        '747': low_down,
-    },
-    '8': {
-    },
-}
-
-for card_num, data in cards_json.items():
-
+def regularCardBuild():
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
-    card_image = Image.open(f'./downloaded_cards/{card_num}.png')
+
+    # With the data changes, it is now misaligned to downloaded content
+    # This realigns that information
+    if not data.get('png_override'):
+        print('CARD FAILED THE VIBE CHECK!')
+        return
+
+    card_image = Image.open(f'./downloaded_cards/{data['png_override']}.png')
     card_image = card_image.resize((850, 850))
-    y_offset = offset_lookup[data['set_id']].get(card_num, 0)
+    y_offset = offset_lookup[set_num].get(card_num, 0)
     image.paste(card_image, (-50, -100+y_offset))
 
     # Drawing the bottom 3 colors based on the element
@@ -448,16 +284,203 @@ for card_num, data in cards_json.items():
     # Just stretch the cards and offset them. idk
 
     # Saving the image to our generated cards
-    image.save(f'./generated_cards/set{data["set_id"]}/{card_num}.png')
+    image.save(f'./generated_cards/set{set_num}/{card_num}.png')
 
-# Automating placing all the cards on sheets of paper.
+def customizePenguin():
+    pass
 
-# 300 pixels per inch
-# width  = int(8.5 * 300)
-# height = int(11 * 300)
-# while True:
-#     sheet = Image.new('RGBA', (width, height))
-#     # 50px offset to start
-#     x = 50
-#     y = 50
-#     break
+with open('scrape/new_cards.json', 'r') as file:
+    cards_json = json.load(file)
+
+# title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
+# flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
+title_font  = ImageFont.truetype('./fonts/boogaloo.ttf', 44)
+flavor_font = ImageFont.truetype('./fonts/boogaloo.ttf', 30)
+
+# TODO When done generating the cards, make sure they line up with the ones on the website
+
+# NOTE Images that use the wrong cards for whatever reason
+# 668 is completely busted
+# 723 is just the wrong image
+# Puffle partying is not accounted for
+# Puffle science is not accounted for
+
+# Some cards need slight offsets. This is a generic template of those offsets
+tiny_down = 25
+low_down = 50
+med_down = 100
+high_down = 150
+tiny_up = -25
+low_up = -50
+med_up = -100
+high_up = -150
+offset_lookup = {
+    '1': {
+        '2': med_down,
+        '4': low_down,
+        '7': low_down,
+        '13': low_down,
+        '62': low_down,
+        '64': low_down,
+        '71': med_up,
+        '73': low_up,
+        '74': tiny_up,
+        '75': low_up,
+        '76': low_up,
+        '90': low_up,
+    },
+    '2': {
+        '4': med_down,
+    },
+    '3': {
+        '2': low_down,
+        '6': low_down,
+        '7': low_down,
+        '11': low_down,
+        '25': low_down,
+        '27': low_down,
+        '28': low_down,
+        '30': low_down,
+        '31': med_down,
+        '32': low_down,
+        '35': low_down,
+        '45': low_down,
+        '46': low_down,
+        '53': med_up,
+        '54': med_up,
+        '55': med_up,
+        '56': low_down,
+        '57': med_down,
+    },
+    '4': {
+        '2': low_down,
+        '7': low_down,
+        '8': low_down,
+        '12': low_down,
+        '17': low_down,
+        '19': low_down,
+        '21': low_down,
+        '22': low_down,
+        '26': med_down,
+        '28': low_down,
+        '33': low_down,
+        '37': low_down,
+        '39': low_down,
+        '42': low_down,
+        '60': low_down,
+    },
+    '5': {
+        '4': low_down,
+        '19': low_down,
+        '23': low_down,
+        '24': low_down,
+        '26': low_down,
+        '27': low_down,
+    },
+    '6': {
+        '8': low_down,
+        '11': med_down,
+        '20': med_down,
+        '23': med_down,
+        '25': med_down,
+        '27': med_down,
+        '28': med_down,
+        '35': low_down,
+        '37': med_down,
+        '38': low_down,
+        '42': low_down,
+        '44': low_down,
+        '48': low_down,
+        '53': low_down,
+        '55': low_down,
+        '56': low_down,
+        '61': low_down,
+        '67': low_down,
+        '70': low_down,
+        '74': low_down,
+        '75': low_down,
+        '77': low_down,
+        '79': low_down,
+        '81': med_up,
+        '87': low_down,
+        '88': low_down,
+        '92': low_down,
+        '94': low_down,
+        '95': low_down,
+    },
+    '7': {
+        '2': low_down,
+        '3': low_down,
+        '5': low_down,
+        '7': med_down,
+        '15': low_down,
+        '17': low_down,
+        '18': low_down,
+        '20': med_down,
+        '22': low_down,
+        '34': low_down,
+        '38': low_down,
+        '42': low_down,
+        '44': low_down,
+        '48': low_down,
+        '49': low_down,
+        '53': low_down,
+        '55': low_down,
+        '57': low_down,
+        '58': low_down,
+        # '661': low_down,
+        # '663': low_down,
+        # '664': med_down,
+        # '666': low_down,
+        # '668': low_down,
+        # '669': low_down,
+        # '671': low_down,
+        # '674': low_down,
+        # '678': low_down,
+        # '683': low_down,
+        # '684': low_down,
+        # # '688': low_down, # BROKEN!
+        # '691': low_down,
+        # '692': low_down,
+        # '695': low_down,
+        # '696': low_down,
+        # '697': low_down,
+        # '698': low_down,
+        # '700': low_down,
+        # '701': med_down,
+        # '720': low_down,
+        # # '723': low_down, # WRONG IMAGE
+        # '727': low_up,
+        # '739': low_down,
+        # '740': low_down,
+        # '743': med_down,
+        # '747': low_down,
+    },
+    '8': {
+    },
+}
+
+for set_num, card_list in cards_json.items():
+    for card_num, data in card_list.items():
+        
+        # Custom penguin card
+        if data['label'].lower() == 'customize your penguin':
+            customizePenguin()
+            continue
+
+        if set_num != '3': continue
+
+        # Creating normal card
+        regularCardBuild()
+
+    # Automating placing all the cards on sheets of paper.
+
+    # 300 pixels per inch
+    # width  = int(8.5 * 300)
+    # height = int(11 * 300)
+    # while True:
+    #     sheet = Image.new('RGBA', (width, height))
+    #     # 50px offset to start
+    #     x = 50
+    #     y = 50
+    #     break

@@ -187,8 +187,10 @@ def getFlavorText(data: dict):
 with open('scrape/new_cards.json', 'r') as file:
     cards_json = json.load(file)
 
-title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
-flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
+# title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
+# flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
+title_font  = ImageFont.truetype('./fonts/boogaloo.ttf', 44)
+flavor_font = ImageFont.truetype('./fonts/boogaloo.ttf', 30)
 
 # TODO When done generating the cards, make sure they line up with the ones on the website
 
@@ -392,22 +394,22 @@ for card_num, data in cards_json.items():
     text_radius = title_font.getlength(data['label'].upper()) // 2
 
     flavor_text = getFlavorText(data)
-    if data['element'] == 's':
-        reg_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(0, 0, 0))
-        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
-    else:
-        mask_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(255, 255, 255))
-        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(255, 255, 255))
-
     if len(data['card_id']) < 3:
-        card_num = data['card_id']
-    elif data['card_id'][0] == 7:
-        card_num = f'1{data["card_id"][1:]}'
+        card_id = data['card_id']
+    elif data['card_id'][0] == '7':
+        card_id = f'1{data["card_id"][1:]}'
     else:
-        card_num = data['card_id'][1:]
+        card_id = data['card_id'][1:]
 
-    print(card_num)
-    reg_text_drawer.text((615, 960), f'{data["card_id"] if len(data["card_id"]) < 3 else data["card_id"][1:]}/{set_count[data["set_id"]]}', font=flavor_font, fill=(0, 0, 0))
+    if data['element'] == 's':
+        reg_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(0, 0, 0))
+        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
+        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[data["set_id"]]}', font=flavor_font, fill=(0, 0, 0))
+    else:
+        mask_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(255, 255, 255))
+        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(255, 255, 255))
+        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[data["set_id"]]}', font=flavor_font, fill=(255, 255, 255))
+
     description = data.get('description').upper()
     if description:
         if data['element'] == 's':

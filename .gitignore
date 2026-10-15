@@ -8,6 +8,7 @@ ruffle
 *swf_files/
 *generated_cards/
 *downloaded_cards/
+*paper_sheets/
 
 # C extensions
 *.so

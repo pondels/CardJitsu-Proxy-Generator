@@ -188,15 +188,24 @@ with open('scrape/new_cards.json', 'r') as file:
 title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
 flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
 
-for card_num, data in cards_json.items():
+# Some cards need slight offsets. This is a generic template of those offsets
+low_down = 50
+high_down = 100
+low_up = -50
+high_up = -100
+offset_lookup = {
+    '1': low_down,
+    # '': ,
+}
 
-    if data['element'] != 'w': continue
+for card_num, data in cards_json.items():
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
     card_image = Image.open(f'./downloaded_cards/{card_num}.png')
     card_image = card_image.resize((850, 850))
-    image.paste(card_image, (-50, -100))
+    y_offset = offset_lookup.get(card_num, 0)
+    image.paste(card_image, (-50, -150+y_offset))
 
     # Drawing the bottom 3 colors based on the element
     color_background = color_key['tri_color'][data['element']].copy()
@@ -261,19 +270,16 @@ for card_num, data in cards_json.items():
     image.paste(power_mask, mask=power_mask)
 
     # Saving the image to our generated cards
-    # image.save(f'./generated_cards/set_{data["set_id"]}/{card_num}.png')
-    image.show()
-    break
-
+    image.save(f'./generated_cards/set{data["set_id"]}/{card_num}.png')
 
 # Automating placing all the cards on sheets of paper.
 
 # 300 pixels per inch
-width  = int(8.5 * 300)
-height = int(11 * 300)
-while True:
-    sheet = Image.new('RGBA', (width, height))
-    # 50px offset to start
-    x = 50
-    y = 50
-    break
+# width  = int(8.5 * 300)
+# height = int(11 * 300)
+# while True:
+#     sheet = Image.new('RGBA', (width, height))
+#     # 50px offset to start
+#     x = 50
+#     y = 50
+#     break

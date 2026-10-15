@@ -212,11 +212,33 @@ offset_lookup = {
     '75': low_up,
     '76': low_up,
     '90': low_up,
+
+    # Set 2 custom offsets
+    '98': med_down,
+
+    # Set 3 custom offsets
+    '202': low_down,
+    '206': low_down,
+    '211': low_down,
+    '225': low_down,
+    '227': low_down,
+    '228': low_down,
+    '230': low_down,
+    '231': med_down,
+    '232': low_down,
+    '235': low_down,
+    '245': low_down,
+    '246': low_down,
+    '253': med_up,
+    '254': med_up,
+    '255': med_up,
+    '256': low_down,
+    '257': med_down,
 }
 
 for card_num, data in cards_json.items():
 
-    if data['set_id'] != '1': continue
+    if data['set_id'] != '3': continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
@@ -255,14 +277,14 @@ for card_num, data in cards_json.items():
     mask_text_drawer = ImageDraw.Draw(white_mask)
     text_radius = title_font.getlength(data['label'].upper()) // 2
 
-    # 'description': 'When this is scored, Water cannot be played next round.',
     flavor_text = getFlavorText(data)
     if data['element'] == 's':
         reg_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(0, 0, 0))
+        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
     else:
         mask_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(255, 255, 255))
+        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(255, 255, 255))
 
-    reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
     reg_text_drawer.text((615, 960), f'{data["card_id"] if len(data["card_id"]) < 3 else data["card_id"][1:]}/{set_count[data["set_id"]]}', font=flavor_font, fill=(0, 0, 0))
     description = data.get('description').upper()
     if description:

@@ -167,7 +167,7 @@ def mapPowerCard(image: Image, white_mask: Image, data: dict):
     for x in range(white_mask.width):
         for y in range(white_mask.height):
             # We found pixel data, nuke it from the original
-            if mask_data[x, y][0] != 0 or mask_data[x, y][1] != 0 or mask_data[x, y][2] != 0:
+            if mask_data[x, y][0] > 50 or mask_data[x, y][1] > 50 or mask_data[x, y][2] > 50:
                 image.putpixel((x, y), (0, 0, 0, 0))
 
     # Adding ability image in top right
@@ -356,6 +356,8 @@ offset_lookup = {
 
 for card_num, data in cards_json.items():
 
+    if not data.get('rare'): continue
+
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
     card_image = Image.open(f'./downloaded_cards/{card_num}.png')
@@ -371,12 +373,16 @@ for card_num, data in cards_json.items():
     color_top_left = color_key['top_left'][data['color']].copy()
     image.paste(color_top_left, mask=color_top_left)
 
-    # Drawing the Set Penguin
-    penguin_set = color_key['penguin_set'][data['set_id']].copy()
-    image.paste(penguin_set, mask=penguin_set)
 
     # Symbol and number shadow to mask
     white_mask = Image.new('RGBA', (750, 1050))
+
+    # Drawing the Set Penguin
+    if data.get('rare'):
+        penguin_set = color_key['penguin_set']['rare'].copy()
+    else:
+        penguin_set = color_key['penguin_set'][data['set_id']].copy()
+    white_mask.paste(penguin_set, mask=penguin_set)
 
     # Adding card frame to mask
     card_outline = color_key['basic']['card_outline'].copy()

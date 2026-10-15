@@ -7495,7 +7495,7 @@
         "color": "b",
         "value": "9",
         "asset": "",
-        "description": "When this is played, Fire cards become Water for this round.",
+        "description": "When this is scored, Fire cannot be played next round.",
         "is_active": "1",
         "flavor_text": "The last step to becoming a Water Ninja is defeating Sensei in battle. Though his skills are legendary, the way to defeating him is dedication. Keep trying, no matter what, and victory will be yours."
     },

@@ -189,23 +189,41 @@ title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
 flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
 
 # Some cards need slight offsets. This is a generic template of those offsets
+tiny_down = 25
 low_down = 50
-high_down = 100
+med_down = 100
+high_down = 150
+tiny_up = -25
 low_up = -50
-high_up = -100
+med_up = -100
+high_up = -150
 offset_lookup = {
-    '1': low_down,
-    # '': ,
+
+    # Set 1 custom offsets
+    '2': med_down,
+    '4': low_down,
+    '7': low_down,
+    '13': low_down,
+    '62': low_down,
+    '64': low_down,
+    '71': med_up,
+    '73': low_up,
+    '74': tiny_up,
+    '75': low_up,
+    '76': low_up,
+    '90': low_up,
 }
 
 for card_num, data in cards_json.items():
+
+    if data['set_id'] != '1': continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
     card_image = Image.open(f'./downloaded_cards/{card_num}.png')
     card_image = card_image.resize((850, 850))
     y_offset = offset_lookup.get(card_num, 0)
-    image.paste(card_image, (-50, -150+y_offset))
+    image.paste(card_image, (-50, -100+y_offset))
 
     # Drawing the bottom 3 colors based on the element
     color_background = color_key['tri_color'][data['element']].copy()

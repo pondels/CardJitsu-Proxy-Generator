@@ -9,6 +9,7 @@ set_count = {
     '5': 28,
     '6': 110,
     '7': 150,
+    '8': 4,
 }
 
 color_key = {
@@ -33,6 +34,7 @@ color_key = {
         '5':    Image.open('./files/Set/5.png'),
         '6':    Image.open('./files/Set/6.png'),
         '7':    Image.open('./files/Set/7.png'),
+        '8':    Image.open('./files/Set/7.png'),
         'rare': Image.open('./files/Set/rare.png'),
     },
     'numbers': {
@@ -188,6 +190,14 @@ with open('scrape/new_cards.json', 'r') as file:
 title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
 flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
 
+# TODO When done generating the cards, make sure they line up with the ones on the website
+
+# NOTE Images that use the wrong cards for whatever reason
+# 668 is completely busted
+# 723 is just the wrong image
+# Puffle partying is not accounted for
+# Puffle science is not accounted for
+
 # Some cards need slight offsets. This is a generic template of those offsets
 tiny_down = 25
 low_down = 50
@@ -198,109 +208,157 @@ low_up = -50
 med_up = -100
 high_up = -150
 offset_lookup = {
-
-    # Set 1 custom offsets
-    '2': med_down,
-    '4': low_down,
-    '7': low_down,
-    '13': low_down,
-    '62': low_down,
-    '64': low_down,
-    '71': med_up,
-    '73': low_up,
-    '74': tiny_up,
-    '75': low_up,
-    '76': low_up,
-    '90': low_up,
-
-    # Set 2 custom offsets
-    '98': med_down,
-
-    # Set 3 custom offsets
-    '202': low_down,
-    '206': low_down,
-    '211': low_down,
-    '225': low_down,
-    '227': low_down,
-    '228': low_down,
-    '230': low_down,
-    '231': med_down,
-    '232': low_down,
-    '235': low_down,
-    '245': low_down,
-    '246': low_down,
-    '253': med_up,
-    '254': med_up,
-    '255': med_up,
-    '256': low_down,
-    '257': med_down,
-
-    # Set 4 custom offsets
-    '302': low_down,
-    '307': low_down,
-    '308': low_down,
-    '312': low_down,
-    '317': low_down,
-    '319': low_down,
-    '321': low_down,
-    '322': low_down,
-    '326': med_down,
-    '328': low_down,
-    '333': low_down,
-    '337': low_down,
-    '339': low_down,
-    '342': low_down,
-    '360': low_down,
-
-    # Set 5 custom offsets
-    '404': low_down,
-    '419': low_down,
-    '423': low_down,
-    '424': low_down,
-    '426': low_down,
-    '427': low_down,
-
-    # Set 6 custom offsets
-    '508': low_down,
-    '511': med_down,
-    '520': med_down,
-    '523': med_down,
-    '525': med_down,
-    '527': med_down,
-    '528': med_down,
-    '535': low_down,
-    '537': med_down,
-    '538': low_down,
-    '542': low_down,
-    '544': low_down,
-    '548': low_down,
-    '553': low_down,
-    '555': low_down,
-    '556': low_down,
-    '561': low_down,
-    '567': low_down,
-    '570': low_down,
-    '574': low_down,
-    '575': low_down,
-    '577': low_down,
-    '579': low_down,
-    '581': med_up,
-    '587': low_down,
-    '588': low_down,
-    '592': low_down,
-    '594': low_down,
-    '595': low_down,
+    '1': {
+        '2': med_down,
+        '4': low_down,
+        '7': low_down,
+        '13': low_down,
+        '62': low_down,
+        '64': low_down,
+        '71': med_up,
+        '73': low_up,
+        '74': tiny_up,
+        '75': low_up,
+        '76': low_up,
+        '90': low_up,
+    },
+    '2': {
+        '98': med_down,
+    },
+    '3': {
+        '202': low_down,
+        '206': low_down,
+        '211': low_down,
+        '225': low_down,
+        '227': low_down,
+        '228': low_down,
+        '230': low_down,
+        '231': med_down,
+        '232': low_down,
+        '235': low_down,
+        '245': low_down,
+        '246': low_down,
+        '253': med_up,
+        '254': med_up,
+        '255': med_up,
+        '256': low_down,
+        '257': med_down,
+    },
+    '4': {
+        '302': low_down,
+        '307': low_down,
+        '308': low_down,
+        '312': low_down,
+        '317': low_down,
+        '319': low_down,
+        '321': low_down,
+        '322': low_down,
+        '326': med_down,
+        '328': low_down,
+        '333': low_down,
+        '337': low_down,
+        '339': low_down,
+        '342': low_down,
+        '360': low_down,
+    },
+    '5': {
+        '404': low_down,
+        '419': low_down,
+        '423': low_down,
+        '424': low_down,
+        '426': low_down,
+        '427': low_down,
+    },
+    '6': {
+        '508': low_down,
+        '511': med_down,
+        '520': med_down,
+        '523': med_down,
+        '525': med_down,
+        '527': med_down,
+        '528': med_down,
+        '535': low_down,
+        '537': med_down,
+        '538': low_down,
+        '542': low_down,
+        '544': low_down,
+        '548': low_down,
+        '553': low_down,
+        '555': low_down,
+        '556': low_down,
+        '561': low_down,
+        '567': low_down,
+        '570': low_down,
+        '574': low_down,
+        '575': low_down,
+        '577': low_down,
+        '579': low_down,
+        '581': med_up,
+        '587': low_down,
+        '588': low_down,
+        '592': low_down,
+        '594': low_down,
+        '595': low_down,
+    },
+    '7': {
+        '602': low_down,
+        '603': low_down,
+        '605': low_down,
+        '607': med_down,
+        '615': low_down,
+        '617': low_down,
+        '618': low_down,
+        '620': med_down,
+        '622': low_down,
+        '634': low_down,
+        '638': low_down,
+        '642': low_down,
+        '644': low_down,
+        '648': low_down,
+        '649': low_down,
+        '653': low_down,
+        '655': low_down,
+        '657': low_down,
+        '658': low_down,
+        '661': low_down,
+        '663': low_down,
+        '664': med_down,
+        '666': low_down,
+        '668': low_down,
+        '669': low_down,
+        '671': low_down,
+        '674': low_down,
+        '678': low_down,
+        '683': low_down,
+        '684': low_down,
+        # '688': low_down, # BROKEN!
+        '691': low_down,
+        '692': low_down,
+        '695': low_down,
+        '696': low_down,
+        '697': low_down,
+        '698': low_down,
+        '700': low_down,
+        '701': med_down,
+        '720': low_down,
+        # '723': low_down, # WRONG IMAGE
+        '727': low_up,
+        '739': low_down,
+        '740': low_down,
+        '743': med_down,
+        '747': low_down,
+    },
+    '8': {
+    },
 }
 
 for card_num, data in cards_json.items():
-
-    if data['set_id'] != '6': continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
     card_image = Image.open(f'./downloaded_cards/{card_num}.png')
     card_image = card_image.resize((850, 850))
-    y_offset = offset_lookup.get(card_num, 0)
+    y_offset = offset_lookup[data['set_id']].get(card_num, 0)
     image.paste(card_image, (-50, -100+y_offset))
 
     # Drawing the bottom 3 colors based on the element
@@ -341,6 +399,14 @@ for card_num, data in cards_json.items():
         mask_text_drawer.text((375-text_radius, 710), data['label'].upper(), font=title_font, fill=(255, 255, 255))
         reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(255, 255, 255))
 
+    if len(data['card_id']) < 3:
+        card_num = data['card_id']
+    elif data['card_id'][0] == 7:
+        card_num = f'1{data["card_id"][1:]}'
+    else:
+        card_num = data['card_id'][1:]
+
+    print(card_num)
     reg_text_drawer.text((615, 960), f'{data["card_id"] if len(data["card_id"]) < 3 else data["card_id"][1:]}/{set_count[data["set_id"]]}', font=flavor_font, fill=(0, 0, 0))
     description = data.get('description').upper()
     if description:

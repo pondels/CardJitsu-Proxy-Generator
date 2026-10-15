@@ -7,6 +7,7 @@ __pycache__/
 ruffle
 *swf_files/
 *generated_cards/
+*downloaded_cards/
 
 # C extensions
 *.so

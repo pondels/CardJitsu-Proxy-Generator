@@ -251,11 +251,50 @@ offset_lookup = {
     '339': low_down,
     '342': low_down,
     '360': low_down,
+
+    # Set 5 custom offsets
+    '404': low_down,
+    '419': low_down,
+    '423': low_down,
+    '424': low_down,
+    '426': low_down,
+    '427': low_down,
+
+    # Set 6 custom offsets
+    '508': low_down,
+    '511': med_down,
+    '520': med_down,
+    '523': med_down,
+    '525': med_down,
+    '527': med_down,
+    '528': med_down,
+    '535': low_down,
+    '537': med_down,
+    '538': low_down,
+    '542': low_down,
+    '544': low_down,
+    '548': low_down,
+    '553': low_down,
+    '555': low_down,
+    '556': low_down,
+    '561': low_down,
+    '567': low_down,
+    '570': low_down,
+    '574': low_down,
+    '575': low_down,
+    '577': low_down,
+    '579': low_down,
+    '581': med_up,
+    '587': low_down,
+    '588': low_down,
+    '592': low_down,
+    '594': low_down,
+    '595': low_down,
 }
 
 for card_num, data in cards_json.items():
 
-    if data['set_id'] != '4': continue
+    if data['set_id'] != '6': continue
 
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
@@ -325,6 +364,9 @@ for card_num, data in cards_json.items():
     image.paste(element_mask, mask=element_mask)
     power_mask = color_key['numbers']['number'][data['value']].copy()
     image.paste(power_mask, mask=power_mask)
+
+    # TODO See what the cards would look like borderless.
+    # Just stretch the cards and offset them. idk
 
     # Saving the image to our generated cards
     image.save(f'./generated_cards/set{data["set_id"]}/{card_num}.png')

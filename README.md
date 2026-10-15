@@ -11,6 +11,25 @@ https://cardjitsu.co/
 Lots of cards from their original swf files have their top left corner missing
 most likely to preserve data in the final render, so those have to manually be fixed.
 
+NOTE Stickers and customize your penguin backgrounds w/ penguins need to be migrated over
+
+Set 1:
+    Summer party (45) using Water Party (87) image
+    Water Party (87) using Summer Party (45) image
+Set 2:
+    Cards 20-30 not generated, as they are duplicates
+Set 3:
+    Club Penguin Times (201) using wrong image
+    Coins for Change (244) using wrong image
+Set 4:
+    April Fool's Day Party art is aids
+Set 5:
+    Fire Deck uses wrong image
+Set 6:
+    Water Sensei promo card missing
+    Water Ninja promo card missing
+    Water Video Sketch promo card missing
+
 References from cardjitsu.co were made to accurately fill in those holes
 Cards needing fixing still
 Set 1:

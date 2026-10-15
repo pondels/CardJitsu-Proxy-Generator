@@ -356,8 +356,6 @@ offset_lookup = {
 
 for card_num, data in cards_json.items():
 
-    if not data.get('rare'): continue
-
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
     card_image = Image.open(f'./downloaded_cards/{card_num}.png')
@@ -382,7 +380,11 @@ for card_num, data in cards_json.items():
         penguin_set = color_key['penguin_set']['rare'].copy()
     else:
         penguin_set = color_key['penguin_set'][data['set_id']].copy()
-    white_mask.paste(penguin_set, mask=penguin_set)
+    
+    if data.get('rare') and data.get('description'):
+        white_mask.paste(penguin_set, mask=penguin_set)
+    else:
+        image.paste(penguin_set, mask=penguin_set)
 
     # Adding card frame to mask
     card_outline = color_key['basic']['card_outline'].copy()

@@ -1,10 +1,12 @@
 # CardJitsu-Proxy-Generator
 A repository for creating proxy cards for Club Penguin's Card jitsu
 
+# A good reference point for all released cards
 https://cardjitsu.co/
+https://clubpenguin.fandom.com/wiki/List_of_Card-Jitsu_sets
+
 # NOTE Images that use the wrong cards for whatever reason
 # 668 is completely busted
-# 723 is just the wrong image
 # Puffle partying is not accounted for
 # Puffle science is not accounted for
 

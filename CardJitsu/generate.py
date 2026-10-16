@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 import json
+import os
 
 set_count = {
     '1': 110,
@@ -196,7 +197,7 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
 
     card_image = Image.open(f'./downloaded_cards/{data['png_override']}.png')
     # We don't want to scale the image
-    if data.get('scale_image') is not None and data['scale_image']:
+    if data.get('scale_image') is None or data['scale_image'] == True:
         card_image = card_image.resize((850, 850))
 
     offset = (0, 0)
@@ -213,7 +214,6 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
     # Top Left Color
     color_top_left = color_key['top_left'][data['color']].copy()
     image.paste(color_top_left, mask=color_top_left)
-
 
     # Symbol and number shadow to mask
     white_mask = Image.new('RGBA', (750, 1050))
@@ -290,6 +290,60 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
 def customizePenguin():
     pass
 
+def generateSheets(card_images, width, height, sheet_name):
+    # How much of a border do you want from the edge of the page
+    card_width = card_images[0].width
+    card_height = card_images[0].height
+    x_buffer = 0
+    y_buffer = 0
+    cards_per_width  = (width  - x_buffer) // card_width
+    cards_per_height = (height - y_buffer) // card_height
+    cards_per_page = cards_per_width * cards_per_height
+    sheet_num = 0
+    while card_images:
+        cards_to_print = card_images[:cards_per_page]
+        card_images = card_images[cards_per_page:]
+        sheet = Image.new('RGBA', (width, height))
+        sheet_drawer = ImageDraw.Draw(sheet)
+        card_index = 0
+        for x_card in range(cards_per_width):
+            for y_card in range(cards_per_height):
+                if card_index >= len(cards_to_print): break
+                x_offset = x_buffer + 2*x_card + x_card*card_width
+                y_offset = y_buffer + 2*y_card + y_card*card_height
+                sheet.paste(cards_to_print[card_index], (x_offset, y_offset))
+                card_index += 1
+
+            # Drawing cutting lines
+            cut_x = x_offset-2
+            cut_y = y_offset-2
+            sheet_drawer.line((cut_x, cut_y, card_width, cut_y), fill=(0, 0, 0, 255))
+            sheet_drawer.line((cut_x, cut_y, cut_x, card_height), fill=(0, 0, 0, 255))
+
+            if card_index >= len(cards_to_print): break
+
+        sheet.save(f'./paper_sheets/{sheet_name}_{sheet_num}.png')
+        sheet_num += 1
+
+# Automating placing all the cards on sheets of paper.
+def mapCardsOnPaper():
+    regular_cards = []
+    power_cards = []
+    for set_num, card_list in cards_json.items():
+        for card_num, data in card_list.items():
+            card_path = f'./generated_cards/set{set_num}/{card_num}.png'
+            if not os.path.exists(card_path): continue
+            image = Image.open(card_path)
+            image = image.resize((801, 1126))
+            if data['description']: power_cards.append(image)
+            else: regular_cards.append(image)
+
+    # 300 pixels per inch
+    height  = int(8.5 * 300)
+    width = int(11 * 300)
+    generateSheets(regular_cards, width, height, 'reg')
+    generateSheets(power_cards, width, height, 'pow')
+
 with open('scrape/new_cards.json', 'r') as file:
     cards_json = json.load(file)
 
@@ -297,14 +351,6 @@ with open('scrape/new_cards.json', 'r') as file:
 # flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
 title_font  = ImageFont.truetype('./fonts/boogaloo.ttf', 44)
 flavor_font = ImageFont.truetype('./fonts/boogaloo.ttf', 30)
-
-# TODO When done generating the cards, make sure they line up with the ones on the website
-
-# NOTE Images that use the wrong cards for whatever reason
-# 668 is completely busted
-# 723 is just the wrong image
-# Puffle partying is not accounted for
-# Puffle science is not accounted for
 
 # Some cards need slight offsets. This is a generic template of those offsets
 tiny_down = 25
@@ -469,14 +515,4 @@ for set_num, card_list in cards_json.items():
         # Creating normal card
         regularCardBuild(data, set_num, card_num)
 
-# Automating placing all the cards on sheets of paper.
-
-# 300 pixels per inch
-# width  = int(8.5 * 300)
-# height = int(11 * 300)
-# while True:
-#     sheet = Image.new('RGBA', (width, height))
-#     # 50px offset to start
-#     x = 50
-#     y = 50
-#     break
+mapCardsOnPaper()

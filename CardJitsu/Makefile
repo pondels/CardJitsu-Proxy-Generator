@@ -24,6 +24,5 @@ $(SWF_DIR):
 
 clean:
 	rm -r ./files/swf_files
-	rm -r ./files/CardImages
 
 all: dependencies download_swf_files

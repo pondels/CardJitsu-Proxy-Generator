@@ -22,7 +22,13 @@ download_swf_files: $(SWF_DIR)
 $(SWF_DIR):
 	cd ./files && mkdir swf_files
 
+python_setup:
+	python3 -m venv venv
+	. venv/bin/activate && pip install -r requirements.txt
+	python3 generate.py
+
 clean:
 	rm -r ./files/swf_files
+	rm -r venv
 
-all: dependencies download_swf_files
+all: dependencies download_swf_files python_setup

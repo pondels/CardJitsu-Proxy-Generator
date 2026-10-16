@@ -285,6 +285,12 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
     # Just stretch the cards and offset them. idk
 
     # Saving the image to our generated cards
+    if not os.path.exists('./generated_cards'):
+        os.mkdir('./generated_cards')
+
+    if not os.path.exists(f'./generated_cards/set{set_num}'):
+        os.mkdir(f'./generated_cards/set{set_num}')
+
     image.save(f'./generated_cards/set{set_num}/{card_num}.png')
 
 def customizePenguin():
@@ -321,6 +327,9 @@ def generateSheets(card_images, width, height, sheet_name):
             sheet_drawer.line((cut_x, cut_y, cut_x, card_height), fill=(0, 0, 0, 255))
 
             if card_index >= len(cards_to_print): break
+
+        if not os.path.exists(f'./paper_sheets/'):
+            os.mkdir(f'./paper_sheets/')
 
         sheet.save(f'./paper_sheets/{sheet_name}_{sheet_num}.png')
         sheet_num += 1

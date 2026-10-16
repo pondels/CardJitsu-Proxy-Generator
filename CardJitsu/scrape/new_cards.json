@@ -3135,6 +3135,7 @@
     },
     "4": {
         "1": {
+            "png_override": "301",
             "card_id": "1",
             "set_id": "4",
             "power_id": "0",
@@ -3150,6 +3151,7 @@
             "flavor_text": "This item is sometimes found in the Costume Trunk at the Stage. Once you have a camera, wave to snap award-winning photos all over the island."
         },
         "2": {
+            "png_override": "302",
             "card_id": "2",
             "set_id": "4",
             "power_id": "0",
@@ -3165,6 +3167,7 @@
             "flavor_text": "All wigs can be found in Penguin Style catalog in the Gift Shop. Every penguin should have one \u2013 from punk to surfer \u2013 they really complete an outfit!"
         },
         "3": {
+            "png_override": "303",
             "card_id": "3",
             "set_id": "4",
             "power_id": "0",
@@ -3180,6 +3183,7 @@
             "flavor_text": "Be a chef! Make pizzas in the Pizzatron 3000 game in the kitchen. Put on your red apron and dance to serve customers in the restaurant."
         },
         "4": {
+            "png_override": "304",
             "card_id": "4",
             "set_id": "4",
             "power_id": "0",
@@ -3195,6 +3199,7 @@
             "flavor_text": "Secret Agents will find this machine in the Coffee Shop during the Secret of the Fur mission. It will help you save the island."
         },
         "5": {
+            "png_override": "305",
             "card_id": "5",
             "set_id": "4",
             "power_id": "0",
@@ -3210,6 +3215,7 @@
             "flavor_text": "You'll find this at the Stage \u2013 and it's never empty! Open it and choose an outfit. You could be a brave explorer, a scientist, a lobster, a hero, a time traveler... anything you want!"
         },
         "6": {
+            "png_override": "306",
             "card_id": "6",
             "set_id": "4",
             "power_id": "0",
@@ -3225,6 +3231,7 @@
             "flavor_text": "The employees in the Pet shop love looking after puffles! With the orange apron on, you can dance to serve them food. Look for it from time to time in Penguin Style."
         },
         "7": {
+            "png_override": "307",
             "card_id": "7",
             "set_id": "4",
             "power_id": "0",
@@ -3240,6 +3247,7 @@
             "flavor_text": "The laid back bass player of Penguin Band. He keeps the beat with bandmate G Billy and loves to play the jazzy stuff."
         },
         "8": {
+            "png_override": "308",
             "card_id": "8",
             "set_id": "4",
             "power_id": "0",
@@ -3255,6 +3263,7 @@
             "flavor_text": "The founder of and drummer for Penguin Band. If you ever get the chance to meet him Backstage during Music Jam be sure to get an autographed background by clicking his player card!"
         },
         "9": {
+            "png_override": "309",
             "card_id": "9",
             "set_id": "4",
             "power_id": "0",
@@ -3270,6 +3279,7 @@
             "flavor_text": "Penguins with outdoor areas for their igloos can throw amazing parties. Check out Better Igloos for cool furniture, like this BBQ. Oh the gnome? Every party should have one!"
         },
         "10": {
+            "png_override": "310",
             "card_id": "10",
             "set_id": "4",
             "power_id": "0",
@@ -3285,6 +3295,7 @@
             "flavor_text": "You never know who will sell you a ticket for the latest Stage performance at the Plaza. Sometimes actors man the booth between shows!"
         },
         "11": {
+            "png_override": "311",
             "card_id": "11",
             "set_id": "4",
             "power_id": "0",
@@ -3300,6 +3311,7 @@
             "flavor_text": "It's the toughest Sled Racing run on the Ski Hill. Up to four penguins can race together, so if you're serious about challenging your buddies, this is the way to do it!"
         },
         "12": {
+            "png_override": "312",
             "card_id": "12",
             "set_id": "4",
             "power_id": "0",
@@ -3315,6 +3327,7 @@
             "flavor_text": "Ready, set, throw snow! Find this snowball-powered clock in the Snow Forts. Throw snowballs at the target to help keep it powered. Just press T on your keyboard and click the red target!"
         },
         "13": {
+            "png_override": "313",
             "card_id": "13",
             "set_id": "4",
             "power_id": "0",
@@ -3330,6 +3343,7 @@
             "flavor_text": "First discovered in February '09, these critters are known to be gentle but powerful. Adopt one from the Pet Shop and discover what it can turn to ice with a single breath!"
         },
         "14": {
+            "png_override": "314",
             "card_id": "14",
             "set_id": "4",
             "power_id": "0",
@@ -3345,6 +3359,7 @@
             "flavor_text": "This is the outside of the Dojo and it was uncovered by penguins in November 2008. To get here, you must use your map."
         },
         "15": {
+            "png_override": "315",
             "card_id": "15",
             "set_id": "4",
             "power_id": "0",
@@ -3360,6 +3375,7 @@
             "flavor_text": "This ginormous rocking horse somehow found itself upstairs in the Lodge Attic. To see it for yourself, go to the Ski Village and climb the ladder inside the Ski Lodge."
         },
         "16": {
+            "png_override": "316",
             "card_id": "16",
             "set_id": "4",
             "power_id": "0",
@@ -3375,6 +3391,7 @@
             "flavor_text": "There's new stuff in this catalog every month! Why not get your friends together in the Gift Shop and check it out? Pick out new outfits, then hold a fashion show in your igloo!"
         },
         "17": {
+            "png_override": "317",
             "card_id": "17",
             "set_id": "4",
             "power_id": "0",
@@ -3390,6 +3407,7 @@
             "flavor_text": "Directors needed! Located in the Plaza, the Stage has new plays every month and always needs actors, stagehands, and even directors to make every performance a success. Grab a costume from the catalog and break a leg!"
         },
         "18": {
+            "png_override": "318",
             "card_id": "18",
             "set_id": "4",
             "power_id": "0",
@@ -3405,6 +3423,7 @@
             "flavor_text": "This outfit showed up in the Penguin Style during Music Jam. When penguins put it on and danced, they conducted orchestras all over the island."
         },
         "19": {
+            "png_override": "319",
             "card_id": "19",
             "set_id": "4",
             "power_id": "0",
@@ -3420,6 +3439,7 @@
             "flavor_text": "From the top of the Lighthouse, you can look through the telescope to see if there's sign of Rockhopper's ship or play the game Jet Pack Adventure."
         },
         "20": {
+            "png_override": "320",
             "card_id": "20",
             "set_id": "4",
             "power_id": "0",
@@ -3435,6 +3455,7 @@
             "flavor_text": "There's two secret passages to the underground. You'll find this one in the Plaza. To find the other passage, head to the room with the best beats and pay attention to the speaker on the far right."
         },
         "21": {
+            "png_override": "321",
             "card_id": "21",
             "set_id": "4",
             "power_id": "0",
@@ -3450,6 +3471,7 @@
             "flavor_text": "This cool lead guitarist of Penguin Band loves to hang out with other music fans around the island. Find him with his bandmates Backstage during Music Jam and receive an autographed background."
         },
         "22": {
+            "png_override": "322",
             "card_id": "22",
             "set_id": "4",
             "power_id": "0",
@@ -3465,6 +3487,7 @@
             "flavor_text": "The talented pianist and accordion player in the Penguin Band. He's always bursting with new song ideas and loves to share them with audiences around the island."
         },
         "23": {
+            "png_override": "323",
             "card_id": "23",
             "set_id": "4",
             "power_id": "0",
@@ -3480,6 +3503,7 @@
             "flavor_text": "Penguins learned a new dance with this item when Cadence showed up with it during a party in the Night Club. If you have the item, wear it and press D on your keyboard and see what you can do!"
         },
         "24": {
+            "png_override": "324",
             "card_id": "24",
             "set_id": "4",
             "power_id": "0",
@@ -3495,6 +3519,7 @@
             "flavor_text": "This character appears in Shadow Guy and Gamma Gal vs. Squidzoid at the Stage. He's a bit of a shy guy, but he's just as important as the ones with the super powers!"
         },
         "25": {
+            "png_override": "325",
             "card_id": "25",
             "set_id": "4",
             "power_id": "0",
@@ -3510,6 +3535,7 @@
             "flavor_text": "Appearing at the Stage Dec. 2007, this Shakespearean style comedy starred a Bard, a Countess, a Jester and (obviously) a Fish who couldn't stop blubbing. \"BUT NEVER DOUBT I BLUB!\""
         },
         "26": {
+            "png_override": "326",
             "card_id": "26",
             "set_id": "4",
             "power_id": "0",
@@ -3525,6 +3551,7 @@
             "flavor_text": "It's a celebration where things happen that can't happen! Discover the wacky and unexpected with friends across the island at this party \u2013 from surprise-filled boxes to new dimensions!"
         },
         "27": {
+            "png_override": "327",
             "card_id": "27",
             "set_id": "4",
             "power_id": "0",
@@ -3540,6 +3567,7 @@
             "flavor_text": "You can light up the Stage with Gamma Gal's incredible Plasma Glow Wave during every performance of Shadow Guy and Gamma Gal vs. Squidzoid. Wear the costume and wave to activate the special power."
         },
         "28": {
+            "png_override": "328",
             "card_id": "28",
             "set_id": "4",
             "power_id": "0",
@@ -3555,6 +3583,7 @@
             "flavor_text": "First available at the Music Jam '09 party, this item is still a hit across the island! To join in the fun, press D on your keyboard while wearing the item."
         },
         "29": {
+            "png_override": "329",
             "card_id": "29",
             "set_id": "4",
             "power_id": "0",
@@ -3570,6 +3599,7 @@
             "flavor_text": "Puffles love them and it's a good thing too! When they get hungry it's the best meal to recharge their energy. O'Berries grow in the wild and are always in full supply on your puffle's player card."
         },
         "30": {
+            "png_override": "330",
             "card_id": "30",
             "set_id": "4",
             "power_id": "0",
@@ -3585,6 +3615,7 @@
             "flavor_text": "In Penguins that Time Forgot at the Stage, this curious character finds himself on an adventure back in time surrounded by dinosaurs and cave penguins."
         },
         "31": {
+            "png_override": "331",
             "card_id": "31",
             "set_id": "4",
             "power_id": "0",
@@ -3600,6 +3631,7 @@
             "flavor_text": "There's always a lot to discover around the island and in 2009, for 101 days straight, penguins had fun completing a new activity every day!"
         },
         "32": {
+            "png_override": "332",
             "card_id": "32",
             "set_id": "4",
             "power_id": "0",
@@ -3615,6 +3647,7 @@
             "flavor_text": "The 2009 color vote was an epic battle between Lavender, Maroon and Aqua. Penguins voted in the Forest and the winning color was added to the Penguin Style catalog as a new penguin color."
         },
         "33": {
+            "png_override": "333",
             "card_id": "33",
             "set_id": "4",
             "power_id": "0",
@@ -3630,6 +3663,7 @@
             "flavor_text": "Holiday spirit takes over the island during this party! This is the Photo Booth in the Forest where penguins posed for pictures with Santa."
         },
         "34": {
+            "png_override": "334",
             "card_id": "34",
             "set_id": "4",
             "power_id": "0",
@@ -3645,6 +3679,7 @@
             "flavor_text": "Be part of this popular Stage show, as a detective, ghost, or even the Viking Opera singer. Put on the Viking wig and dance, following along to the script."
         },
         "35": {
+            "png_override": "335",
             "card_id": "35",
             "set_id": "4",
             "power_id": "0",
@@ -3660,6 +3695,7 @@
             "flavor_text": "Most penguins have had a snowball fight at the Snow Forts. But at the Water Party, the splat of water balloons replacing the thud of snow. Too cool!"
         },
         "36": {
+            "png_override": "336",
             "card_id": "36",
             "set_id": "4",
             "power_id": "0",
@@ -3675,6 +3711,7 @@
             "flavor_text": "At the Music Jam '09 party, this item was popular at the Lighthouse stage. When you wore it and danced, you could even hear it playing!"
         },
         "37": {
+            "png_override": "337",
             "card_id": "37",
             "set_id": "4",
             "power_id": "0",
@@ -3690,6 +3727,7 @@
             "flavor_text": "The captain of the Migrator brought these plants to the island in 2009. Penguins put them in their igloos and they started to grow! Every few weeks they change \u2013 even to this day!"
         },
         "38": {
+            "png_override": "338",
             "card_id": "38",
             "set_id": "4",
             "power_id": "0",
@@ -3705,6 +3743,7 @@
             "flavor_text": "During this June 2009 party, after Rockhopper's plants took over the island, penguin explorers discovered rare flowers \u2013 some that changed colors and others that liked to eat snowballs!"
         },
         "39": {
+            "png_override": "339",
             "card_id": "39",
             "set_id": "4",
             "power_id": "0",
@@ -3720,6 +3759,7 @@
             "flavor_text": "Penguins called this one of 2009's coolest events. They voted for their favorite stage plays, got to meet Penguin Band and Aunt Arctic, and enjoyed dressing up to receive their own awards!"
         },
         "40": {
+            "png_override": "340",
             "card_id": "40",
             "set_id": "4",
             "power_id": "0",
@@ -3735,6 +3775,7 @@
             "flavor_text": "During Music Jam '09 party, this pass got penguins into the Backstage and Night Club Rooftop where they hung out with friends and had a chance to meet Penguin Band and Cadence."
         },
         "41": {
+            "png_override": "341",
             "card_id": "41",
             "set_id": "4",
             "power_id": "0",
@@ -3750,6 +3791,7 @@
             "flavor_text": "Cadence is a very popular penguin around here! She makes appearances at big events like the Penguin Play Awards. You can meet her and receive an autographed background by clicking her player card."
         },
         "42": {
+            "png_override": "342",
             "card_id": "42",
             "set_id": "4",
             "power_id": "0",
@@ -3765,6 +3807,7 @@
             "flavor_text": "This book contains the best collection of rare and exclusive items. Look for a code with select toys and enter at clubpenguin.com to gain access to this special catalog."
         },
         "43": {
+            "png_override": "343",
             "card_id": "43",
             "set_id": "4",
             "power_id": "0",
@@ -3780,6 +3823,7 @@
             "flavor_text": "You might spot more than a few penguins wearing this popular item. When it appears in Penguin Style, the Gift Shop always has plenty in stock!"
         },
         "44": {
+            "png_override": "344",
             "card_id": "44",
             "set_id": "4",
             "power_id": "0",
@@ -3795,6 +3839,7 @@
             "flavor_text": "Penguins flew for the first time when they danced while wearing this item at the 2006 April Fool's Day Party. Penguins aren't the only ones who like these caps though \u2013 check out the green puffles!"
         },
         "45": {
+            "png_override": "345",
             "card_id": "45",
             "set_id": "4",
             "power_id": "0",
@@ -3810,6 +3855,7 @@
             "flavor_text": "One of the island's best kept secrets. Make Dessert Pizza in the Pizza Parlor's Pizzatron 3000 game by clicking on the lever of the machine when you enter the game!"
         },
         "46": {
+            "png_override": "346",
             "card_id": "46",
             "set_id": "4",
             "power_id": "0",
@@ -3825,6 +3871,7 @@
             "flavor_text": "This limited edition instrument is available from the Penguin Style catalog in the Gift Shop from time to time. To play it, put it on and dance. Go solo or join a band!"
         },
         "47": {
+            "png_override": "347",
             "card_id": "47",
             "set_id": "4",
             "power_id": "0",
@@ -3840,6 +3887,7 @@
             "flavor_text": "Fire. Snow. Water. That's what you'll need to master the Card-Jitsu game. Train with your friends and Sensei at the Dojo to earn belts and become a ninja."
         },
         "48": {
+            "png_override": "348",
             "card_id": "48",
             "set_id": "4",
             "power_id": "0",
@@ -3855,6 +3903,7 @@
             "flavor_text": "This super-secret agency has one goal: to protect the Club Pengun island. Their base, the Command Room, is hidden near the Ski Village."
         },
         "49": {
+            "png_override": "349",
             "card_id": "49",
             "set_id": "4",
             "power_id": "7",
@@ -3870,6 +3919,7 @@
             "flavor_text": "One of Gary the Gadget Guy's inventions, this special FX box is found at the Stage. Every switch, button and lever changes the set in a different way."
         },
         "50": {
+            "png_override": "350",
             "card_id": "50",
             "set_id": "4",
             "power_id": "8",
@@ -3885,6 +3935,7 @@
             "flavor_text": "During the Medieval Party penguins discovered dragons, befriended knights and completed heroic quests."
         },
         "51": {
+            "png_override": "351",
             "card_id": "51",
             "set_id": "4",
             "power_id": "3",
@@ -3900,6 +3951,7 @@
             "flavor_text": "Cadence is a popular DJ and she loves to dance. She opened the Night Club's Dance Contest game  in 2009, where you can challenge your friends or dance solo."
         },
         "52": {
+            "png_override": "352",
             "card_id": "52",
             "set_id": "4",
             "power_id": "9",
@@ -3915,6 +3967,7 @@
             "flavor_text": "Pick up the  Cloud Wave Bracer from the Martial Artworks catalog in the Ninja Hideout. Wear them and dance to create mysterious clouds before you turn invisible!"
         },
         "53": {
+            "png_override": "353",
             "card_id": "53",
             "set_id": "4",
             "power_id": "3",
@@ -3930,6 +3983,7 @@
             "flavor_text": "You can find this costume in the Gift Shop at Halloween or in the Costume Trunk while Haunting of the Viking Opera is on at the Stage. During the play, this outfit certainly scared the singers!"
         },
         "54": {
+            "png_override": "354",
             "card_id": "54",
             "set_id": "4",
             "power_id": "12",
@@ -3945,6 +3999,7 @@
             "flavor_text": "The gnarly game can be found in the Mine, where your surf &amp; skate tricks will earn you coins! Hang on for a wild surf ride!"
         },
         "55": {
+            "png_override": "355",
             "card_id": "55",
             "set_id": "4",
             "power_id": "11",
@@ -3960,6 +4015,7 @@
             "flavor_text": "This Treasure Book instrument is a musical masterpiece! It's pretty rare and you just have to put it on and dance to rock!"
         },
         "56": {
+            "png_override": "356",
             "card_id": "56",
             "set_id": "4",
             "power_id": "2",
@@ -3975,6 +4031,7 @@
             "flavor_text": "You'll see  this penguin in the Comics on the community section of the website. He's always looking for a new challenge to take games to the next level \u2013 the X-treme!"
         },
         "57": {
+            "png_override": "357",
             "card_id": "57",
             "set_id": "4",
             "power_id": "2",
@@ -3990,6 +4047,7 @@
             "flavor_text": "Penguins can enter this room through the Portal Box item when it is set up in an igloo. This item was available at the 2009 April Fool's Day Party."
         },
         "58": {
+            "png_override": "358",
             "card_id": "58",
             "set_id": "4",
             "power_id": "10",
@@ -4005,6 +4063,7 @@
             "flavor_text": "This item is super rare! It's only available once in a while and is usually hidden as a secret in the Penguin Style catalog."
         },
         "59": {
+            "png_override": "359",
             "card_id": "59",
             "set_id": "4",
             "power_id": "2",
@@ -4020,6 +4079,7 @@
             "flavor_text": "Gary is the island's resident inventor. He generally prefers to keep to himself to concentrate on inventing new gadgets. You may have seen a few like the Jet Pack and Pizzatron 3000."
         },
         "60": {
+            "png_override": "360",
             "card_id": "60",
             "set_id": "4",
             "power_id": "3",
@@ -4157,6 +4217,7 @@
     },
     "5": {
         "1": {
+            "png_override": "401",
             "card_id": "1",
             "set_id": "5",
             "power_id": "0",
@@ -4172,6 +4233,7 @@
             "flavor_text": "Battle up to 3 other ninjas in Card-Jitsu Fire, the ultimate test of speed and power. Land on an element, play your cards and the highest number will win."
         },
         "2": {
+            "png_override": "402",
             "card_id": "2",
             "set_id": "5",
             "power_id": "0",
@@ -4187,6 +4249,7 @@
             "flavor_text": "Skilled ninjas show their mastery of the element of fire, battling with hot sauce. They never spill a drop on their ninja suit and they don't fear it on their pizza."
         },
         "3": {
+            "png_override": "403",
             "card_id": "3",
             "set_id": "5",
             "power_id": "0",
@@ -4202,6 +4265,7 @@
             "flavor_text": "Ninja students all over the island helped to stoke the fires of a long\u2013dormant Volcano in the hills of Club Penguin. Even their black puffles joined in!"
         },
         "4": {
+            "png_override": "404",
             "card_id": "4",
             "set_id": "5",
             "power_id": "0",
@@ -4217,6 +4281,7 @@
             "flavor_text": "Here's a tip if you're a ninja, you can buy a Goldsmith Apron inside the Hideout (beside the Dojo). If you wear this item then dance, your penguin will forge gold!"
         },
         "5": {
+            "png_override": "405",
             "card_id": "5",
             "set_id": "5",
             "power_id": "0",
@@ -4232,6 +4297,7 @@
             "flavor_text": "Ninjas face off in a match of Card-Jitsu Fire atop the great Volcano. Each ninja student must master the element of fire to earn legendary items such as the Fire Gem."
         },
         "6": {
+            "png_override": "406",
             "card_id": "6",
             "set_id": "5",
             "power_id": "0",
@@ -4247,6 +4313,7 @@
             "flavor_text": "This distant mountain in the hills of Club Penguin had lay dormant for years. It wasn't until September 2009 that penguins realized that is was actually a Volcano!"
         },
         "7": {
+            "png_override": "407",
             "card_id": "7",
             "set_id": "5",
             "power_id": "0",
@@ -4262,6 +4329,7 @@
             "flavor_text": "Ninjas practice their Card-Jitsu poses before pouncing into action. Here, we see a ninja preparing to go into a Card-Jitsu Fire battle, where you must play the best element card to win."
         },
         "8": {
+            "png_override": "408",
             "card_id": "8",
             "set_id": "5",
             "power_id": "0",
@@ -4277,6 +4345,7 @@
             "flavor_text": "Only ninjas can access this quaint little shop at the heart of the Ninja Hideout beside the Dojo. The magical Amulet is the most popular item sold here."
         },
         "9": {
+            "png_override": "409",
             "card_id": "9",
             "set_id": "5",
             "power_id": "0",
@@ -4292,6 +4361,7 @@
             "flavor_text": "Land on this square in a game of Card-Jitsu Fire, and you\u2019ll face a battle against another ninja. Remember, fire beats snow, snow beats water, water beats fire."
         },
         "10": {
+            "png_override": "410",
             "card_id": "10",
             "set_id": "5",
             "power_id": "0",
@@ -4307,6 +4377,7 @@
             "flavor_text": "Once you have earned all the pieces of your Fire Suit, you must challenge Sensei and win. Only then will you earn your Fire Gem to become a Fire Ninja!"
         },
         "11": {
+            "png_override": "411",
             "card_id": "11",
             "set_id": "5",
             "power_id": "0",
@@ -4322,6 +4393,7 @@
             "flavor_text": "Back in September 2009, construction on the entrance to the Volcano began at the Hideout. Sensei built a path to the top of the Volcano, and we worked together to build the Fire Dojo!"
         },
         "12": {
+            "png_override": "412",
             "card_id": "12",
             "set_id": "5",
             "power_id": "0",
@@ -4337,6 +4409,7 @@
             "flavor_text": "See how the fire symbol glows? Once a ninja student has mastered the element of fire, Sensei will award them with a Fire Gem. Only then will the fire symbol glow in the Ninja Hideout."
         },
         "13": {
+            "png_override": "413",
             "card_id": "13",
             "set_id": "5",
             "power_id": "0",
@@ -4352,6 +4425,7 @@
             "flavor_text": "Sensei asked ninja students to gather fiery items from all over the island. We used these items to stoke the Volcano. It was time for our next ninja journey!"
         },
         "14": {
+            "png_override": "414",
             "card_id": "14",
             "set_id": "5",
             "power_id": "0",
@@ -4367,6 +4441,7 @@
             "flavor_text": "Ninjas gathered fiery items from all around the island to make the Volcano even hotter. It sparked great events, starting with a great storm which hit the island just before Halloween."
         },
         "15": {
+            "png_override": "415",
             "card_id": "15",
             "set_id": "5",
             "power_id": "0",
@@ -4382,6 +4457,7 @@
             "flavor_text": "This card does not exist in real-life, and as such has no description"
         },
         "16": {
+            "png_override": "416",
             "card_id": "16",
             "set_id": "5",
             "power_id": "0",
@@ -4397,6 +4473,7 @@
             "flavor_text": "Here's a hot tip if you're a Fire Ninja, wear these 4 items: Flame Sandals, Magma Coat, Lava Mask &amp; Fiery Helmet. Then hit D on your keyboard. Behold the Fire Stance!"
         },
         "17": {
+            "png_override": "417",
             "card_id": "17",
             "set_id": "5",
             "power_id": "0",
@@ -4412,6 +4489,7 @@
             "flavor_text": "We drew these ninjas back in August 2009 while we were working up some stuff for Card-Jitsu Fire. Some of these were made into real world \"pop-up\" cards."
         },
         "18": {
+            "png_override": "418",
             "card_id": "18",
             "set_id": "5",
             "power_id": "0",
@@ -4427,6 +4505,7 @@
             "flavor_text": "The powerful stone statues at the Fire Dojo watch over ninja students as they learn to master the element of fire. Beyond the mighty Fire Suit!"
         },
         "19": {
+            "png_override": "419",
             "card_id": "19",
             "set_id": "5",
             "power_id": "0",
@@ -4442,6 +4521,7 @@
             "flavor_text": "We aren't quite sure about this tub of hot sauce at the Fire Dojo. Is it pouring hot sauce into the Volcano, or is the lava actually hot sauce? This mystery remains..."
         },
         "20": {
+            "png_override": "420",
             "card_id": "20",
             "set_id": "5",
             "power_id": "0",
@@ -4457,6 +4537,7 @@
             "flavor_text": "Here's the original sketch of the Fire Dojo from May 2009. In the finished version we added a tub of hot sauce, and changed the outfit on the statue a bit!"
         },
         "21": {
+            "png_override": "421",
             "card_id": "21",
             "set_id": "5",
             "power_id": "0",
@@ -4472,6 +4553,7 @@
             "flavor_text": "Sensei first appeared outside the Dojo in November 2008, where he was seen digging snow with a shovel. Almost a year later, he helped awaken the great Volcano..."
         },
         "22": {
+            "png_override": "422",
             "card_id": "22",
             "set_id": "5",
             "power_id": "0",
@@ -4487,6 +4569,7 @@
             "flavor_text": "This is a sketch we drew of Sensei in front of the Volcano entrance. We made this for a scene on our website back in September 2009, but ended up never using it!"
         },
         "23": {
+            "png_override": "423",
             "card_id": "23",
             "set_id": "5",
             "power_id": "0",
@@ -4502,6 +4585,7 @@
             "flavor_text": "Behold the Amulet! A symbol of power and skill, and a key to mastering the element of fire. Once you have mastered the element of fire, the Fire Gem will glow![1]"
         },
         "24": {
+            "png_override": "424",
             "card_id": "24",
             "set_id": "5",
             "power_id": "0",
@@ -4517,6 +4601,7 @@
             "flavor_text": "Take the next step along the ninja path. Journey across the narrow bridge to the Fire Dojo, where you will learn to master the element of fire to become a Fire Ninja."
         },
         "25": {
+            "png_override": "425",
             "card_id": "25",
             "set_id": "5",
             "power_id": "0",
@@ -4532,6 +4617,7 @@
             "flavor_text": "The entrance to the Volcano can only be opened by those who own the Amulet. To enter, click the stone table and uncover the hidden door to the secret Fire Dojo."
         },
         "26": {
+            "png_override": "426",
             "card_id": "26",
             "set_id": "5",
             "power_id": "0",
@@ -4547,6 +4633,7 @@
             "flavor_text": "Sensei is a master of Card-Jitsu Fire. As you challenge other ninja students and earn experience, Sensei will award you with pieces of the Fire Ninja Suit."
         },
         "27": {
+            "png_override": "427",
             "card_id": "27",
             "set_id": "5",
             "power_id": "4",
@@ -4562,6 +4649,7 @@
             "flavor_text": "To gain your  Fire Ninja Suit, you must practice Card-Jitsu Fire, then defeat the Sensei in the final challenge. Do you have what it takes to become a Fire Ninja?"
         },
         "28": {
+            "png_override": "428",
             "card_id": "28",
             "set_id": "5",
             "power_id": "4",
@@ -4579,6 +4667,7 @@
     },
     "6": {
         "1": {
+            "png_override": "501",
             "card_id": "1",
             "set_id": "6",
             "power_id": "0",
@@ -4594,6 +4683,7 @@
             "flavor_text": "A quick-thinking trickster, always ready for adventure. The Monkey King must face a great quest in the play \"Secrets of the Bamboo Forest\"."
         },
         "2": {
+            "png_override": "502",
             "card_id": "2",
             "set_id": "6",
             "power_id": "0",
@@ -4609,6 +4699,7 @@
             "flavor_text": "Soaring through the air at top speed, penguin pilots master the art of Jet Packing. Head to the Beacon to take off on Jet Pack Adventure!"
         },
         "3": {
+            "png_override": "503",
             "card_id": "3",
             "set_id": "6",
             "power_id": "0",
@@ -4624,6 +4715,7 @@
             "flavor_text": "Fairies and Princesses go together like fish and pizza. Both have been spotted during plays, Halloween, and the Medieval Party."
         },
         "4": {
+            "png_override": "504",
             "card_id": "4",
             "set_id": "6",
             "power_id": "0",
@@ -4639,6 +4731,7 @@
             "flavor_text": "Does your puffle want to try out a new hairdo? These salon chairs first appeared during the Puffle Party 2010. They are now available in the Pet Shop."
         },
         "5": {
+            "png_override": "505",
             "card_id": "5",
             "set_id": "6",
             "power_id": "0",
@@ -4654,6 +4747,7 @@
             "flavor_text": "Every year for Halloween, more and more costumes appear at the Gift Shop. Trick-or-treaters should not be surprised to see dragons or Franken-fairies around the island."
         },
         "6": {
+            "png_override": "506",
             "card_id": "6",
             "set_id": "6",
             "power_id": "0",
@@ -4669,6 +4763,7 @@
             "flavor_text": "During the Halloween Party, penguins looking to show off their custom costumes can waddle over to the costume show. Monsters and ladybugs alike are welcome!"
         },
         "7": {
+            "png_override": "507",
             "card_id": "7",
             "set_id": "6",
             "power_id": "0",
@@ -4684,6 +4779,7 @@
             "flavor_text": "Soccer is a very popular pastime on the island. Whether two or twenty two penguins are playing, the action is always epic. Get your game on at the Stadium!"
         },
         "8": {
+            "png_override": "508",
             "card_id": "8",
             "set_id": "6",
             "power_id": "0",
@@ -4699,6 +4795,7 @@
             "flavor_text": "Unloading the Coffee Shop truck is one of the oldest jobs on the island. And as long as penguins need their coffee, the Coffee Shop will need someone to help unload the beans."
         },
         "9": {
+            "png_override": "509",
             "card_id": "9",
             "set_id": "6",
             "power_id": "0",
@@ -4714,6 +4811,7 @@
             "flavor_text": "As part of the Earth Day celebration, penguins decided to help clean up the island. A new Recycling Depot was built, and everyone took part in a huge recycling scavenger hunt."
         },
         "10": {
+            "png_override": "510",
             "card_id": "10",
             "set_id": "6",
             "power_id": "0",
@@ -4729,6 +4827,7 @@
             "flavor_text": "During the Penguin Play Awards, interviewers are always busy. Everyone is invited to sit in the chair and share their thoughts on the Stage plays and awards. Everyone!"
         },
         "11": {
+            "png_override": "511",
             "card_id": "11",
             "set_id": "6",
             "power_id": "0",
@@ -4744,6 +4843,7 @@
             "flavor_text": "To play soccer at the Stadium, you've got to be quick. Click on the soccer ball to run over and kick it. The faster you're going, the faster the ball will go!"
         },
         "12": {
+            "png_override": "512",
             "card_id": "12",
             "set_id": "6",
             "power_id": "0",
@@ -4759,6 +4859,7 @@
             "flavor_text": "These are sketches of characters from \"Secrets of the Bamboo Forest\". We drew lots of different designs for their costumes before we decided on these ones."
         },
         "13": {
+            "png_override": "513",
             "card_id": "13",
             "set_id": "6",
             "power_id": "0",
@@ -4774,6 +4875,7 @@
             "flavor_text": "When a rockslide in the Mine revealed hidden caves, crews moved in to make them safe to explore. \"We're off to a rocky start,\" said Rory, \"but that's normal for a cave.\""
         },
         "14": {
+            "png_override": "514",
             "card_id": "14",
             "set_id": "6",
             "power_id": "0",
@@ -4789,6 +4891,7 @@
             "flavor_text": "Revealed by a rockslide in January of 2010, this dark cave is a construction worker's dream. Penguins can mine for gold with jackhammers, or help keep the lights powered with snowballs."
         },
         "15": {
+            "png_override": "515",
             "card_id": "15",
             "set_id": "6",
             "power_id": "0",
@@ -4804,6 +4907,7 @@
             "flavor_text": "This costume from \"Secrets of the Bamboo Forest\" gives you the power to turn into a statue. Just press 'W' on your keyboard! The perfect skill for patient guardians..."
         },
         "16": {
+            "png_override": "516",
             "card_id": "16",
             "set_id": "6",
             "power_id": "0",
@@ -4819,6 +4923,7 @@
             "flavor_text": "Every September, penguins look forward to the island's famous Fair. There are many special games, prizes and shows to see... so step right up!"
         },
         "17": {
+            "png_override": "517",
             "card_id": "17",
             "set_id": "6",
             "power_id": "0",
@@ -4834,6 +4939,7 @@
             "flavor_text": "Hockey players can find all their equipment in the Snow and Sports catalog at the Stadium. The proper gear is important before stepping onto the ice."
         },
         "18": {
+            "png_override": "518",
             "card_id": "18",
             "set_id": "6",
             "power_id": "0",
@@ -4849,6 +4955,7 @@
             "flavor_text": "The Puffle Show premiered during the Puffle Party in 2010. Penguins took their furry friends there to compete in an exciting obstacle course."
         },
         "19": {
+            "png_override": "519",
             "card_id": "19",
             "set_id": "6",
             "power_id": "0",
@@ -4864,6 +4971,7 @@
             "flavor_text": "During the Holiday Party in 2009, a special postcard allowed penguins to send a gift to their friends. Wrapped inside each was a Candy Cane Hat."
         },
         "20": {
+            "png_override": "520",
             "card_id": "20",
             "set_id": "6",
             "power_id": "0",
@@ -4879,6 +4987,7 @@
             "flavor_text": "Even during the colder months, many penguins enjoy bundling up and playing in the snow. Making snowmen, caroling and snowball fights are very popular activities during this time."
         },
         "21": {
+            "png_override": "521",
             "card_id": "21",
             "set_id": "6",
             "power_id": "0",
@@ -4894,6 +5003,7 @@
             "flavor_text": "The Stadium was upgraded to allow bigger crows to attend hockey and soccer games. Complete with bleachers, new lighting and booths for food vendors."
         },
         "22": {
+            "png_override": "522",
             "card_id": "22",
             "set_id": "6",
             "power_id": "0",
@@ -4909,6 +5019,7 @@
             "flavor_text": "Nothing spruces up an igloo like a few items from the Better Igloos catalog. Puffles especially love it when there are lots of things to play with."
         },
         "23": {
+            "png_override": "523",
             "card_id": "23",
             "set_id": "6",
             "power_id": "0",
@@ -4924,6 +5035,7 @@
             "flavor_text": "Music Jam is the island's annual music festival. It's all about finding the right styles, sounds and moves to express yourself."
         },
         "24": {
+            "png_override": "524",
             "card_id": "24",
             "set_id": "6",
             "power_id": "0",
@@ -4939,6 +5051,7 @@
             "flavor_text": "This sketch shows an Elite Agent locating his Field-Op. We wanted to show the Spy Phone up close, and we thought it looked best having an agent hold it from the top."
         },
         "25": {
+            "png_override": "525",
             "card_id": "25",
             "set_id": "6",
             "power_id": "0",
@@ -4954,6 +5067,7 @@
             "flavor_text": "During the Festival of Flight, penguins celebrated the many different ways to fly. They used jetpacks, propeller hats, hot air balloons, and more to get the island \"off the ground\"."
         },
         "26": {
+            "png_override": "526",
             "card_id": "26",
             "set_id": "6",
             "power_id": "0",
@@ -4969,6 +5083,7 @@
             "flavor_text": "During the Festival of Flight, many penguins used the Test Glider to take to the skies. Aviator goggles were a must have!"
         },
         "27": {
+            "png_override": "527",
             "card_id": "27",
             "set_id": "6",
             "power_id": "0",
@@ -4984,6 +5099,7 @@
             "flavor_text": "You need fast flippers and sharp reflexes to play Puffle Paddle. Juggle as many puffles as you can, and earn tons of tickets in this popular Fair game."
         },
         "28": {
+            "png_override": "528",
             "card_id": "28",
             "set_id": "6",
             "power_id": "0",
@@ -4999,6 +5115,7 @@
             "flavor_text": "The island's fanciest fashions can be seen on the red carpet during the Penguin Play Awards. All the latest styles can be found at the Gift Shop."
         },
         "29": {
+            "png_override": "529",
             "card_id": "29",
             "set_id": "6",
             "power_id": "0",
@@ -5014,6 +5131,7 @@
             "flavor_text": "Visitors to the Dock will find the Hydro Hopper boat all fueled up and ready to go. Jump in for some extreme tubing, or just chill out and catch some sun."
         },
         "30": {
+            "png_override": "530",
             "card_id": "30",
             "set_id": "6",
             "power_id": "0",
@@ -5029,6 +5147,7 @@
             "flavor_text": "The zaniest of all puffles, these curious creatures were first discovered at the Puffle Party in 2010. Their buckteeth and quirky personalities make them stand out in any crowd."
         },
         "31": {
+            "png_override": "531",
             "card_id": "31",
             "set_id": "6",
             "power_id": "0",
@@ -5044,6 +5163,7 @@
             "flavor_text": "The entire community of Club Penguin helped plant this special tree during the Earth Day celebration in 2010. Many believe it will be the tallest tree on the island someday."
         },
         "32": {
+            "png_override": "532",
             "card_id": "32",
             "set_id": "6",
             "power_id": "0",
@@ -5059,6 +5179,7 @@
             "flavor_text": "Many penguins have a passion for gardening. So during the Earth Day celebration in 2010, a community garden was planted at the Mine Shack. Now anyone can go there and plant vegetables!"
         },
         "33": {
+            "png_override": "533",
             "card_id": "33",
             "set_id": "6",
             "power_id": "0",
@@ -5074,6 +5195,7 @@
             "flavor_text": "In June of 2010, penguins were invited to dress up as pirates, captains, and even castaways. Mermaids and sailors in seafaring dresses were also spotted during the celebration."
         },
         "34": {
+            "png_override": "534",
             "card_id": "34",
             "set_id": "6",
             "power_id": "0",
@@ -5089,6 +5211,7 @@
             "flavor_text": "In 2010, the Better Igloos catalog began selling clothing racks and displays so penguins could set up their own shops. Now there are many unique and interesting showing up all over the island,"
         },
         "35": {
+            "png_override": "535",
             "card_id": "35",
             "set_id": "6",
             "power_id": "0",
@@ -5104,6 +5227,7 @@
             "flavor_text": "A popular costume during the Island Adventure Party. The Seafarer's Gown and Bonny Curls were perfect for any gal that wanted to sail while looking their best."
         },
         "36": {
+            "png_override": "536",
             "card_id": "36",
             "set_id": "6",
             "power_id": "0",
@@ -5119,6 +5243,7 @@
             "flavor_text": "Music Jam is about more than just music! The island's annual festival is about finding the best styles and sounds to express yourself, including your best dance moves."
         },
         "37": {
+            "png_override": "537",
             "card_id": "37",
             "set_id": "6",
             "power_id": "0",
@@ -5134,6 +5259,7 @@
             "flavor_text": "Rock is a popular style of music during Music Jam, the island's annual music festival. Many penguins enjoy breaking out there electric guitars and rocking out at the Lighthouse."
         },
         "38": {
+            "png_override": "538",
             "card_id": "38",
             "set_id": "6",
             "power_id": "0",
@@ -5149,6 +5275,7 @@
             "flavor_text": "Pop concerts are a huge hit with audiences. During the Music Jam festival, the Beach is set up with all the lights and sound systems a pop star needs!"
         },
         "39": {
+            "png_override": "539",
             "card_id": "39",
             "set_id": "6",
             "power_id": "0",
@@ -5164,6 +5291,7 @@
             "flavor_text": "Daring Daisy and Fearless Fiesel star in this Stage Play. Join them as they journey to discover the hidden underwater city of Penglantis!"
         },
         "40": {
+            "png_override": "540",
             "card_id": "40",
             "set_id": "6",
             "power_id": "0",
@@ -5179,6 +5307,7 @@
             "flavor_text": "This Stage play featured Norman, a shrunken penguin who must befriend a swarm of bugs to help him. Together they find a way to return Norman to his normal size."
         },
         "41": {
+            "png_override": "541",
             "card_id": "41",
             "set_id": "6",
             "power_id": "0",
@@ -5194,6 +5323,7 @@
             "flavor_text": "Puffle rescuers need to have quick reflexes, and nerves of steel. Navigating dangerous ice floes, treacherous caverns and dangerous creatures is all part of the job."
         },
         "42": {
+            "png_override": "542",
             "card_id": "42",
             "set_id": "6",
             "power_id": "0",
@@ -5209,6 +5339,7 @@
             "flavor_text": "This is an average Everyday Phoning Facility, over in the Ski Village. There's nothing to see here... unless you happen to receive an invitation to the Elite Penguin Force..."
         },
         "43": {
+            "png_override": "543",
             "card_id": "43",
             "set_id": "6",
             "power_id": "0",
@@ -5224,6 +5355,7 @@
             "flavor_text": "Gary the Gadget Guy, inventor of the jet pack, makes sure there's always enough for everyone. That makes a LOT of jet packs."
         },
         "44": {
+            "png_override": "544",
             "card_id": "44",
             "set_id": "6",
             "power_id": "0",
@@ -5239,6 +5371,7 @@
             "flavor_text": "Nothing says Halloween like pumpkins for your igloo... except make a pumpkin igloo! This special igloo design only appears during Halloween in the Igloo Upgrades catalog."
         },
         "45": {
+            "png_override": "545",
             "card_id": "45",
             "set_id": "6",
             "power_id": "0",
@@ -5254,6 +5387,7 @@
             "flavor_text": "A great treasure hunt was held during the Island Adventure Party. Penguins had to search for pieces of a lost map, to find where treasure was buried. X marked the spot!"
         },
         "46": {
+            "png_override": "546",
             "card_id": "46",
             "set_id": "6",
             "power_id": "0",
@@ -5269,6 +5403,7 @@
             "flavor_text": "In May of 2010, PSA agents were called in to stop one of Herbert's plans. Though agents saved everyone from harm, Herbert managed to destroy the PSA's HQ with a popcorn device."
         },
         "47": {
+            "png_override": "547",
             "card_id": "47",
             "set_id": "6",
             "power_id": "0",
@@ -5284,6 +5419,7 @@
             "flavor_text": "During the Island Adventure Party, a group of classy captains banded together to try and battle the pirates. They did their best to find more treasure, and have more adventures than anyone else."
         },
         "48": {
+            "png_override": "548",
             "card_id": "48",
             "set_id": "6",
             "power_id": "0",
@@ -5299,6 +5435,7 @@
             "flavor_text": "April Fools is a strange but funny celebration in Club Penguin. There's all sorts of weird silliness happening. It's easy to join in,-pull a prank, or tell a crazy joke."
         },
         "49": {
+            "png_override": "549",
             "card_id": "49",
             "set_id": "6",
             "power_id": "0",
@@ -5314,6 +5451,7 @@
             "flavor_text": "During November of 2009, penguins were invited to solve the Great Snow Maze. Many penguins worked together to reach the end, and were awarded with a Yeti costume."
         },
         "50": {
+            "png_override": "550",
             "card_id": "50",
             "set_id": "6",
             "power_id": "0",
@@ -5329,6 +5467,7 @@
             "flavor_text": "This penguin private investigator is one of the stars of the Stage play \"Ruby and the Ruby\". He's a no-nonsense penguin who doesn't miss a clue, and always finds what he's looking for."
         },
         "51": {
+            "png_override": "551",
             "card_id": "51",
             "set_id": "6",
             "power_id": "0",
@@ -5344,6 +5483,7 @@
             "flavor_text": "During the April Fools Party, the entire island goes topsy-turvy. Those who join in the fun may even be crowned the King of April Fools... though kings are crowned every few minutes."
         },
         "52": {
+            "png_override": "552",
             "card_id": "52",
             "set_id": "6",
             "power_id": "0",
@@ -5359,6 +5499,7 @@
             "flavor_text": "To join the Elite Penguin Force, first you must complete The Test. This Test will challenge all of an agent's skills, including their speed, stealth and how clever they are."
         },
         "53": {
+            "png_override": "553",
             "card_id": "53",
             "set_id": "6",
             "power_id": "0",
@@ -5374,6 +5515,7 @@
             "flavor_text": "During the Festival of Flight, a machine called the Cloud-Maker 3000 could make clouds of different shapes. Anvil clouds turned out to be surprisingly heavy!"
         },
         "54": {
+            "png_override": "554",
             "card_id": "54",
             "set_id": "6",
             "power_id": "0",
@@ -5389,6 +5531,7 @@
             "flavor_text": "These ultra-rare items are only available to those who have entered at least 5 codes into the Treasure Book. Codes can be found on games, books and other Club Penguin toys."
         },
         "55": {
+            "png_override": "555",
             "card_id": "55",
             "set_id": "6",
             "power_id": "0",
@@ -5404,6 +5547,7 @@
             "flavor_text": "In January 2010, the whole island was surprised by a rockslide in the Mine. Construction crews quickly cleaned up the mess, and discovered a number of hidden caves."
         },
         "56": {
+            "png_override": "556",
             "card_id": "56",
             "set_id": "6",
             "power_id": "0",
@@ -5419,6 +5563,7 @@
             "flavor_text": "Mer-penguins have shown up in many places. From the Underwater Adventure Stage play, to the Island Adventure Party, mer-penguins are a welcome addition to any celebration."
         },
         "57": {
+            "png_override": "557",
             "card_id": "57",
             "set_id": "6",
             "power_id": "0",
@@ -5434,6 +5579,7 @@
             "flavor_text": "One of the many hazards that Aqua Grabber pilots need to avoid. These puffer fish can inflate to almost a hundred times their normal size, and their spikes can do a lot of damage."
         },
         "58": {
+            "png_override": "558",
             "card_id": "58",
             "set_id": "6",
             "power_id": "0",
@@ -5449,6 +5595,7 @@
             "flavor_text": "Released during the Earth Day celebration in 2010, this watering pack keeps water from freezing, now penguins can water their gardens no matter how cold it is."
         },
         "59": {
+            "png_override": "559",
             "card_id": "59",
             "set_id": "6",
             "power_id": "0",
@@ -5464,6 +5611,7 @@
             "flavor_text": "During the Earth Day celebration, penguins decided it was time to fix up the Mine Shack. So everyone pitched in to help build a large community garden there."
         },
         "60": {
+            "png_override": "560",
             "card_id": "60",
             "set_id": "6",
             "power_id": "0",
@@ -5479,6 +5627,7 @@
             "flavor_text": "Come one, come all, to the great Puffle Circus! Only in town during the Fair, penguins can see puffles of all colors perform amazing acts!"
         },
         "61": {
+            "png_override": "561",
             "card_id": "61",
             "set_id": "6",
             "power_id": "0",
@@ -5494,6 +5643,7 @@
             "flavor_text": "This sketch shows a yellow and blue puffle using items from their \"super plays\". It was used for an Aunt Arctic article, and it inspired the webpage we use for our Puffle Documentary video."
         },
         "62": {
+            "png_override": "562",
             "card_id": "62",
             "set_id": "6",
             "power_id": "0",
@@ -5509,6 +5659,7 @@
             "flavor_text": "During Medieval Party 2010, a new Knight's Quest appeared. This quest brought adventurers into a cave filled with puzzles, and fearsome statues of its owner..."
         },
         "63": {
+            "png_override": "563",
             "card_id": "63",
             "set_id": "6",
             "power_id": "0",
@@ -5524,6 +5675,7 @@
             "flavor_text": "An unexpected pile of popcorn appeared at the Ski Village in May 2010, so penguins decided to throw a Popcorn Party. It took two weeks to eat the whole pile!"
         },
         "64": {
+            "png_override": "564",
             "card_id": "64",
             "set_id": "6",
             "power_id": "0",
@@ -5539,6 +5691,7 @@
             "flavor_text": "During the island's annual Puffle Party, each puffle color has a room decorated in its honor. When the white puffle was discovered, the Mine was turned into an icy paradise."
         },
         "65": {
+            "png_override": "565",
             "card_id": "65",
             "set_id": "6",
             "power_id": "0",
@@ -5554,6 +5707,7 @@
             "flavor_text": "This sketch shows a small part of the green puffle room from the Puffle Party of 2010. The final picture made the cover of the newspaper!"
         },
         "66": {
+            "png_override": "566",
             "card_id": "66",
             "set_id": "6",
             "power_id": "0",
@@ -5569,6 +5723,7 @@
             "flavor_text": "One of the more unusual igloo designs, the Fishbowl Igloo lets you see the world from the eyes of a Fluffy fish. It can be found from time to time in the Better Igloos catalog."
         },
         "67": {
+            "png_override": "567",
             "card_id": "67",
             "set_id": "6",
             "power_id": "0",
@@ -5584,6 +5739,7 @@
             "flavor_text": "The competition between pirates and captains reached epic proportions during the Island Adventure Party. A great battle awaited those who dared to join in!"
         },
         "68": {
+            "png_override": "568",
             "card_id": "68",
             "set_id": "6",
             "power_id": "0",
@@ -5599,6 +5755,7 @@
             "flavor_text": "Secret protectors of Club Penguin, the Elite Penguin Force can tackle any emergency. When the PSA was destroyed by Herbert, the EPF took over all secret agent operations."
         },
         "69": {
+            "png_override": "569",
             "card_id": "69",
             "set_id": "6",
             "power_id": "0",
@@ -5614,6 +5771,7 @@
             "flavor_text": "Whenever Rockhopper visits Club Penguin, he writes down all the things he's looking forward to doing. He posts this list on the notice board down in the Migrator's Hold."
         },
         "70": {
+            "png_override": "570",
             "card_id": "70",
             "set_id": "6",
             "power_id": "0",
@@ -5629,6 +5787,7 @@
             "flavor_text": "This weirdly shaped but strangely comfortable hat was brought by Rockhopper in June of 2010. Penguins has voted it their favorite out of three possible hats, including a bucket and an old boot!"
         },
         "71": {
+            "png_override": "571",
             "card_id": "71",
             "set_id": "6",
             "power_id": "0",
@@ -5644,6 +5803,7 @@
             "flavor_text": "Deep underground is a secret cave filled with water, called the Hidden Lake. To find it, you'll need to journey into the caves beyond the mine, or find the other hidden entrance..."
         },
         "72": {
+            "png_override": "572",
             "card_id": "72",
             "set_id": "6",
             "power_id": "16",
@@ -5659,6 +5819,7 @@
             "flavor_text": "When an orange puffle is completely fed and happy, watch out! They tend to unexpectedly take out a mega monster-truck and hit the gas!"
         },
         "73": {
+            "png_override": "573",
             "card_id": "73",
             "set_id": "6",
             "power_id": "13",
@@ -5674,6 +5835,7 @@
             "flavor_text": "One dark  Halloween night in 2009, a haunted house appeared at the Mine Shack. This menacing mansion had moving statues, paintings that watched you, and puffle pranksters!"
         },
         "74": {
+            "png_override": "574",
             "card_id": "74",
             "set_id": "6",
             "power_id": "7",
@@ -5689,6 +5851,7 @@
             "flavor_text": "Warriors and princesses alike had to battle this mechanical menace at the end of the  Knight's Quest at the Medieval Party. Only by working together could they extinguish his flame and claim the treasure!"
         },
         "75": {
+            "png_override": "575",
             "card_id": "75",
             "set_id": "6",
             "power_id": "11",
@@ -5704,6 +5867,7 @@
             "flavor_text": "Suit up and prepare to go underground! Pink puffles have been lost in the caves below Club Penguin. Jump mine carts, snow cannons, and blasts of steam to succeed."
         },
         "76": {
+            "png_override": "576",
             "card_id": "76",
             "set_id": "6",
             "power_id": "15",
@@ -5719,6 +5883,7 @@
             "flavor_text": "This powerful instrument first appeared during Music Jam in 2010. It was released by surprise halfway through the festival, so penguins had one more chance to rock out."
         },
         "77": {
+            "png_override": "577",
             "card_id": "77",
             "set_id": "6",
             "power_id": "18",
@@ -5734,6 +5899,7 @@
             "flavor_text": "Blue puffles need your help! Many are trapped on dangerous ice floes, surrounded by sharks! Jump between chunks of ice, and watch out for cracks to save them."
         },
         "78": {
+            "png_override": "578",
             "card_id": "78",
             "set_id": "6",
             "power_id": "12",
@@ -5749,6 +5915,7 @@
             "flavor_text": "This ultimate spy gadget has everything an Elite Agent needs. It can receive orders, teleport agents to any location, and even help complete special tasks."
         },
         "79": {
+            "png_override": "579",
             "card_id": "79",
             "set_id": "6",
             "power_id": "5",
@@ -5764,6 +5931,7 @@
             "flavor_text": "Over at the Night Club, DJ Cadence keeps the Dance Contest going with seriously epic music. Penguins looking to show off their moves can dance solo, or compete with their friends."
         },
         "80": {
+            "png_override": "580",
             "card_id": "80",
             "set_id": "6",
             "power_id": "8",
@@ -5779,6 +5947,7 @@
             "flavor_text": "This rare costume is available in the Treasure Book catalog. However, Elite Agents on the Herbert's Revenge case will also receive one for a  special assignment..."
         },
         "81": {
+            "png_override": "581",
             "card_id": "81",
             "set_id": "6",
             "power_id": "14",
@@ -5794,6 +5963,7 @@
             "flavor_text": "This high-powered washer will scrub away any mess within just a few seconds. Your puffles will come out fresh and clean every time. Available only in the Pet Shop's Furniture catalog!"
         },
         "82": {
+            "png_override": "582",
             "card_id": "82",
             "set_id": "6",
             "power_id": "6",
@@ -5809,6 +5979,7 @@
             "flavor_text": "This unique tool showed up during the Earth Day celebration. Penguins voted it their favorite out of three choices. It can grow tree saplings instantly!"
         },
         "83": {
+            "png_override": "583",
             "card_id": "83",
             "set_id": "6",
             "power_id": "17",
@@ -5824,6 +5995,7 @@
             "flavor_text": "To stop the PSA, Herbert needed to break into its computer systems. When a secret agent stopped the attack, Herbert was able to teleport his popcorn device into the HQ and destroy it!"
         },
         "84": {
+            "png_override": "584",
             "card_id": "84",
             "set_id": "6",
             "power_id": "16",
@@ -5839,6 +6011,7 @@
             "flavor_text": "Invented by Gary the Gadget Guy, this powerful device lifted the entire island of Club Penguin into the sky for the Festival of Flight!"
         },
         "85": {
+            "png_override": "585",
             "card_id": "85",
             "set_id": "6",
             "power_id": "13",
@@ -5854,6 +6027,7 @@
             "flavor_text": "One of the Elite Puffles from the Elite Penguin Force. Flare can blow blue fire, which can weld nearly anything together. Agents on the Herbert's Revenge case can summon Flare anytime."
         },
         "86": {
+            "png_override": "586",
             "card_id": "86",
             "set_id": "6",
             "power_id": "7",
@@ -5869,6 +6043,7 @@
             "flavor_text": "To destroy the PSA, Herbert P. Bear needed a powerful device. In May of 2010, he built that device\u2013a souped-up popcorn popper!"
         },
         "87": {
+            "png_override": "587",
             "card_id": "87",
             "set_id": "6",
             "power_id": "11",
@@ -5884,6 +6059,7 @@
             "flavor_text": "Elite Agents receive orders every week for important tasks or critical situations. Agents can report for duty by accessing the Field-Ops computer in the Command Room."
         },
         "88": {
+            "png_override": "588",
             "card_id": "88",
             "set_id": "6",
             "power_id": "15",
@@ -5899,6 +6075,7 @@
             "flavor_text": "When Herbert successfully destroyed the PSA, he celebrated by making all kinds of treats. His gloating would not last long though, as the Elite Penguin Force was soon on his case."
         },
         "89": {
+            "png_override": "589",
             "card_id": "89",
             "set_id": "6",
             "power_id": "18",
@@ -5914,6 +6091,7 @@
             "flavor_text": "Elite Agents must learn a number of highly specialized skills to complete their tasks. Re-wiring circuits, repowering electronics, and bypassing security systems are just some of the basics!"
         },
         "90": {
+            "png_override": "590",
             "card_id": "90",
             "set_id": "6",
             "power_id": "12",
@@ -5929,6 +6107,7 @@
             "flavor_text": "This Aunt Arctic sketch is fairly recent, and shows her not-often-seen igloo. Because penguins have seen her so often, we always try to draw her in new and interesting poses."
         },
         "91": {
+            "png_override": "591",
             "card_id": "91",
             "set_id": "6",
             "power_id": "5",
@@ -5944,6 +6123,7 @@
             "flavor_text": "This peculiar place was discovered at the end of the Great Snow Maze in November 2009. A room fit for any Yeti!"
         },
         "92": {
+            "png_override": "592",
             "card_id": "92",
             "set_id": "6",
             "power_id": "8",
@@ -5959,6 +6139,7 @@
             "flavor_text": "Rescuers must face these high-voltage sea creatures during underwater levels in Puffle Rescue. They're rather shocking to see, and even more so to touch. Avoid at all costs!"
         },
         "93": {
+            "png_override": "593",
             "card_id": "93",
             "set_id": "6",
             "power_id": "14",
@@ -5974,6 +6155,7 @@
             "flavor_text": "Calling all rescuers: Black puffles are trapped underwater! Suit up and dive in! More than anything, make sure not to sink too far into the deep..."
         },
         "94": {
+            "png_override": "594",
             "card_id": "94",
             "set_id": "6",
             "power_id": "6",
@@ -5989,6 +6171,7 @@
             "flavor_text": "When the Hidden Lake was discovered, explorers also found a mysterious locked door... Underwater. The key was later discovered by Puffle Rescuers, who followed a strange shadow..."
         },
         "95": {
+            "png_override": "595",
             "card_id": "95",
             "set_id": "6",
             "power_id": "17",
@@ -6276,6 +6459,7 @@
     },
     "7": {
         "1": {
+            "png_override": "601",
             "card_id": "1",
             "set_id": "7",
             "power_id": "0",
@@ -6291,6 +6475,7 @@
             "flavor_text": "October 2010 saw a return of the spooky igloo contest. Penguins who picked up costumes and furniture items can keep the spine-chilling style all year 'round."
         },
         "2": {
+            "png_override": "602",
             "card_id": "2",
             "set_id": "7",
             "power_id": "0",
@@ -6306,6 +6491,7 @@
             "flavor_text": "We prepared for Halloween 2010 with a chilling countdown and creepy costumes. Then, we searched for candy in the Swamp Quest."
         },
         "3": {
+            "png_override": "603",
             "card_id": "3",
             "set_id": "7",
             "power_id": "0",
@@ -6321,6 +6507,7 @@
             "flavor_text": "Stormy skies rolled over the island and cast shadows over October 2010's Halloween festivities. In November the dark clouds burst with the first ever rain in Club Penguin."
         },
         "4": {
+            "png_override": "604",
             "card_id": "4",
             "set_id": "7",
             "power_id": "0",
@@ -6336,6 +6523,7 @@
             "flavor_text": "October 24th 2010 was the 5th Anniversary Party in Club Penguin. Penguins earned a Celebration Stamp for blowing out the candles on the massive cake in the Coffee Shop."
         },
         "5": {
+            "png_override": "605",
             "card_id": "5",
             "set_id": "7",
             "power_id": "0",
@@ -6351,6 +6539,7 @@
             "flavor_text": "Club Penguin turned five at the October 24th Anniversary Party! Penguins found a party hat and orange puffles were excited to share the giant Anniversary cake."
         },
         "6": {
+            "png_override": "606",
             "card_id": "6",
             "set_id": "7",
             "power_id": "0",
@@ -6366,6 +6555,7 @@
             "flavor_text": "During the Anniversary Party of 2010, we celebrated the past year with a brand new Yearbook and original penguin artwork in the Book Room."
         },
         "7": {
+            "png_override": "607",
             "card_id": "7",
             "set_id": "7",
             "power_id": "0",
@@ -6381,6 +6571,7 @@
             "flavor_text": "Snowball: a ball of snow pressed together to throw. Or... an excuse to get your snow gear on and head to the Snow Forts for a frozen fight!"
         },
         "8": {
+            "png_override": "608",
             "card_id": "8",
             "set_id": "7",
             "power_id": "0",
@@ -6396,6 +6587,7 @@
             "flavor_text": "Challenge your buddy to a game of Find Four in the Ski Lodge. While you're there, you may also see a giant mullet, a moose head and Fred the Cuckoo clock bird."
         },
         "9": {
+            "png_override": "609",
             "card_id": "9",
             "set_id": "7",
             "power_id": "0",
@@ -6411,6 +6603,7 @@
             "flavor_text": "After playing in the snow or at the Ice Rink with your white puffle, chill together by the fire at the Ski Lodge."
         },
         "10": {
+            "png_override": "610",
             "card_id": "10",
             "set_id": "7",
             "power_id": "0",
@@ -6426,6 +6619,7 @@
             "flavor_text": "The Holiday Party 2010 was full of festive costumes and igloo items. In typical penguin fashion, we were thrilled to decorate our igloos... and ourselves."
         },
         "11": {
+            "png_override": "611",
             "card_id": "11",
             "set_id": "7",
             "power_id": "0",
@@ -6441,6 +6635,7 @@
             "flavor_text": "The Book Room above the Coffee Shop is filled with Yearbook memories and tall tales, too! You might even discover a few secrets inside some of the pages..."
         },
         "12": {
+            "png_override": "612",
             "card_id": "12",
             "set_id": "7",
             "power_id": "0",
@@ -6456,6 +6651,7 @@
             "flavor_text": "After putting on their creepy costumes in the October Penguin Style, Frankenpenguins and other monsters braved their way through the Forest to find the Haunted House."
         },
         "13": {
+            "png_override": "613",
             "card_id": "13",
             "set_id": "7",
             "power_id": "0",
@@ -6471,6 +6667,7 @@
             "flavor_text": "The brown puffle pet is super smart, inventive, and wears safety goggles. It's a good thing because its rocket is a bit unpredictable."
         },
         "14": {
+            "png_override": "614",
             "card_id": "14",
             "set_id": "7",
             "power_id": "0",
@@ -6486,6 +6683,7 @@
             "flavor_text": "At The Fair in September 2010, we played games, earned tickets and won fabulous prizes! Puffles and penguins performed magic tricks at stages Rockhopper brought."
         },
         "15": {
+            "png_override": "615",
             "card_id": "15",
             "set_id": "7",
             "power_id": "0",
@@ -6501,6 +6699,7 @@
             "flavor_text": "Sledding is the perfect way to spend time with your buddies. Just head to top of the Ski Hill, and check out the Toboggan or Racing Sleds in the Game Upgrades catalog."
         },
         "16": {
+            "png_override": "616",
             "card_id": "16",
             "set_id": "7",
             "power_id": "0",
@@ -6516,6 +6715,7 @@
             "flavor_text": "During the Holiday Party 2010, penguins got their skates from the Snow and Sports catalog and spent time with their buddies at the Ice Rink."
         },
         "17": {
+            "png_override": "617",
             "card_id": "17",
             "set_id": "7",
             "power_id": "0",
@@ -6531,6 +6731,7 @@
             "flavor_text": "When the Migrator docks at the Beach, you can play Rockhopper's special Treasure Hunt game. Find it, and maybe find a few really rare gems, in the Captain's Quarters."
         },
         "18": {
+            "png_override": "618",
             "card_id": "18",
             "set_id": "7",
             "power_id": "0",
@@ -6546,6 +6747,7 @@
             "flavor_text": "The Lumberjack Look outfit from the January Penguin Style catalog got us in the spirit of adventure! We needed it to complete the Wilderness Expedition 2011."
         },
         "19": {
+            "png_override": "619",
             "card_id": "19",
             "set_id": "7",
             "power_id": "0",
@@ -6561,6 +6763,7 @@
             "flavor_text": "In January 2011 the Pink Sparkly Snowshoes hit Penguin Style just in time for the Wilderness Expedition. Who says exploration gear can't be stylish?"
         },
         "20": {
+            "png_override": "620",
             "card_id": "20",
             "set_id": "7",
             "power_id": "0",
@@ -6576,6 +6779,7 @@
             "flavor_text": "The Holiday Party 2010 was full of surprises. Penguins discovered a mysterious room called \"???\". There, they found the biggest and brightest tree ever seen in Club Penguin."
         },
         "21": {
+            "png_override": "621",
             "card_id": "21",
             "set_id": "7",
             "power_id": "0",
@@ -6591,6 +6795,7 @@
             "flavor_text": "During Coins For Change 2010, Rockhopper challenged everyone to \"Fill the Lighthouse!\" Penguins gave over 12 billion Club Penguin coins that helped real kids around the world."
         },
         "22": {
+            "png_override": "622",
             "card_id": "22",
             "set_id": "7",
             "power_id": "0",
@@ -6606,6 +6811,7 @@
             "flavor_text": "Penguin explorers had to make this elevator machine work during the Wilderness Expedition in January 2011. Experts presume the brown puffle invented it."
         },
         "23": {
+            "png_override": "623",
             "card_id": "23",
             "set_id": "7",
             "power_id": "0",
@@ -6621,6 +6827,7 @@
             "flavor_text": "Building the boat during the Wilderness Expedition in January 2011 was a challenge. But getting to adopt a brown puffle across the bay was worth it."
         },
         "24": {
+            "png_override": "624",
             "card_id": "24",
             "set_id": "7",
             "power_id": "0",
@@ -6636,6 +6843,7 @@
             "flavor_text": "During the Wilderness Expedition in January 2011, we completed several challenges, including a maze and a boat ride across the bay. Then we discovered the brown puffle!"
         },
         "25": {
+            "png_override": "625",
             "card_id": "25",
             "set_id": "7",
             "power_id": "0",
@@ -6651,6 +6859,7 @@
             "flavor_text": "In November 2010, even before the rain clouds flooded the island, penguins at work were finding leaks and looking for messes to mop."
         },
         "26": {
+            "png_override": "626",
             "card_id": "26",
             "set_id": "7",
             "power_id": "0",
@@ -6666,6 +6875,7 @@
             "flavor_text": "Brave ninjas can battle opponents at the Waterfall behind the Dojo and earn Water Suits. Press 'D' when you wear only your suit and demonstrate your power to control water."
         },
         "27": {
+            "png_override": "627",
             "card_id": "27",
             "set_id": "7",
             "power_id": "0",
@@ -6681,6 +6891,7 @@
             "flavor_text": "Your Stamp Books help you track the things you've done on the island. And while you can't really turn yourself into one, you CAN customize yours!"
         },
         "28": {
+            "png_override": "628",
             "card_id": "28",
             "set_id": "7",
             "power_id": "0",
@@ -6696,6 +6907,7 @@
             "flavor_text": "We geared up in expedition gear from Penguin Style and then found adventures during the Wilderness Expedition in January 2011. In the end, we discovered the brown puffle!"
         },
         "29": {
+            "png_override": "629",
             "card_id": "29",
             "set_id": "7",
             "power_id": "0",
@@ -6711,6 +6923,7 @@
             "flavor_text": "Protecting the Earth, Building Safe places and Providing Medical Help are things we can rally around! During Coins For Change 2010, penguins gave over 12 billion Club Penguin coins. Yes, BILLION!"
         },
         "30": {
+            "png_override": "630",
             "card_id": "30",
             "set_id": "7",
             "power_id": "0",
@@ -6726,6 +6939,7 @@
             "flavor_text": "Penguins can choose their color from the Penguin Style catalog! In 2006 players voted to get Lime Green added, and in 2009 players chose Aqua over lavender and maroon."
         },
         "31": {
+            "png_override": "631",
             "card_id": "31",
             "set_id": "7",
             "power_id": "0",
@@ -6741,6 +6955,7 @@
             "flavor_text": "September 2010 saw a return of the popular Fairy Fables play at the Stage. Penguins interested in acting auditioned for the roles of characters like Twee and the Big Bad Wool."
         },
         "32": {
+            "png_override": "632",
             "card_id": "32",
             "set_id": "7",
             "power_id": "0",
@@ -6756,6 +6971,7 @@
             "flavor_text": "\"Penguins That Time Forgot\" hit the Stage again in January 2011. Actors clamored to the Costume Trunk to get their Time-Traveler's hats, Tiki Masks and their Big Brows."
         },
         "33": {
+            "png_override": "633",
             "card_id": "33",
             "set_id": "7",
             "power_id": "0",
@@ -6771,6 +6987,7 @@
             "flavor_text": "This sketch was created when the Elite Penguin Force agents started doing Field Ops in June 2010. Secret agents work together to get things done."
         },
         "34": {
+            "png_override": "634",
             "card_id": "34",
             "set_id": "7",
             "power_id": "0",
@@ -6786,6 +7003,7 @@
             "flavor_text": "The Cove is a place we go to tell stories and play the Catchin' Waves game. If you've taken on the waves there, you've probably got some extreme tales to tell."
         },
         "35": {
+            "png_override": "635",
             "card_id": "35",
             "set_id": "7",
             "power_id": "0",
@@ -6801,6 +7019,7 @@
             "flavor_text": "During the Fair in September 2010, the orange puffle joined the circus and zoomed around the tent it its vehicle. The finale was eating the car."
         },
         "36": {
+            "png_override": "636",
             "card_id": "36",
             "set_id": "7",
             "power_id": "0",
@@ -6816,6 +7035,7 @@
             "flavor_text": "The first ever game in Club Penguin, Hydro Hopper was formerly known as Ballistic Biscuit. Head to the Dock to grab your inner tube and challenge the waters."
         },
         "37": {
+            "png_override": "637",
             "card_id": "37",
             "set_id": "7",
             "power_id": "0",
@@ -6831,6 +7051,7 @@
             "flavor_text": "To change up your igloo, choose a new design, get some furniture items, and decorate. Then throw a party and invite your friends."
         },
         "38": {
+            "png_override": "638",
             "card_id": "38",
             "set_id": "7",
             "power_id": "0",
@@ -6846,6 +7067,7 @@
             "flavor_text": "During Underwater Adventure, brave penguin divers go on a journey. Along the way they discover a grumpy fish who tells them about the lost city of Penglantis."
         },
         "39": {
+            "png_override": "639",
             "card_id": "39",
             "set_id": "7",
             "power_id": "0",
@@ -6861,6 +7083,7 @@
             "flavor_text": "Herbert made his first appearance in the PSA mission \"Questions for a Crab\". After capturing a Secret Agent, he explained his life story and dastardly plans. His flow chart contained over 30 hand drawn pages."
         },
         "40": {
+            "png_override": "640",
             "card_id": "40",
             "set_id": "7",
             "power_id": "0",
@@ -6876,6 +7099,7 @@
             "flavor_text": "Agents must protect against many different kinds of enemies in the game System Defender. Each has its own strengths and weaknesses. Find out more in G's tutorial in the Command Room."
         },
         "41": {
+            "png_override": "641",
             "card_id": "41",
             "set_id": "7",
             "power_id": "0",
@@ -6891,6 +7115,7 @@
             "flavor_text": "In the Book Room, find these special books to hone your keyboard skills, shape your own story, and even find a few secrets!"
         },
         "42": {
+            "png_override": "642",
             "card_id": "42",
             "set_id": "7",
             "power_id": "0",
@@ -6906,6 +7131,7 @@
             "flavor_text": "Classified: To become an Elite Agent, respond to an invitation from another agent. Then head to the Everyday Phoning Facility to take the training test. Your duty? Protect the island."
         },
         "43": {
+            "png_override": "643",
             "card_id": "43",
             "set_id": "7",
             "power_id": "0",
@@ -6921,6 +7147,7 @@
             "flavor_text": "Fireworks filled the sky during 2010's New Year's celebrations. This particular image appeared on the front page of the December 21, 2010 edition of the Club Penguin Times."
         },
         "44": {
+            "png_override": "644",
             "card_id": "44",
             "set_id": "7",
             "power_id": "0",
@@ -6936,6 +7163,7 @@
             "flavor_text": "The brains of the Elite Penguin Force, the Tech Class, are technology experts. Dressed as civilians, they shut down enemy defenses via their computers."
         },
         "45": {
+            "png_override": "645",
             "card_id": "45",
             "set_id": "7",
             "power_id": "0",
@@ -6951,6 +7179,7 @@
             "flavor_text": "In May 2010, Herbert's popcorn explosion meant we had to replace the Sport Shop with the Everyday Phoning Facility. Nothing unusual ever happens there..."
         },
         "46": {
+            "png_override": "646",
             "card_id": "46",
             "set_id": "7",
             "power_id": "0",
@@ -6966,6 +7195,7 @@
             "flavor_text": "Black puffles often look grumpy. But don't let their exterior fool you. They're excellent pets who excel with skateboards... They'll even help you in the Cart Surfer game."
         },
         "47": {
+            "png_override": "647",
             "card_id": "47",
             "set_id": "7",
             "power_id": "0",
@@ -6981,6 +7211,7 @@
             "flavor_text": "Smashing your opponents off the 'berg will get you one step closer to conquering the island. Sumo Smash is a game made especially for Club Penguin's Game Day for Wii."
         },
         "48": {
+            "png_override": "648",
             "card_id": "48",
             "set_id": "7",
             "power_id": "0",
@@ -6996,6 +7227,7 @@
             "flavor_text": "Very inventive, your brown puffle will surprise you with its elaborate creations. Adopt this machine-making puffle from the Pet Shop!"
         },
         "49": {
+            "png_override": "649",
             "card_id": "49",
             "set_id": "7",
             "power_id": "0",
@@ -7011,6 +7243,7 @@
             "flavor_text": "Reindeer, elves and puffles were seen gathering around the massive tree during the December 2010 Holiday Party. We decorated it ourselves!"
         },
         "50": {
+            "png_override": "650",
             "card_id": "50",
             "set_id": "7",
             "power_id": "0",
@@ -7026,6 +7259,7 @@
             "flavor_text": "These three Boss Bugs were sketched in the summer of 2010. The artists wanted them to look as if they could harm a computer system. Elite Agents can attack these Club Penguin enemies in System Defense in the Command Room."
         },
         "51": {
+            "png_override": "651",
             "card_id": "51",
             "set_id": "7",
             "power_id": "0",
@@ -7041,6 +7275,7 @@
             "flavor_text": "Adventurous penguins can puffles made their way through the Tall Trees to find the new brown puffle during the Wilderness Expedition in January 2011."
         },
         "52": {
+            "png_override": "652",
             "card_id": "52",
             "set_id": "7",
             "power_id": "0",
@@ -7056,6 +7291,7 @@
             "flavor_text": "Teamwork is key when you're flying down the hill on a sled with your friends in Sled 'n Slide game for Wii... Get a good time and your team will be closer to conquering Club Penguin Island!"
         },
         "53": {
+            "png_override": "653",
             "card_id": "53",
             "set_id": "7",
             "power_id": "0",
@@ -7071,6 +7307,7 @@
             "flavor_text": "For a long time, players asked for a stage set under the water. So the Club Penguin team made one! In Underwater Adventure, you can get the costumes of Toby the Lobster, a Mermaid, or a Merman."
         },
         "54": {
+            "png_override": "654",
             "card_id": "54",
             "set_id": "7",
             "power_id": "0",
@@ -7086,6 +7323,7 @@
             "flavor_text": "During the Wilderness Expedition, we had to take a boat to get across the bay. But first we had to build it and put our lifejackets on!"
         },
         "55": {
+            "png_override": "655",
             "card_id": "55",
             "set_id": "7",
             "power_id": "0",
@@ -7101,6 +7339,7 @@
             "flavor_text": "From the Lodge, you can get to the Ice Fishing game and catch fish. Shhhh... To get the giant mullet use a smaller fish as bait!"
         },
         "56": {
+            "png_override": "656",
             "card_id": "56",
             "set_id": "7",
             "power_id": "0",
@@ -7116,6 +7355,7 @@
             "flavor_text": "\"Step right up to the most daring, extravagant, ama-a-a-a-zing puffle circus!\" Talented puffles performed and Ringmasters directed the shows during The Fair 2010."
         },
         "57": {
+            "png_override": "657",
             "card_id": "57",
             "set_id": "7",
             "power_id": "0",
@@ -7131,6 +7371,7 @@
             "flavor_text": "It's intense and it has some incredible skate tricks, too. If you want some Cart Surfer help, or just a really cool pet, adopt a black puffle from the Pet Shop."
         },
         "58": {
+            "png_override": "658",
             "card_id": "58",
             "set_id": "7",
             "power_id": "0",
@@ -7146,6 +7387,7 @@
             "flavor_text": "Club Penguin artists had a lot of fun sketching how the brown puffle might play. The scientific pet was discovered during the Wilderness Expedition in January 2011."
         },
         "59": {
+            "png_override": "659",
             "card_id": "59",
             "set_id": "7",
             "power_id": "0",
@@ -7161,6 +7403,7 @@
             "flavor_text": "Race your opponents to the finish line! The Java Jump game in Club Penguin's Game Day for Wii will have you jumping... unless you pick up a heavy anvil along the way."
         },
         "60": {
+            "png_override": "670",
             "card_id": "60",
             "set_id": "7",
             "power_id": "0",
@@ -7176,6 +7419,7 @@
             "flavor_text": "You've picked your team... your skates are laced tight. Now guard your net and shoot pucks for the win! Goal!"
         },
         "61": {
+            "png_override": "671",
             "card_id": "61",
             "set_id": "7",
             "power_id": "0",
@@ -7191,6 +7435,7 @@
             "flavor_text": "First spotted in the Dojo, the shy, snow-loving white puffle holds extraordinary power. Adopt one from the Club Penguin Pet Shop."
         },
         "62": {
+            "png_override": "672",
             "card_id": "62",
             "set_id": "7",
             "power_id": "0",
@@ -7206,6 +7451,7 @@
             "flavor_text": "Loyalty is what blue puffles are all about. If you're looking to expand your team with an all-star pet, adopt one in the Pet Shop."
         },
         "63": {
+            "png_override": "673",
             "card_id": "63",
             "set_id": "7",
             "power_id": "0",
@@ -7221,6 +7467,7 @@
             "flavor_text": "All the puffles are hungry in the Club Penguin Wii \"Feed A Puffle\" Game. But try extra hard to feed a white one \u2013 you can get a Stamp in Club Penguin when you feed one."
         },
         "64": {
+            "png_override": "674",
             "card_id": "64",
             "set_id": "7",
             "power_id": "0",
@@ -7236,6 +7483,7 @@
             "flavor_text": "Ninjas compete fiercely in the Dojo to improve their Card-Jitsu skills. After earning their Ninja Mask, many continue to battle to keep their senses sharp. New Power Cards can surprise even the most skilled opponents."
         },
         "65": {
+            "png_override": "675",
             "card_id": "65",
             "set_id": "7",
             "power_id": "0",
@@ -7251,6 +7499,7 @@
             "flavor_text": "Sensei's past is shrouded in mystery. He is the first master of Card-Jitsu, but little else is known about him. He will, however gladly train any student interested in the ways of the ninja. Seek him in the Dojo for training."
         },
         "66": {
+            "png_override": "676",
             "card_id": "66",
             "set_id": "7",
             "power_id": "0",
@@ -7266,6 +7515,7 @@
             "flavor_text": "Even after you've earned their Ninja Mask, your ninja's training has only begun. The next step of your journey is to master the elements. Search the Ninja Hideout for paths to new Dojos... and new challenges."
         },
         "67": {
+            "png_override": "677",
             "card_id": "67",
             "set_id": "7",
             "power_id": "0",
@@ -7281,6 +7531,7 @@
             "flavor_text": "The Brown Puffle was first discovered in January 2011. Explorers crossed a hidden bay into the wilds of Club Penguin, and found them in a cave. Many puffles even followed the explorers back. Adopt one today the Pet Shop."
         },
         "68": {
+            "png_override": "678",
             "card_id": "68",
             "set_id": "7",
             "power_id": "0",
@@ -7296,6 +7547,7 @@
             "flavor_text": "Fire Ninjas who wear all the parts of their Fire Suit can control fire by pressing 'D' on their keyboard. Many used this power to help melt snow and pump water during the Water Dojo construction in November 2010."
         },
         "69": {
+            "png_override": "679",
             "card_id": "69",
             "set_id": "7",
             "power_id": "0",
@@ -7311,6 +7563,7 @@
             "flavor_text": "In October 2010, black puffles were found exploring the Mine. It was quickly discovered that they were interested in Cart Surfing. To take your black puffle along, just walk to the Mine and start a game."
         },
         "70": {
+            "png_override": "680",
             "card_id": "70",
             "set_id": "7",
             "power_id": "0",
@@ -7326,6 +7579,7 @@
             "flavor_text": "During August 2010, a Mountain Expedition was organized to climb to the top of Toughest Mountain. Many teams of penguins suited up with new climbing gear, and worked together to face the mountain."
         },
         "71": {
+            "png_override": "681",
             "card_id": "71",
             "set_id": "7",
             "power_id": "0",
@@ -7341,6 +7595,7 @@
             "flavor_text": "Climbers faced many obstacles during the Mountain Expedition in August 2010. Icy caverns and harsh weather made the climb very tiring. Many stopped to rest at base camp before climbing to the summit."
         },
         "72": {
+            "png_override": "682",
             "card_id": "72",
             "set_id": "7",
             "power_id": "0",
@@ -7356,6 +7611,7 @@
             "flavor_text": "The final challenge for climbers during the Mountain Expedition in August 2010 was to reach the top. Many who did took a picture to celebrate, which could then be used as a player card background!"
         },
         "73": {
+            "png_override": "683",
             "card_id": "73",
             "set_id": "7",
             "power_id": "0",
@@ -7371,6 +7627,7 @@
             "flavor_text": "To earn all the Stamps in Cart Surfer, you'll need practice... and a little help. For some of the challenges, surfers will need to bring a black puffle with them. You can adopt one of these from the Pet Shop."
         },
         "74": {
+            "png_override": "684",
             "card_id": "74",
             "set_id": "7",
             "power_id": "0",
@@ -7386,6 +7643,7 @@
             "flavor_text": "Stamps Books tell YOUR story. Inside you'll find all the pins you've found, the games you've mastered, and the medals you've earned. Customize yours to show others what you like... and what you can do!"
         },
         "75": {
+            "png_override": "685",
             "card_id": "75",
             "set_id": "7",
             "power_id": "0",
@@ -7401,6 +7659,7 @@
             "flavor_text": "Dark and stormy skies continued to cover the island after the 2010 Halloween Party was over. No one could explain the mysterious weather at first \u2013 even Gary the Gadget Guy was baffled."
         },
         "76": {
+            "png_override": "686",
             "card_id": "76",
             "set_id": "7",
             "power_id": "0",
@@ -7416,6 +7675,7 @@
             "flavor_text": "What do Water Ninjas look like when they're controlling water? That's the question we asked while working on these sketches. We tried lots of different designs, making the water look 'smooth' and 'froamy', until we found the way we liked best."
         },
         "77": {
+            "png_override": "687",
             "card_id": "77",
             "set_id": "7",
             "power_id": "0",
@@ -7431,6 +7691,7 @@
             "flavor_text": "When the Halloween Storm arrived in October 2010, Gary the Gadget Guy was puzzled. \"I had never experienced a storm like it before,\" he said. \"I watched it closely through the binoculars at the Cove. It was very intriguing.\""
         },
         "78": {
+            "png_override": "688",
             "card_id": "78",
             "set_id": "7",
             "power_id": "0",
@@ -7446,6 +7707,7 @@
             "flavor_text": "Card-Jitsu Water is a fast paced battle. It takes quick thinking and fast flippers to master. Those who do will earn their Water Suit, a Water Gem, and the right to call themselves a Water Ninja."
         },
         "79": {
+            "png_override": "689",
             "card_id": "79",
             "set_id": "7",
             "power_id": "0",
@@ -7461,6 +7723,7 @@
             "flavor_text": "In November 2010, it rained for the first time in Club Penguin history. For days the downpour soaked the island. Weather experts were baffled, and penguins everywhere were spotted with umbrellas and rain gear."
         },
         "80": {
+            "png_override": "690",
             "card_id": "80",
             "set_id": "7",
             "power_id": "0",
@@ -7476,6 +7739,7 @@
             "flavor_text": "Ninjas must give their all facing one another in battle. Though matches are fierce, Sensei teaches that competition is the best way to improve your skill. Win or lose, ninjas always remain loyal allies, so remember to tell your opponent \"good game!\""
         },
         "81": {
+            "png_override": "691",
             "card_id": "81",
             "set_id": "7",
             "power_id": "0",
@@ -7491,6 +7755,7 @@
             "flavor_text": "Each part of the Water Ninja Suit is a symbol of skill. They must be earned in order \u2013 first the Water Sandals, then the Waterfall Coat and the Torrent Mask. Once you earn the Helmet of Oceans, you're ready to face Sensei."
         },
         "82": {
+            "png_override": "692",
             "card_id": "82",
             "set_id": "7",
             "power_id": "0",
@@ -7506,6 +7771,7 @@
             "flavor_text": "A rainstorm drenched the island in November 2010. At Sensei's request, workers set up machines to pump rainwater up to the Dojo. The machines ran on snowballs and Fire Ninja flames!"
         },
         "83": {
+            "png_override": "693",
             "card_id": "83",
             "set_id": "7",
             "power_id": "0",
@@ -7521,6 +7787,7 @@
             "flavor_text": "During November 2010, everyone helped pump rainwater up to the Dojo. This water was needed to build a new Dojo for Water Ninja training. For a week, much of the island was covered in pipes and water tanks."
         },
         "84": {
+            "png_override": "694",
             "card_id": "84",
             "set_id": "7",
             "power_id": "0",
@@ -7536,6 +7803,7 @@
             "flavor_text": "The path to the Water Dojo begins in the Ninja Hideout. Once you have an Amulet, touch the stone tablet marked with a sater[4] symbol. A gate will appear and open. Enter it, if you are prepared..."
         },
         "85": {
+            "png_override": "695",
             "card_id": "85",
             "set_id": "7",
             "power_id": "0",
@@ -7551,6 +7819,7 @@
             "flavor_text": "When a ninja wears all the parts of the Water Suit, they will have the power to control water. Wearing only the suit, press 'D', and a wave of water will surge around you."
         },
         "86": {
+            "png_override": "696",
             "card_id": "86",
             "set_id": "7",
             "power_id": "0",
@@ -7566,6 +7835,7 @@
             "flavor_text": "The rainstorm in November 2010 was a sign that ninjas were ready to master the element of water. Sensei soon announced the construction of the Water Dojo. It opened on November 25... and Card-Jitsu Water training began."
         },
         "87": {
+            "png_override": "697",
             "card_id": "87",
             "set_id": "7",
             "power_id": "0",
@@ -7581,6 +7851,7 @@
             "flavor_text": "During construction of the Water Dojo in November 2010, Sensei appeared in the Ninja Hideout. Dressed in his Water Robe, he helped ninjas prepare... and showed them what the power of a Water Ninja could do."
         },
         "88": {
+            "png_override": "698",
             "card_id": "88",
             "set_id": "7",
             "power_id": "0",
@@ -7596,6 +7867,7 @@
             "flavor_text": "This rough sketch was an idea for a poster, showing all the different parts of the new Card-Jitsu Water game. We wanted to make it feel like the beginning of an ancient legend or story. That's why Sensei is so big \u2013 he's not a giant, it's just for style!"
         },
         "89": {
+            "png_override": "699",
             "card_id": "89",
             "set_id": "7",
             "power_id": "0",
@@ -7611,6 +7883,7 @@
             "flavor_text": "This sketch of a Water Ninja was created for a membership card design. We wanted to show how it feels to become a Water Ninja \u2013 to have such awesome power and skill. That's why we left off his mask \u2013 we wanted to see his expression!"
         },
         "90": {
+            "png_override": "700",
             "card_id": "90",
             "set_id": "7",
             "power_id": "0",
@@ -7626,6 +7899,7 @@
             "flavor_text": "When we were designing what Water Ninjas looked like, it helped to sketch them in different battle poses. We really like this early drawing we found in an artist's sketch book."
         },
         "91": {
+            "png_override": "701",
             "card_id": "91",
             "set_id": "7",
             "power_id": "0",
@@ -7641,6 +7915,7 @@
             "flavor_text": "\"Dude. Soooo loving the shades. They make me even stronger and more silent. Maybe later we can hang out and I'll eat a Puffle O to entertain 'ya.\""
         },
         "92": {
+            "png_override": "702",
             "card_id": "92",
             "set_id": "7",
             "power_id": "0",
@@ -7656,6 +7931,7 @@
             "flavor_text": "\"You think this is fast? You should see how I move when I get shot from a cannon! It's a riot! And I think, actually, it increases happiness.\""
         },
         "93": {
+            "png_override": "703",
             "card_id": "93",
             "set_id": "7",
             "power_id": "0",
@@ -7671,6 +7947,7 @@
             "flavor_text": "\"Paints, creativity, and music,\" Chirp replies with whimsy. \"Mix those up with some imagination and you got a masterpiece, my friends, a masterpiece!\""
         },
         "94": {
+            "png_override": "704",
             "card_id": "94",
             "set_id": "7",
             "power_id": "0",
@@ -7686,6 +7963,7 @@
             "flavor_text": "\"I love bubbles! They're beautiful to blow. Bouncy. Breathtaking. Transparent perfection, I say!\""
         },
         "95": {
+            "png_override": "705",
             "card_id": "95",
             "set_id": "7",
             "power_id": "0",
@@ -7701,6 +7979,7 @@
             "flavor_text": "When a ninja wears all the parts of the Water Suit, they will have the power to control weather. Wearing only the suit, press 'D', and a wave of water will surge around you.[10]"
         },
         "96": {
+            "png_override": "706",
             "card_id": "96",
             "set_id": "7",
             "power_id": "0",
@@ -7716,6 +7995,7 @@
             "flavor_text": "\"Um, nope! Can't touch this propeller hat,\" Flit laughs loudly. \"It takes tons of practice... Even I need it! Recall Christmas 2008 when I got stuck sideways in a tree?!\""
         },
         "97": {
+            "png_override": "707",
             "card_id": "97",
             "set_id": "7",
             "power_id": "0",
@@ -7731,6 +8011,7 @@
             "flavor_text": "\"It's so cool to bounce around like my ball,\" he declares. \"By the way... it rolled under a ginormous pile of snow and though I'm small, round, and can roll, I'm a bit too puffy. Can you help?\""
         },
         "98": {
+            "png_override": "709",
             "card_id": "98",
             "set_id": "7",
             "power_id": "0",
@@ -7746,6 +8027,7 @@
             "flavor_text": "\"From this snowman emerges the almighty Niblet, the might green puffle! He's been trying to become a white puffle by hiding in the snow.\""
         },
         "99": {
+            "png_override": "711",
             "card_id": "99",
             "set_id": "7",
             "power_id": "0",
@@ -7761,6 +8043,7 @@
             "flavor_text": "Sometimes rounding up puffles feels a little like chasing a rainbow. Lots of colors, but the closer you get the farther away it seems."
         },
         "100": {
+            "png_override": "713",
             "card_id": "100",
             "set_id": "7",
             "power_id": "0",
@@ -7776,6 +8059,7 @@
             "flavor_text": "Such a popular myth, they made a Stage play about it. Does this puffle really live under the 'berg?"
         },
         "101": {
+            "png_override": "714",
             "card_id": "101",
             "set_id": "7",
             "power_id": "0",
@@ -7791,6 +8075,7 @@
             "flavor_text": "Swoosh, the mysterious meteor puffle flies through the air with the greatest of ease..."
         },
         "102": {
+            "png_override": "715",
             "card_id": "102",
             "set_id": "7",
             "power_id": "0",
@@ -7806,6 +8091,7 @@
             "flavor_text": "A multi-colored legend, or just a creative little yellow puffle who has been playing with paint?"
         },
         "103": {
+            "png_override": "716",
             "card_id": "103",
             "set_id": "7",
             "power_id": "0",
@@ -7821,6 +8107,7 @@
             "flavor_text": "\"I'm telling ya, it was huge! Twice the size of a penguin and it had claws like a crab. I was shaking in my snow boots!\""
         },
         "104": {
+            "png_override": "717",
             "card_id": "104",
             "set_id": "7",
             "power_id": "0",
@@ -7836,6 +8123,7 @@
             "flavor_text": "\"Turbo is my black puffle. It rolls its eyes a lot,\" replies the penguin as he feeds his pet a flipper full of Puffle O's. \"It really gets fired up when I take it out for a walk.\""
         },
         "105": {
+            "png_override": "718",
             "card_id": "105",
             "set_id": "7",
             "power_id": "0",
@@ -7851,6 +8139,7 @@
             "flavor_text": "\"As an employee, I value the blue puffles,\" replies the staff member. \"They are loyal, easy to take care of, and fun to play ball with. You can't go wrong with a blue puffle.\""
         },
         "106": {
+            "png_override": "719",
             "card_id": "106",
             "set_id": "7",
             "power_id": "0",
@@ -7866,6 +8155,7 @@
             "flavor_text": "\"This is my pink puffle, Cutie! I named it that because I think its eyes are sooo adorable,\" continues the ballet dancer. \"Plus it matches my outfit!\""
         },
         "107": {
+            "png_override": "720",
             "card_id": "107",
             "set_id": "7",
             "power_id": "0",
@@ -7881,6 +8171,7 @@
             "flavor_text": "\"My puffle Greenie is the silliest puffle I've ever met, which is why we get along so well,\" she giggles. \"I love it when it plays on its unicycle \u2013 it's so funny!\""
         },
         "108": {
+            "png_override": "721",
             "card_id": "108",
             "set_id": "7",
             "power_id": "0",
@@ -7896,6 +8187,7 @@
             "flavor_text": "\"Oh! Look at that one over there blowing bubbles! That one is sooo cute \u2013 it should be my pet,\" she exclaims. \"I'll make it Princess Purple because I love princesses and purple!\""
         },
         "109": {
+            "png_override": "722",
             "card_id": "109",
             "set_id": "7",
             "power_id": "0",
@@ -7911,6 +8203,7 @@
             "flavor_text": "\"This is my sidekick on my adventures. I named it Fireball because it's so fast when it goes flying out of its cannon like whooooosh! Look, it's going again!\""
         },
         "110": {
+            "png_override": "44",
             "card_id": "110",
             "set_id": "7",
             "power_id": "0",
@@ -7927,6 +8220,7 @@
         },
         "111": {
             "rare": true,
+            "png_override": "660",
             "card_id": "111",
             "set_id": "7",
             "power_id": "0",
@@ -7943,6 +8237,7 @@
         },
         "112": {
             "rare": true,
+            "png_override": "661",
             "card_id": "112",
             "set_id": "7",
             "power_id": "0",
@@ -7959,6 +8254,7 @@
         },
         "113": {
             "rare": true,
+            "png_override": "662",
             "card_id": "113",
             "set_id": "7",
             "power_id": "0",
@@ -7975,6 +8271,7 @@
         },
         "114": {
             "rare": true,
+            "png_override": "663",
             "card_id": "114",
             "set_id": "7",
             "power_id": "0",
@@ -7991,6 +8288,7 @@
         },
         "115": {
             "rare": true,
+            "png_override": "664",
             "card_id": "115",
             "set_id": "7",
             "power_id": "0",
@@ -8007,6 +8305,7 @@
         },
         "116": {
             "rare": true,
+            "png_override": "665",
             "card_id": "116",
             "set_id": "7",
             "power_id": "0",
@@ -8023,6 +8322,7 @@
         },
         "117": {
             "rare": true,
+            "png_override": "666",
             "card_id": "117",
             "set_id": "7",
             "power_id": "0",
@@ -8039,6 +8339,7 @@
         },
         "118": {
             "rare": true,
+            "png_override": "667",
             "card_id": "118",
             "set_id": "7",
             "power_id": "0",
@@ -8055,6 +8356,7 @@
         },
         "119": {
             "rare": true,
+            "png_override": "668",
             "card_id": "119",
             "set_id": "7",
             "power_id": "0",
@@ -8071,6 +8373,7 @@
         },
         "120": {
             "rare": true,
+            "png_override": "669",
             "card_id": "120",
             "set_id": "7",
             "power_id": "0",
@@ -8086,6 +8389,7 @@
             "flavor_text": "Pink puffles are sporty creatures \u2013 they also like water. Adopt a pink puffle at the Pet Shop and take it into the Aqua Grabber game to help you!"
         },
         "121": {
+            "png_override": "724",
             "card_id": "121",
             "set_id": "7",
             "power_id": "5",
@@ -8101,6 +8405,7 @@
             "flavor_text": "\"Okay, I just need to catch a few more for the Pet Shop. Easy now... steady... steady...\" says the penguin, thinking out loud. \"It takes real concentration to do this!\""
         },
         "122": {
+            "png_override": "725",
             "card_id": "122",
             "set_id": "7",
             "power_id": "11",
@@ -8116,6 +8421,7 @@
             "flavor_text": "In November 2010, Fire Ninjas gathered and used their powers to help get the water flowing to the new Water Dojo. To become a ninja, head to the Dojo and play Card-Jitsu."
         },
         "123": {
+            "png_override": "726",
             "card_id": "123",
             "set_id": "7",
             "power_id": "15",
@@ -8131,6 +8437,7 @@
             "flavor_text": "In the  October 2010 Halloween Party, we waddled through mazes. To open the doors into the Dark Chamber, we had to mimic the creepy organ music."
         },
         "124": {
+            "png_override": "727",
             "card_id": "124",
             "set_id": "7",
             "power_id": "17",
@@ -8146,6 +8453,7 @@
             "flavor_text": "Getting a giant pumpkin to the lighthouse was just one part of the 2010 Halloween Party. Penguins got their costumes ready from the October edition of Penguin Style."
         },
         "125": {
+            "png_override": "728",
             "card_id": "125",
             "set_id": "7",
             "power_id": "12",
@@ -8161,6 +8469,7 @@
             "flavor_text": "One of the Captain's favorite snacks is surprising... stinky cheese! Even without cheese, you may find Rockhopper on his Migrator ship, when it docks in Club Penguin."
         },
         "126": {
+            "png_override": "730",
             "card_id": "126",
             "set_id": "7",
             "power_id": "8",
@@ -8176,6 +8485,7 @@
             "flavor_text": "There are many ways to earn coins in Club Penguin. But the clam that holds the giant pearl in Aqua Grabber might be the sparkliest way of all. Tip: Don't wake up the clam!"
         },
         "127": {
+            "png_override": "731",
             "card_id": "127",
             "set_id": "7",
             "power_id": "14",
@@ -8191,6 +8501,7 @@
             "flavor_text": "Ninjas who play Card-Jitsu Water can earn stamps that will show off their ninja skills. Go to the Dojo and challenge your opponents to race towards the gong at the Waterfall."
         },
         "128": {
+            "png_override": "733",
             "card_id": "128",
             "set_id": "7",
             "power_id": "17",
@@ -8206,6 +8517,7 @@
             "flavor_text": "From the Mine, you can take on the task of rescuing puffles in peril when you play Puffle Rescue. And as you navigate the waters, never forget that creatures like squid and sharks are hot on your flippers."
         },
         "129": {
+            "png_override": "734",
             "card_id": "129",
             "set_id": "7",
             "power_id": "16",
@@ -8221,6 +8533,7 @@
             "flavor_text": "Hone your battle skills by challenging ninja opponents at the Fire Dojo. You'll need patience, practice, power. Also, to master this element and become a Fire Ninja, some hot sauce is recommended."
         },
         "130": {
+            "png_override": "735",
             "card_id": "130",
             "set_id": "7",
             "power_id": "13",
@@ -8236,6 +8549,7 @@
             "flavor_text": "On January 13, 2011, the EPF was attacked by enemy bugs. Agents repelled the attack with a new program called System Defender. Now any agent can train in this game at the Command Room."
         },
         "131": {
+            "png_override": "736",
             "card_id": "131",
             "set_id": "7",
             "power_id": "7",
@@ -8251,6 +8565,7 @@
             "flavor_text": "Originally brought to Club Penguin from Rockhopper Island, adventurous red puffles love cannons. You can adopt a red puffle from the Pet Shop."
         },
         "132": {
+            "png_override": "737",
             "card_id": "132",
             "set_id": "7",
             "power_id": "11",
@@ -8266,6 +8581,7 @@
             "flavor_text": "\"It's incredibly complex. A machine made from all sorts of things around the island.\" During the Wilderness Expedition of January 2011, we were challenged to make the machine work."
         },
         "133": {
+            "png_override": "738",
             "card_id": "133",
             "set_id": "7",
             "power_id": "15",
@@ -8281,6 +8597,7 @@
             "flavor_text": "The  Ultimate Protobot and his minions wreak havoc in System Defender. Luckily, the Elite Penguin Force has strong defenses to counteract their attempts. Agents, your orders are in the Command Room."
         },
         "134": {
+            "png_override": "739",
             "card_id": "134",
             "set_id": "7",
             "power_id": "18",
@@ -8296,6 +8613,7 @@
             "flavor_text": "At the Holiday Party 2010, the island was brightly lit. How many lights, you ask? Over 1000 bulbs shone bright in the  Courtyard alone. Sensei really, really likes decorating."
         },
         "135": {
+            "png_override": "740",
             "card_id": "135",
             "set_id": "7",
             "power_id": "12",
@@ -8311,6 +8629,7 @@
             "flavor_text": "In Club Penguin's  Game Day for Wii, the Rollin' Riot game's challenge is to make the biggest snowball... just make sure your opponents don't take yours!"
         },
         "136": {
+            "png_override": "743",
             "card_id": "136",
             "set_id": "7",
             "power_id": "14",
@@ -8326,6 +8645,7 @@
             "flavor_text": "We were excited to go on a Wilderness Expedition in January 2011. Once through the  Tree Maze and onto the boat, we crossed a bay and were faced with cliffs and caves. Then we discovered the inventive brown puffle!"
         },
         "137": {
+            "png_override": "744",
             "card_id": "137",
             "set_id": "7",
             "power_id": "6",
@@ -8341,6 +8661,7 @@
             "flavor_text": "Filling the Lighthouse during  Coins for Change 2010 was an awesome challenge. We did it! And the virtual Club Penguin coins meant real donations went to help kids around the globe."
         },
         "138": {
+            "png_override": "745",
             "card_id": "138",
             "set_id": "7",
             "power_id": "14",
@@ -8356,6 +8677,7 @@
             "flavor_text": "The last step to becoming a Water Ninja is defeating Sensei in battle. Though his skills are legendary, the way to defeating him is dedication. Keep trying, no matter what, and victory will be yours."
         },
         "139": {
+            "png_override": "746",
             "card_id": "139",
             "set_id": "7",
             "power_id": "13",
@@ -8371,6 +8693,7 @@
             "flavor_text": "If you're looking for an edge in the game Jet Pack Adventure, take a green puffle with you. These talented fliers will go around collecting coins, and will look for extra fuel if you start to run out!"
         },
         "140": {
+            "png_override": "747",
             "card_id": "140",
             "set_id": "7",
             "power_id": "7",
@@ -8386,6 +8709,7 @@
             "flavor_text": "The Water Dojo is a place of mist and mystery. Ninjas journey here to train in the ancient art of Card-Jitsu Water. Speak with Sensei to arrange a match. Those who do must be prepared to compete... and to swim."
         },
         "141": {
+            "png_override": "748",
             "card_id": "141",
             "set_id": "7",
             "power_id": "10",
@@ -8401,6 +8725,7 @@
             "flavor_text": "A snowflake. A single sheet of blank paper. A white puffle. Small things can sometimes conceal great power."
         },
         "142": {
+            "png_override": "749",
             "card_id": "142",
             "set_id": "7",
             "power_id": "4",
@@ -8416,6 +8741,7 @@
             "flavor_text": "\"Avast!\" cries Rockhopper. \"What be them flares on the horizon? What's that Yarr? Arr, I think it be a message from me buddies at Club Penguin too.\""
         },
         "143": {
+            "png_override": "90",
             "card_id": "143",
             "set_id": "1",
             "power_id": "6",
@@ -8431,6 +8757,7 @@
             "flavor_text": "\"I've taken the Aqua Grabber out on many deep sea salvage missions,\" proclaims the purple penguin. \"My pink puffle helps me find the really rare treasures.\""
         },
         "144": {
+            "png_override": "",
             "card_id": "144",
             "set_id": "",
             "power_id": "",
@@ -8446,6 +8773,7 @@
             "flavor_text": "When brown puffles were discovered in January 2011, their talents for technology were quickly discovered. In this photograph, a brown puffle is seen using an advanced quantum laser to enlarge a cookie."
         },
         "145": {
+            "png_override": "",
             "card_id": "145",
             "set_id": "",
             "power_id": "",
@@ -8462,6 +8790,7 @@
         },
         "146": {
             "rare": true,
+            "png_override": "750",
             "flavor_text": "\"Talk about an incredible job,\" the Keeper exclaims in the middle of a bounce. \"Every day dancing is required...\"",
             "card_id": "146",
             "set_id": "7",
@@ -8478,6 +8807,7 @@
         },
         "147": {
             "rare": true,
+            "png_override": "741",
             "card_id": "147",
             "set_id": "7",
             "power_id": "5",
@@ -8494,6 +8824,7 @@
         },
         "148": {
             "rare": true,
+            "png_override": "742",
             "card_id": "148",
             "set_id": "7",
             "power_id": "8",
@@ -8510,6 +8841,7 @@
         },
         "149": {
             "rare": true,
+            "png_override": "732",
             "card_id": "149",
             "set_id": "7",
             "power_id": "6",
@@ -8526,6 +8858,7 @@
         },
         "150": {
             "rare": true,
+            "png_override": "729",
             "card_id": "150",
             "set_id": "7",
             "power_id": "5",
@@ -8543,6 +8876,7 @@
     },
     "8": {
         "1": {
+            "png_override": "801",
             "flavor_text": "Sweeping the sands of liberty. Only the truest of sand castles may be thwarted by the mightiest of penguins.",
             "card_id": "1",
             "set_id": "8",
@@ -8558,6 +8892,7 @@
             "is_active": "1"
         },
         "2": {
+            "png_override": "802",
             "flavor_text": "A fortress mighty enough for a king. A traveling agent ready for deployment.",
             "card_id": "2",
             "set_id": "8",
@@ -8573,6 +8908,7 @@
             "is_active": "1"
         },
         "3": {
+            "png_override": "803",
             "flavor_text": "Nobody kills the messenger.",
             "card_id": "3",
             "set_id": "8",
@@ -8588,6 +8924,7 @@
             "is_active": "1"
         },
         "4": {
+            "png_override": "804",
             "flavor_text": "There is no war in Ba Sing Se.",
             "card_id": "4",
             "set_id": "8",

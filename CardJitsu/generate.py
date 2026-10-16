@@ -184,7 +184,7 @@ def getFlavorText(data: dict):
 
     return '\n'.join(final_text)
 
-def regularCardBuild():
+def regularCardBuild(data: dict, set_num: int, card_num: str):
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
 
@@ -238,15 +238,9 @@ def regularCardBuild():
     text_radius = title_font.getlength(data['label'].upper()) // 2
 
     flavor_text = getFlavorText(data)
-    if len(data['card_id']) < 3:
-        card_id = data['card_id']
-    elif data['card_id'][0] == '7':
-        card_id = f'1{data["card_id"][1:]}'
-    else:
-        card_id = data['card_id'][1:]
 
     # This removes any leading 0's
-    card_id = str(int(card_id))
+    card_id = str(int(card_num))
 
     if data['element'] == 's':
         reg_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(0, 0, 0))
@@ -357,7 +351,7 @@ offset_lookup = {
         '7': low_down,
         '8': low_down,
         '12': low_down,
-        '17': low_down,
+        '17': med_down,
         '19': low_down,
         '21': low_down,
         '22': low_down,
@@ -428,36 +422,33 @@ offset_lookup = {
         '55': low_down,
         '57': low_down,
         '58': low_down,
-        # '661': low_down,
-        # '663': low_down,
-        # '664': med_down,
-        # '666': low_down,
-        # '668': low_down,
-        # '669': low_down,
-        # '671': low_down,
-        # '674': low_down,
-        # '678': low_down,
-        # '683': low_down,
-        # '684': low_down,
-        # # '688': low_down, # BROKEN!
-        # '691': low_down,
-        # '692': low_down,
-        # '695': low_down,
-        # '696': low_down,
-        # '697': low_down,
-        # '698': low_down,
-        # '700': low_down,
-        # '701': med_down,
-        # '720': low_down,
-        # # '723': low_down, # WRONG IMAGE
-        # '727': low_up,
-        # '739': low_down,
-        # '740': low_down,
-        # '743': med_down,
-        # '747': low_down,
+        '61': low_down,
+        '62': low_down,
+        '64': low_down,
+        '68': low_down,
+        '73': low_down,
+        '74': low_down,
+        '81': low_down,
+        '82': med_down,
+        '85': low_down,
+        '86': low_down,
+        '87': low_down,
+        '88': low_down,
+        '90': low_down,
+        '91': low_down,
+        '107': low_down,
+        '115': med_down,
+        '117': low_down,
+        '119': tiny_down,
+        '120': tiny_down,
+        '124': low_up,
+        '136': med_down,
+        '139': low_up,
+        '140': low_down,
+        '143': low_up,
+        '146': low_up,
     },
-    '8': {
-    },
+    '8': {},
 }
 
 for set_num, card_list in cards_json.items():
@@ -468,19 +459,19 @@ for set_num, card_list in cards_json.items():
             customizePenguin()
             continue
 
-        if set_num != '3': continue
+        if set_num != '8': continue
 
         # Creating normal card
-        regularCardBuild()
+        regularCardBuild(data, set_num, card_num)
 
-    # Automating placing all the cards on sheets of paper.
+# Automating placing all the cards on sheets of paper.
 
-    # 300 pixels per inch
-    # width  = int(8.5 * 300)
-    # height = int(11 * 300)
-    # while True:
-    #     sheet = Image.new('RGBA', (width, height))
-    #     # 50px offset to start
-    #     x = 50
-    #     y = 50
-    #     break
+# 300 pixels per inch
+# width  = int(8.5 * 300)
+# height = int(11 * 300)
+# while True:
+#     sheet = Image.new('RGBA', (width, height))
+#     # 50px offset to start
+#     x = 50
+#     y = 50
+#     break

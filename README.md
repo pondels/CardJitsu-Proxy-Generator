@@ -19,20 +19,19 @@ Set 1:
 Set 2:
     Cards 20-30 not generated, as they are duplicates
 Set 3:
-    Club Penguin Times (201) using wrong image
-    Coins for Change (244) using wrong image
+    Club Penguin Times (1) using wrong image
+    Coins for Change (44) using wrong image
 Set 4:
     April Fool's Day Party art is aids
 Set 5:
     Fire Deck uses wrong image
+    Fire Ninja (27) has a red infill opposed to a holographic infill
 Set 6:
     Water Sensei promo card missing
     Water Ninja promo card missing
     Water Video Sketch promo card missing
 Set 7:
     Water Ninja (688) is missing its texture
-    Yellow Puffle (723) using the wrong image
-    Aqua Grabber missing
     Puffle Science! missing
     Puffle Partying missing
 

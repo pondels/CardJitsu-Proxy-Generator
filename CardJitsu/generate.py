@@ -195,9 +195,16 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
         return
 
     card_image = Image.open(f'./downloaded_cards/{data['png_override']}.png')
-    card_image = card_image.resize((850, 850))
-    y_offset = offset_lookup[set_num].get(card_num, 0)
-    image.paste(card_image, (-50, -100+y_offset))
+    # We don't want to scale the image
+    if data.get('scale_image') is not None and data['scale_image']:
+        card_image = card_image.resize((850, 850))
+
+    offset = (0, 0)
+    if data.get('offset_image') is None or data['offset_image']:
+        y_offset = offset_lookup[set_num].get(card_num, 0)
+        offset = (-50, -100+y_offset)
+
+    image.paste(card_image, offset)
 
     # Drawing the bottom 3 colors based on the element
     color_background = color_key['tri_color'][data['element']].copy()
@@ -215,7 +222,7 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
     if data.get('rare'):
         penguin_set = color_key['penguin_set']['rare'].copy()
     else:
-        penguin_set = color_key['penguin_set'][data['set_id']].copy()
+        penguin_set = color_key['penguin_set'][set_num].copy()
     
     if data.get('rare') and data.get('description'):
         white_mask.paste(penguin_set, mask=penguin_set)
@@ -245,11 +252,11 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
     if data['element'] == 's':
         reg_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(0, 0, 0))
         reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
-        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[data["set_id"]]}', font=flavor_font, fill=(0, 0, 0))
+        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=flavor_font, fill=(0, 0, 0))
     else:
         mask_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(255, 255, 255))
         reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(255, 255, 255))
-        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[data["set_id"]]}', font=flavor_font, fill=(255, 255, 255))
+        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=flavor_font, fill=(255, 255, 255))
 
     description = data.get('description').upper()
     if description:
@@ -458,8 +465,6 @@ for set_num, card_list in cards_json.items():
         if data['label'].lower() == 'customize your penguin':
             customizePenguin()
             continue
-
-        if set_num != '8': continue
 
         # Creating normal card
         regularCardBuild(data, set_num, card_num)

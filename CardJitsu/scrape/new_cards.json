@@ -6412,6 +6412,9 @@
             "flavor_text": ""
         },
         "111": {
+            "png_override": "1001",
+            "scale_image": false,
+            "offset_image": false,
             "card_id": "111",
             "set_id": "6",
             "power_id": "",
@@ -6427,6 +6430,10 @@
             "flavor_text": "Masters of Card-Jitsu will face a wave of new challenges in the Water Dojo. Train to beat your opponents and defeat Sensei. Then you'll reach your destiny, and become a Water Ninja."
         },
         "112": {
+            "png_override": "1004",
+            "scale_image": false,
+            "offset_image": false,
+            "offset": [0, 0],
             "card_id": "112",
             "set_id": "6",
             "power_id": "",
@@ -6442,6 +6449,9 @@
             "flavor_text": "A Ninja mastering the element of water will earn five powerful items - the Waved Sandals, the Waterfall Coat, the Torrent Mask, the Helmet of Oceans and the Water Gem."
         },
         "113": {
+            "png_override": "1005",
+            "scale_image": false,
+            "offset_image": false,
             "card_id": "113",
             "set_id": "6",
             "power_id": "",
@@ -8757,7 +8767,9 @@
             "flavor_text": "\"I've taken the Aqua Grabber out on many deep sea salvage missions,\" proclaims the purple penguin. \"My pink puffle helps me find the really rare treasures.\""
         },
         "144": {
-            "png_override": "",
+            "png_override": "1003",
+            "scale_image": false,
+            "offset_image": false,
             "card_id": "144",
             "set_id": "",
             "power_id": "",
@@ -8773,7 +8785,9 @@
             "flavor_text": "When brown puffles were discovered in January 2011, their talents for technology were quickly discovered. In this photograph, a brown puffle is seen using an advanced quantum laser to enlarge a cookie."
         },
         "145": {
-            "png_override": "",
+            "png_override": "1002",
+            "scale_image": false,
+            "offset_image": false,
             "card_id": "145",
             "set_id": "",
             "power_id": "",

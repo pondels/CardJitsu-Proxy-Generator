@@ -5,11 +5,6 @@ A repository for creating proxy cards for Club Penguin's Card jitsu
 https://cardjitsu.co/
 https://clubpenguin.fandom.com/wiki/List_of_Card-Jitsu_sets
 
-# NOTE Images that use the wrong cards for whatever reason
-# 668 is completely busted
-# Puffle partying is not accounted for
-# Puffle science is not accounted for
-
 Lots of cards from their original swf files have their top left corner missing
 most likely to preserve data in the final render, so those have to manually be fixed.
 

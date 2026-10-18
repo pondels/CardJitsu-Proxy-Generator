@@ -705,7 +705,7 @@
             "flavor_text": "\"I knew I wanted a yellow puffle from the moment I saw it in the Forest at Halloween,\" she replies. \"My puffle Lemon likes to paint just like I do.\""
         },
         "45": {
-            "png_override": "45",
+            "png_override": "87",
             "card_id": "45",
             "set_id": "1",
             "power_id": "0",
@@ -1377,7 +1377,7 @@
             "flavor_text": "\"I still remember it plain as day. There was this big rumble and all this snow came WOOOSHING down the mountain!\" recalls a witness. \"We couldn't go sledding for like a week!\""
         },
         "87": {
-            "png_override": "87",
+            "png_override": "45",
             "card_id": "87",
             "set_id": "1",
             "power_id": "14",

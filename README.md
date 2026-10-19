@@ -11,17 +11,15 @@ most likely to preserve data in the final render, so those have to manually be f
 NOTE Stickers and customize your penguin backgrounds w/ penguins need to be migrated over
 
 Set 2:
-    Cards 20-30 not generated, as they are duplicates
-Set 3:
+    Cards 20-30 not generated, get those in.
+    Set total should be 30 and not 19
+Set 3: (I'm ignoring these unless done otherwise. I like the other art more)
     Club Penguin Times (1) using wrong image
     Coins for Change (44) using wrong image
-Set 4:
-    April Fool's Day Party art is aids
+Set 4: (May fix if I'm not lazy to redo the entire card)
+    April Fool's Day Party (26) art is aids
 Set 5:
-    Fire Deck uses wrong image
     Fire Ninja (27) has a red infill opposed to a holographic infill
-Set 7:
-    Water Ninja (688) is missing its texture
 
 References from cardjitsu.co were made to accurately fill in those holes
 Cards needing fixing still

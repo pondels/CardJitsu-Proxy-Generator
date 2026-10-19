@@ -185,6 +185,15 @@ def getFlavorText(data: dict):
 
     return '\n'.join(final_text)
 
+def maxAlpha(image: Image):
+    image_data = image.load()
+    for x in range(image.width):
+        for y in range(image.height):
+            # We found pixel data, nuke it from the original
+            pixel = image_data[x, y]
+            if pixel[3] > 0:
+                image.putpixel((x, y), (pixel[0], pixel[1], pixel[2], 255))
+
 def regularCardBuild(data: dict, set_num: int, card_num: str):
     # Opening the card image
     image = Image.new(mode='RGBA', size=(750, 1050))
@@ -211,6 +220,8 @@ def regularCardBuild(data: dict, set_num: int, card_num: str):
     card_fix_path = f'./fixed_cards/set{set_num}/{card_num}.png'
     if os.path.exists(card_fix_path):
         card_fix = Image.open(card_fix_path)
+        # Setting the transparency of each used pixel to 255
+        maxAlpha(card_fix)
         image.paste(card_fix, mask=card_fix)
 
     # Drawing the bottom 3 colors based on the element
@@ -530,7 +541,7 @@ for set_num, card_list in cards_json.items():
         # NOTE This is purely here to filter out any
         # unwanted cards for the sake of quick generation
         # Adjust this however you would like for testing generation
-        # if set_num != '1' or card_num != '2': continue
+        if set_num != '5': continue
 
         # Creating normal card
         regularCardBuild(data, set_num, card_num)

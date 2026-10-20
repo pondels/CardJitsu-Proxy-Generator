@@ -1505,6 +1505,7 @@
             "flavor_text": "\"To be as the moon amongst the shadows, one must follow the code of honor and loyalty. Each movement must be as precise as a dance. Patience is both rewarded and a reward.\""
         },
         "95": {
+            "png_override": "953",
             "card_id": "95",
             "set_id": "1",
             "power_id": "",
@@ -1520,6 +1521,7 @@
             "flavor_text": ""
         },
         "96": {
+            "png_override": "969",
             "card_id": "96",
             "set_id": "1",
             "power_id": "",
@@ -1535,6 +1537,7 @@
             "flavor_text": ""
         },
         "97": {
+            "png_override": "937",
             "card_id": "97",
             "set_id": "1",
             "power_id": "",
@@ -1550,6 +1553,7 @@
             "flavor_text": ""
         },
         "98": {
+            "png_override": "987",
             "card_id": "98",
             "set_id": "1",
             "power_id": "",
@@ -1565,6 +1569,7 @@
             "flavor_text": ""
         },
         "99": {
+            "png_override": "980",
             "card_id": "99",
             "set_id": "1",
             "power_id": "",
@@ -1580,6 +1585,7 @@
             "flavor_text": ""
         },
         "100": {
+            "png_override": "939",
             "card_id": "100",
             "set_id": "1",
             "power_id": "o",
@@ -1595,6 +1601,7 @@
             "flavor_text": ""
         },
         "101": {
+            "png_override": "919",
             "card_id": "101",
             "set_id": "1",
             "power_id": "",
@@ -1610,6 +1617,7 @@
             "flavor_text": ""
         },
         "102": {
+            "png_override": "912",
             "card_id": "102",
             "set_id": "1",
             "power_id": "",
@@ -1625,6 +1633,7 @@
             "flavor_text": ""
         },
         "103": {
+            "png_override": "932",
             "card_id": "103",
             "set_id": "1",
             "power_id": "",
@@ -1640,6 +1649,7 @@
             "flavor_text": ""
         },
         "104": {
+            "png_override": "978",
             "card_id": "104",
             "set_id": "1",
             "power_id": "",
@@ -1655,6 +1665,7 @@
             "flavor_text": ""
         },
         "105": {
+            "png_override": "963",
             "card_id": "105",
             "set_id": "1",
             "power_id": "",
@@ -1670,6 +1681,7 @@
             "flavor_text": ""
         },
         "106": {
+            "png_override": "974",
             "card_id": "106",
             "set_id": "1",
             "power_id": "",
@@ -1685,6 +1697,7 @@
             "flavor_text": ""
         },
         "107": {
+            "png_override": "984",
             "card_id": "107",
             "set_id": "1",
             "power_id": "",
@@ -1700,6 +1713,7 @@
             "flavor_text": ""
         },
         "108": {
+            "png_override": "982",
             "card_id": "108",
             "set_id": "1",
             "power_id": "",
@@ -1715,6 +1729,7 @@
             "flavor_text": ""
         },
         "109": {
+            "png_override": "913",
             "card_id": "109",
             "set_id": "1",
             "power_id": "",
@@ -1730,6 +1745,7 @@
             "flavor_text": ""
         },
         "110": {
+            "png_override": "971",
             "card_id": "110",
             "set_id": "1",
             "power_id": "",

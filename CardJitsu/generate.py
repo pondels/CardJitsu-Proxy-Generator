@@ -15,9 +15,16 @@ set_count = {
 
 color_key = {
     'tri_color': {
-        'f': None,
-        's': None,
-        'w': None,
+        'regular': {
+            'f': None,
+            's': None,
+            'w': None,
+        },
+        'custom': {
+            'f': None,
+            's': None,
+            'w': None,
+        },
     },
     'top_left': {
         'r': None,
@@ -87,15 +94,16 @@ color_key = {
         '': {},
     },
     'basic': {
-        'power_outline': Image.open('./files/Basic/power_card_outline.png'),
-        'card_outline':  Image.open('./files/Basic/card_outline.png'),
-        'power_bg':      Image.open('./files/Basic/power_card_text_background.png'),
+        'power_outline':        Image.open('./files/Basic/power_card_outline.png'),
+        'card_outline_regular': Image.open('./files/Basic/card_outline_regular.png'),
+        'card_outline_custom':  Image.open('./files/Basic/card_outline_custom.png'),
+        'power_bg':             Image.open('./files/Basic/power_card_text_background.png'),
     }
 }
 
 # Setting up the color key
-def setTriColor(key, k1, k2, k3):
-    bottom_background = Image.open('./files/Basic/bottom_background.png')
+def setTriColor(key, k1, k2, k3, card_type):
+    bottom_background = Image.open(f'./files/Basic/bottom_background_{card_type}.png')
     image = bottom_background.load()
     for x in range(bottom_background.width):
         for y in range(bottom_background.height):
@@ -106,7 +114,7 @@ def setTriColor(key, k1, k2, k3):
             if image[x, y][0] == 132: 
                 bottom_background.putpixel((x, y), k3)
 
-    color_key['tri_color'][key] = bottom_background
+    color_key['tri_color'][card_type][key] = bottom_background
 
 def setTopLeft(key, k1):
     bottom_background = Image.open('./files/Basic/top_left_background.png')
@@ -119,9 +127,13 @@ def setTopLeft(key, k1):
     color_key['top_left'][key] = bottom_background
 
 # Setting up the bottom color images
-setTriColor('f', (230, 130, 55),  (229, 90, 59),   (219, 42, 50))
-setTriColor('s', (244, 244, 246), (230, 233, 234), (217, 220, 221))
-setTriColor('w', (67, 127, 182),  (65, 102, 165),  (55, 69, 128))
+setTriColor('f', (230, 130, 55),  (229, 90, 59),   (219, 42, 50), 'regular')
+setTriColor('s', (244, 244, 246), (230, 233, 234), (217, 220, 221), 'regular')
+setTriColor('w', (67, 127, 182),  (65, 102, 165),  (55, 69, 128), 'regular')
+
+setTriColor('f', (230, 130, 55),  (229, 90, 59),   (219, 42, 50), 'custom')
+setTriColor('s', (244, 244, 246), (230, 233, 234), (217, 220, 221), 'custom')
+setTriColor('w', (67, 127, 182),  (65, 102, 165),  (55, 69, 128), 'custom')
 
 # Setting up the top left colors
 setTopLeft('p', (163, 153, 202))
@@ -131,419 +143,525 @@ setTopLeft('y', (251, 234, 44))
 setTopLeft('b', (16, 72, 160))
 setTopLeft('r', (227, 60, 37))
 
-def getAbilityImage(description):
-    description = description.lower()
-    if 'cannot be played next round' in description:
-        blocked_element = description.split('cannot')[0].split(',')[1].strip()[0]
-        return Image.open(f'./files/Ability/Block/{blocked_element}.png')
-    elif f"discard one" in description:
-        discard_type = description.split('opponent\'s')[1].strip()[0]
-        return Image.open(f'./files/Ability/DiscardOne/{discard_type}.png')
-    elif 'cards become' in description:
-        split_desc = description.split('cards become')
-        first = split_desc[0].strip().split(' ')[-1]
-        second = split_desc[1].strip().split(' ')[0]
-        return Image.open(f'./files/Ability/Convert/{first}_to_{second}.png')
-    elif 'discard all' in description:
-        discard_type = description.split('opponent\'s')[1].strip()[0]
-        return Image.open(f'./files/Ability/DiscardAll/{discard_type}.png')
-    elif '-2' in description:
-        return Image.open(f'./files/Ability/Modify/-2.png')
-    elif '+2' in description:
-        return Image.open(f'./files/Ability/Modify/+2.png')
-    elif 'lower values win' in description:
-        return Image.open(f'./files/Ability/Modify/reverse_value.png')
-    else: print(f'SOMETHING WENT WRONG: {description}')
+class CardCreator():
 
-def mapPowerCard(image: Image, white_mask: Image, data: dict):
-    # Drawing Black Ability Background
-    ability_bg = color_key['basic']['power_bg'].copy()
-    image.paste(ability_bg, mask=ability_bg)
+    COLOR_LOOKUP = {
+        'maroon':       (128,  33,  75),
+        'green':        (  0, 153,   0),
+        'dark_green':   (  0, 102,   0),
+        'lime_green':   (138, 227,   2),
+        'brown':        (153, 102,   0),
+        'arctic_white': (240, 240, 216),
+        'peach':        (255, 102, 102),
+        'dark_purple':  (102,   0, 153),
+        'yellow':       (255, 204,   0),
+        'pink':         (255,  51, 153),
+        'black':        ( 51,  51,  51),
+        'orange':       (255, 102,   0),
+        'light_blue':   (  0, 153, 204),
+        'red':          (204,   0,   0),
+        'aqua':         (  2, 167, 151),
+        'sensei_gray':  (142, 154, 158),
+        'dot_lavender': (195, 120, 208),
+        'default_blue': ( 46,  71, 170),
+        'dark_black':   (  0,   0,   0),
+        'lavender':     (174, 159, 200),
+        'blue':         (  0,  51, 102),
+    }
 
-    # Ability white bar to mask
-    ability_outline = color_key['basic']['power_outline'].copy()
-    white_mask.paste(ability_outline, mask=ability_outline)
+    TITLE_FONT = ImageFont.truetype('./fonts/boogaloo.ttf', 44)
+    CUSTOM_TITLE_FONT = ImageFont.truetype('./fonts/boogaloo.ttf', 35)
+    FLAVOR_FONT = ImageFont.truetype('./fonts/boogaloo.ttf', 30)
+    # CardCreator.TITLE_FONT  = ImageFont.truetype('./fonts/candombe.otf', 75)
+    # CardCreator.FLAVOR_FONT = ImageFont.truetype('./fonts/candombe.otf', 37)
+    TINY_DOWN = 25
+    LOW_DOWN = 50
+    MED_DOWN = 100
+    HIGH_DOWN = 150
+    TINY_UP = -25
+    LOW_UP = -50
+    MED_UP = -100
+    HIGH_UP = -150
+    # Some cards need slight offsets. This is a generic template of those offsets
+    OFFSET_LOOKUP = {
+        '1': {
+            '2': MED_DOWN,
+            '4': LOW_DOWN,
+            '7': LOW_DOWN,
+            '13': LOW_DOWN,
+            '62': LOW_DOWN,
+            '64': LOW_DOWN,
+            '71': MED_UP,
+            '73': LOW_UP,
+            '74': TINY_UP,
+            '75': LOW_UP,
+            '76': LOW_UP,
+            '90': LOW_UP,
+        },
+        '2': {
+            '4': MED_DOWN,
+        },
+        '3': {
+            '2': LOW_DOWN,
+            '6': LOW_DOWN,
+            '7': LOW_DOWN,
+            '11': LOW_DOWN,
+            '25': LOW_DOWN,
+            '27': LOW_DOWN,
+            '28': LOW_DOWN,
+            '30': LOW_DOWN,
+            '31': MED_DOWN,
+            '32': LOW_DOWN,
+            '35': LOW_DOWN,
+            '45': LOW_DOWN,
+            '46': LOW_DOWN,
+            '53': MED_UP,
+            '54': MED_UP,
+            '55': MED_UP,
+            '56': LOW_DOWN,
+            '57': MED_DOWN,
+        },
+        '4': {
+            '2': LOW_DOWN,
+            '7': LOW_DOWN,
+            '8': LOW_DOWN,
+            '12': LOW_DOWN,
+            '17': MED_DOWN,
+            '19': LOW_DOWN,
+            '21': LOW_DOWN,
+            '22': LOW_DOWN,
+            '26': MED_DOWN,
+            '28': LOW_DOWN,
+            '33': LOW_DOWN,
+            '37': LOW_DOWN,
+            '39': LOW_DOWN,
+            '42': LOW_DOWN,
+            '60': LOW_DOWN,
+        },
+        '5': {
+            '4': LOW_DOWN,
+            '19': LOW_DOWN,
+            '23': LOW_DOWN,
+            '24': LOW_DOWN,
+            '26': LOW_DOWN,
+            '27': LOW_DOWN,
+        },
+        '6': {
+            '8': LOW_DOWN,
+            '11': MED_DOWN,
+            '20': MED_DOWN,
+            '23': MED_DOWN,
+            '25': MED_DOWN,
+            '27': MED_DOWN,
+            '28': MED_DOWN,
+            '35': LOW_DOWN,
+            '37': MED_DOWN,
+            '38': LOW_DOWN,
+            '42': LOW_DOWN,
+            '44': LOW_DOWN,
+            '48': LOW_DOWN,
+            '53': LOW_DOWN,
+            '55': LOW_DOWN,
+            '56': LOW_DOWN,
+            '61': LOW_DOWN,
+            '67': LOW_DOWN,
+            '70': LOW_DOWN,
+            '74': LOW_DOWN,
+            '75': LOW_DOWN,
+            '77': LOW_DOWN,
+            '79': LOW_DOWN,
+            '81': MED_UP,
+            '87': LOW_DOWN,
+            '88': LOW_DOWN,
+            '92': LOW_DOWN,
+            '94': LOW_DOWN,
+            '95': LOW_DOWN,
+        },
+        '7': {
+            '2': LOW_DOWN,
+            '3': LOW_DOWN,
+            '5': LOW_DOWN,
+            '7': MED_DOWN,
+            '15': LOW_DOWN,
+            '17': LOW_DOWN,
+            '18': LOW_DOWN,
+            '20': MED_DOWN,
+            '22': LOW_DOWN,
+            '34': LOW_DOWN,
+            '38': LOW_DOWN,
+            '42': LOW_DOWN,
+            '44': LOW_DOWN,
+            '48': LOW_DOWN,
+            '49': LOW_DOWN,
+            '53': LOW_DOWN,
+            '55': LOW_DOWN,
+            '57': LOW_DOWN,
+            '58': LOW_DOWN,
+            '61': LOW_DOWN,
+            '62': LOW_DOWN,
+            '64': LOW_DOWN,
+            '68': LOW_DOWN,
+            '73': LOW_DOWN,
+            '74': LOW_DOWN,
+            '81': LOW_DOWN,
+            '82': MED_DOWN,
+            '85': LOW_DOWN,
+            '86': LOW_DOWN,
+            '87': LOW_DOWN,
+            '88': LOW_DOWN,
+            '90': LOW_DOWN,
+            '91': LOW_DOWN,
+            '107': LOW_DOWN,
+            '115': MED_DOWN,
+            '117': LOW_DOWN,
+            '119': TINY_DOWN,
+            '120': TINY_DOWN,
+            '124': LOW_UP,
+            '136': MED_DOWN,
+            '139': LOW_UP,
+            '140': LOW_DOWN,
+            '143': LOW_UP,
+            '146': LOW_UP,
+        },
+        '8': {},
+    }
 
-    mask_data = white_mask.load()
-    for x in range(white_mask.width):
-        for y in range(white_mask.height):
-            # We found pixel data, nuke it from the original
-            if mask_data[x, y][0] > 50 or mask_data[x, y][1] > 50 or mask_data[x, y][2] > 50:
-                image.putpixel((x, y), (0, 0, 0, 0))
+    @staticmethod
+    def getAbilityImage(description):
+        description = description.lower()
+        if 'cannot be played next round' in description:
+            blocked_element = description.split('cannot')[0].split(',')[1].strip()[0]
+            return Image.open(f'./files/Ability/Block/{blocked_element}.png')
+        elif f"discard one" in description:
+            discard_type = description.split('opponent\'s')[1].strip()[0]
+            return Image.open(f'./files/Ability/DiscardOne/{discard_type}.png')
+        elif 'cards become' in description:
+            split_desc = description.split('cards become')
+            first = split_desc[0].strip().split(' ')[-1]
+            second = split_desc[1].strip().split(' ')[0]
+            return Image.open(f'./files/Ability/Convert/{first}_to_{second}.png')
+        elif 'discard all' in description:
+            discard_type = description.split('opponent\'s')[1].strip()[0]
+            return Image.open(f'./files/Ability/DiscardAll/{discard_type}.png')
+        elif '-2' in description:
+            return Image.open(f'./files/Ability/Modify/-2.png')
+        elif '+2' in description:
+            return Image.open(f'./files/Ability/Modify/+2.png')
+        elif 'lower values win' in description:
+            return Image.open(f'./files/Ability/Modify/reverse_value.png')
+        else: print(f'SOMETHING WENT WRONG: {description}')
 
-    # Adding ability image in top right
-    ability_image = getAbilityImage(data['description'])
-    image.paste(ability_image, mask=ability_image)
+    @staticmethod
+    def mapPowerCard(image: Image, white_mask: Image, data: dict):
+        # Drawing Black Ability Background
+        ability_bg = color_key['basic']['power_bg'].copy()
+        image.paste(ability_bg, mask=ability_bg)
 
-def getFlavorText(data: dict):
-    final_text = ['']
-    for word in data['flavor_text'].split(' '):
-        if flavor_font.getlength(final_text[-1] + word) > 650:
-            final_text.append('')
+        # Ability white bar to mask
+        ability_outline = color_key['basic']['power_outline'].copy()
+        white_mask.paste(ability_outline, mask=ability_outline)
 
-        final_text[-1] += f'{word} '
+        mask_data = white_mask.load()
+        for x in range(white_mask.width):
+            for y in range(white_mask.height):
+                # We found pixel data, nuke it from the original
+                if mask_data[x, y][0] > 50 or mask_data[x, y][1] > 50 or mask_data[x, y][2] > 50:
+                    image.putpixel((x, y), (0, 0, 0, 0))
 
-    return '\n'.join(final_text)
+        # Adding ability image in top right
+        ability_image = CardCreator.getAbilityImage(data['description'])
+        image.paste(ability_image, mask=ability_image)
 
-def maxAlpha(image: Image):
-    image_data = image.load()
-    for x in range(image.width):
-        for y in range(image.height):
-            # We found pixel data, nuke it from the original
-            pixel = image_data[x, y]
-            if pixel[3] > 0:
-                image.putpixel((x, y), (pixel[0], pixel[1], pixel[2], 255))
+    @staticmethod
+    def getFlavorText(data: dict):
+        final_text = ['']
+        for word in data['flavor_text'].split(' '):
+            if CardCreator.FLAVOR_FONT.getlength(final_text[-1] + word) > 650:
+                final_text.append('')
 
-def regularCardBuild(data: dict, set_num: int, card_num: str):
-    # Opening the card image
-    image = Image.new(mode='RGBA', size=(750, 1050))
+            final_text[-1] += f'{word} '
 
-    # With the data changes, it is now misaligned to downloaded content
-    # This realigns that information
-    if not data.get('png_override'):
-        print('CARD FAILED THE VIBE CHECK!')
-        return
+        return '\n'.join(final_text)
 
-    card_image = Image.open(f'./downloaded_cards/{data['png_override']}.png')
-    # We don't want to scale the image
-    if data.get('scale_image') is None or data['scale_image'] == True:
-        card_image = card_image.resize((850, 850))
+    @staticmethod
+    def maxAlpha(image: Image):
+        image_data = image.load()
+        for x in range(image.width):
+            for y in range(image.height):
+                # We found pixel data, nuke it from the original
+                pixel = image_data[x, y]
+                if pixel[3] > 0:
+                    image.putpixel((x, y), (pixel[0], pixel[1], pixel[2], 255))
 
-    offset = (0, 0)
-    if data.get('offset_image') is None or data['offset_image']:
-        y_offset = offset_lookup[set_num].get(card_num, 0)
-        offset = (-50, -100+y_offset)
+    @staticmethod
+    def saveImage(image: Image, set_num: int, card_num: int):
+        # Saving the image to our generated cards
+        if not os.path.exists('./generated_cards'):
+            os.mkdir('./generated_cards')
 
-    image.paste(card_image, offset)
+        if not os.path.exists(f'./generated_cards/set{set_num}'):
+            os.mkdir(f'./generated_cards/set{set_num}')
 
-    # If the card has a fix to it, paste it on
-    card_fix_path = f'./fixed_cards/set{set_num}/{card_num}.png'
-    if os.path.exists(card_fix_path):
-        card_fix = Image.open(card_fix_path)
-        # Setting the transparency of each used pixel to 255
-        maxAlpha(card_fix)
-        image.paste(card_fix, mask=card_fix)
+        image.save(f'./generated_cards/set{set_num}/{card_num}.png')
 
-    # Drawing the bottom 3 colors based on the element
-    color_background = color_key['tri_color'][data['element']].copy()
-    image.paste(color_background, mask=color_background)
+    @staticmethod
+    def getBaseImage(): return Image.new(mode='RGBA', size=(750, 1050))
 
-    # Top Left Color
-    color_top_left = color_key['top_left'][data['color']].copy()
-    image.paste(color_top_left, mask=color_top_left)
+    @staticmethod
+    def regularCardBuild(data: dict, set_num: int, card_num: str):
+        # Opening the card image
+        image = CardCreator.getBaseImage()
 
-    # Symbol and number shadow to mask
-    white_mask = Image.new('RGBA', (750, 1050))
+        # With the data changes, it is now misaligned to downloaded content
+        # This realigns that information
+        if not data.get('png_override'):
+            print('CARD FAILED THE VIBE CHECK!')
+            return
 
-    # Drawing the Set Penguin
-    if data.get('rare'):
-        penguin_set = color_key['penguin_set']['rare'].copy()
-    else:
+        card_image = Image.open(f'./downloaded_cards/{data['png_override']}.png')
+        # We don't want to scale the image
+        if data.get('scale_image') is None or data['scale_image'] == True:
+            card_image = card_image.resize((850, 850))
+
+        offset = (0, 0)
+        if data.get('offset_image') is None or data['offset_image']:
+            y_offset = CardCreator.OFFSET_LOOKUP[set_num].get(card_num, 0)
+            offset = (-50, -100+y_offset)
+
+        image.paste(card_image, offset)
+
+        # If the card has a fix to it, paste it on
+        card_fix_path = f'./fixed_cards/set{set_num}/{card_num}.png'
+        if os.path.exists(card_fix_path):
+            card_fix = Image.open(card_fix_path)
+            # Setting the transparency of each used pixel to 255
+            CardCreator.maxAlpha(card_fix)
+            image.paste(card_fix, mask=card_fix)
+
+        # Drawing the bottom 3 colors based on the element
+        color_background = color_key['tri_color']['regular'][data['element']].copy()
+        image.paste(color_background, mask=color_background)
+
+        # Top Left Color
+        color_top_left = color_key['top_left'][data['color']].copy()
+        image.paste(color_top_left, mask=color_top_left)
+
+        # Symbol and number shadow to mask
+        white_mask = Image.new('RGBA', (750, 1050))
+
+        # Drawing the Set Penguin
+        if data.get('rare'):
+            penguin_set = color_key['penguin_set']['rare'].copy()
+        else:
+            penguin_set = color_key['penguin_set'][set_num].copy()
+        
+        if data.get('rare') and data.get('description'):
+            white_mask.paste(penguin_set, mask=penguin_set)
+        else:
+            image.paste(penguin_set, mask=penguin_set)
+
+        # Adding card frame to mask
+        card_outline = color_key['basic']['card_outline'].copy()
+        white_mask.paste(card_outline, mask=card_outline)
+
+        # Adding element and power background to mask
+        element_mask = color_key['symbols']['mask'][data['element']].copy()
+        white_mask.paste(element_mask, mask=element_mask)
+        power_mask = color_key['numbers']['mask'][data['value']].copy()
+        white_mask.paste(power_mask, mask=power_mask)
+
+        # Card title to mask if not snow, otherwise, black text to original
+        reg_text_drawer = ImageDraw.Draw(image)
+        mask_text_drawer = ImageDraw.Draw(white_mask)
+        text_radius = CardCreator.TITLE_FONT.getlength(data['label'].upper()) // 2
+
+        flavor_text = CardCreator.getFlavorText(data)
+
+        # This removes any leading 0's
+        card_id = str(int(card_num))
+
+        if data['element'] == 's':
+            reg_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=CardCreator.TITLE_FONT, fill=(0, 0, 0))
+            reg_text_drawer.text((50, 790), flavor_text, font=CardCreator.FLAVOR_FONT, fill=(0, 0, 0))
+            reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=CardCreator.FLAVOR_FONT, fill=(0, 0, 0))
+        else:
+            mask_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=CardCreator.TITLE_FONT, fill=(255, 255, 255))
+            reg_text_drawer.text((50, 790), flavor_text, font=CardCreator.FLAVOR_FONT, fill=(255, 255, 255))
+            reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=CardCreator.FLAVOR_FONT, fill=(255, 255, 255))
+
+        description = data.get('description').upper()
+        if description:
+            if data['element'] == 's':
+                reg_text_drawer.text((560, 925), 'POWER CARD', font=CardCreator.FLAVOR_FONT, fill=(0, 0, 0))
+            else:
+                mask_text_drawer.text((560, 925), 'POWER CARD', font=CardCreator.FLAVOR_FONT, fill=(255, 255, 255))
+
+            CardCreator.mapPowerCard(image, white_mask, data)
+            desc_split = description.split(', ')
+            top_radius = CardCreator.FLAVOR_FONT.getlength(f'{desc_split[0]},') // 2
+            bot_radius = CardCreator.FLAVOR_FONT.getlength(desc_split[1]) // 2
+            reg_text_drawer.text((375-top_radius, 610), f'{desc_split[0]},', font=CardCreator.FLAVOR_FONT, fill=(255, 255, 255))
+            reg_text_drawer.text((375-bot_radius, 645), desc_split[1],       font=CardCreator.FLAVOR_FONT, fill=(255, 255, 255))
+        else:
+            # Pasting the mask on
+            image.paste(white_mask, mask=white_mask)
+
+        # Adding Symbol and Power images
+        element_mask = color_key['symbols']['symbol'][data['element']].copy()
+        image.paste(element_mask, mask=element_mask)
+        power_mask = color_key['numbers']['number'][data['value']].copy()
+        image.paste(power_mask, mask=power_mask)
+
+        # TODO See what the cards would look like borderless.
+        # Just stretch the cards and offset them. idk
+
+        # Saving the image to our generated cards
+        if not os.path.exists('./generated_cards'):
+            os.mkdir('./generated_cards')
+
+        if not os.path.exists(f'./generated_cards/set{set_num}'):
+            os.mkdir(f'./generated_cards/set{set_num}')
+
+        image.save(f'./generated_cards/set{set_num}/{card_num}.png')
+
+    @staticmethod
+    def customizePenguin(data: dict, set_num: int, card_num: str):
+
+        # Opening the card image
+        image = CardCreator.getBaseImage()
+
+        if not data.get('png_override'):
+            print('CARD FAILED THE VIBE CHECK!')
+            return
+
+        card_image = Image.open(f'./downloaded_cards/{data['png_override']}.png')
+        card_image = card_image.resize((900, 900))
+        image.paste(card_image, (-20, 40))
+
+        # TODO Pasting the penguin based on penguin color
+        penguin_color = Image.open('./files/Basic/penguin_color_mask.png')
+        penguin_overlay = Image.open('./files/Basic/penguin_template.png')
+        image.alpha_composite(penguin_color)
+        image.alpha_composite(penguin_overlay)
+
+        # Drawing the bottom 3 colors based on the element
+        color_background = color_key['tri_color']['custom'][data['element']].copy()
+        image.paste(color_background, mask=color_background)
+
+        # Top Left Color
+        color_top_left = color_key['top_left'][data['color']].copy()
+        image.paste(color_top_left, mask=color_top_left)
+
+        # Drawing the Set Penguin
         penguin_set = color_key['penguin_set'][set_num].copy()
-    
-    if data.get('rare') and data.get('description'):
-        white_mask.paste(penguin_set, mask=penguin_set)
-    else:
         image.paste(penguin_set, mask=penguin_set)
 
-    # Adding card frame to mask
-    card_outline = color_key['basic']['card_outline'].copy()
-    white_mask.paste(card_outline, mask=card_outline)
+        # Adding card frame to mask
+        card_outline = color_key['basic']['card_outline_custom'].copy()
+        image.paste(card_outline, mask=card_outline)
 
-    # Adding element and power background to mask
-    element_mask = color_key['symbols']['mask'][data['element']].copy()
-    white_mask.paste(element_mask, mask=element_mask)
-    power_mask = color_key['numbers']['mask'][data['value']].copy()
-    white_mask.paste(power_mask, mask=power_mask)
+        # Adding element and power background to mask
+        element_mask = color_key['symbols']['mask'][data['element']].copy()
+        image.paste(element_mask, mask=element_mask)
+        power_mask = color_key['numbers']['mask'][data['value']].copy()
+        image.paste(power_mask, mask=power_mask)
 
-    # Card title to mask if not snow, otherwise, black text to original
-    reg_text_drawer = ImageDraw.Draw(image)
-    mask_text_drawer = ImageDraw.Draw(white_mask)
-    text_radius = title_font.getlength(data['label'].upper()) // 2
+        # Adding Symbol and Power images
+        element_mask = color_key['symbols']['symbol'][data['element']].copy()
+        image.paste(element_mask, mask=element_mask)
+        power_mask = color_key['numbers']['number'][data['value']].copy()
+        image.paste(power_mask, mask=power_mask)
 
-    flavor_text = getFlavorText(data)
+        # Card title to mask if not snow, otherwise, black text to original
+        reg_text_drawer = ImageDraw.Draw(image)
+        text_radius = CardCreator.CUSTOM_TITLE_FONT.getlength(data['label'].upper()) // 2
 
-    # This removes any leading 0's
-    card_id = str(int(card_num))
+        # This removes any leading 0's
+        card_id = str(int(card_num))
+        color_fill = (255, 255, 255) if data['element'] != 's' else (0, 0, 0)
+        reg_text_drawer.text((375-text_radius, 920), data['label'].upper(), font=CardCreator.CUSTOM_TITLE_FONT, fill=color_fill)
+        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=CardCreator.FLAVOR_FONT, fill=color_fill)
 
-    if data['element'] == 's':
-        reg_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(0, 0, 0))
-        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(0, 0, 0))
-        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=flavor_font, fill=(0, 0, 0))
-    else:
-        mask_text_drawer.text((375-text_radius, 720), data['label'].upper(), font=title_font, fill=(255, 255, 255))
-        reg_text_drawer.text((50, 790), flavor_text, font=flavor_font, fill=(255, 255, 255))
-        reg_text_drawer.text((600, 960), f'{card_id}/{set_count[set_num]}', font=flavor_font, fill=(255, 255, 255))
-
-    description = data.get('description').upper()
-    if description:
-        if data['element'] == 's':
-            reg_text_drawer.text((560, 925), 'POWER CARD', font=flavor_font, fill=(0, 0, 0))
-        else:
-            mask_text_drawer.text((560, 925), 'POWER CARD', font=flavor_font, fill=(255, 255, 255))
-
-        mapPowerCard(image, white_mask, data)
-        desc_split = description.split(', ')
-        top_radius = flavor_font.getlength(f'{desc_split[0]},') // 2
-        bot_radius = flavor_font.getlength(desc_split[1]) // 2
-        reg_text_drawer.text((375-top_radius, 610), f'{desc_split[0]},', font=flavor_font, fill=(255, 255, 255))
-        reg_text_drawer.text((375-bot_radius, 645), desc_split[1],       font=flavor_font, fill=(255, 255, 255))
-    else:
-        # Pasting the mask on
-        image.paste(white_mask, mask=white_mask)
-
-    # Adding Symbol and Power images
-    element_mask = color_key['symbols']['symbol'][data['element']].copy()
-    image.paste(element_mask, mask=element_mask)
-    power_mask = color_key['numbers']['number'][data['value']].copy()
-    image.paste(power_mask, mask=power_mask)
-
-    # TODO See what the cards would look like borderless.
-    # Just stretch the cards and offset them. idk
-
-    # Saving the image to our generated cards
-    if not os.path.exists('./generated_cards'):
-        os.mkdir('./generated_cards')
-
-    if not os.path.exists(f'./generated_cards/set{set_num}'):
-        os.mkdir(f'./generated_cards/set{set_num}')
-
-    image.save(f'./generated_cards/set{set_num}/{card_num}.png')
-
-def customizePenguin():
-    pass
-
-def generateSheets(card_images, width, height, sheet_name):
-    # How much of a border do you want from the edge of the page
-    card_width = card_images[0].width
-    card_height = card_images[0].height
-    x_buffer = 0
-    y_buffer = 0
-    cards_per_width  = (width  - x_buffer) // card_width
-    cards_per_height = (height - y_buffer) // card_height
-    cards_per_page = cards_per_width * cards_per_height
-    sheet_num = 0
-    while card_images:
-        cards_to_print = card_images[:cards_per_page]
-        card_images = card_images[cards_per_page:]
-        sheet = Image.new('RGBA', (width, height))
-        sheet_drawer = ImageDraw.Draw(sheet)
-        card_index = 0
-        for x_card in range(cards_per_width):
-            for y_card in range(cards_per_height):
-                if card_index >= len(cards_to_print): break
-                x_offset = x_buffer + 2*x_card + x_card*card_width
-                y_offset = y_buffer + 2*y_card + y_card*card_height
-                sheet.paste(cards_to_print[card_index], (x_offset, y_offset))
-                card_index += 1
-
-            # Drawing cutting lines
-            cut_x = x_offset-2
-            cut_y = y_offset-2
-            sheet_drawer.line((cut_x, cut_y, card_width, cut_y), fill=(0, 0, 0, 255))
-            sheet_drawer.line((cut_x, cut_y, cut_x, card_height), fill=(0, 0, 0, 255))
-
-            if card_index >= len(cards_to_print): break
-
-        if not os.path.exists(f'./paper_sheets/'):
-            os.mkdir(f'./paper_sheets/')
-
-        sheet.save(f'./paper_sheets/{sheet_name}_{sheet_num}.png')
-        sheet_num += 1
+        CardCreator.saveImage(image, set_num, card_num)
 
 # Automating placing all the cards on sheets of paper.
-def mapCardsOnPaper():
-    regular_cards = []
-    power_cards = []
-    for set_num, card_list in cards_json.items():
-        for card_num, data in card_list.items():
-            card_path = f'./generated_cards/set{set_num}/{card_num}.png'
-            if not os.path.exists(card_path): continue
-            image = Image.open(card_path)
-            image = image.resize((801, 1126))
-            if data['description']: power_cards.append(image)
-            else: regular_cards.append(image)
+class SheetGenerator():
 
-    # 300 pixels per inch
-    height  = int(8.5 * 300)
-    width = int(11 * 300)
-    generateSheets(regular_cards, width, height, 'reg')
-    generateSheets(power_cards, width, height, 'pow')
+    @staticmethod
+    def generateSheets(card_images, width, height, sheet_name):
+        # How much of a border do you want from the edge of the page
+        card_width = card_images[0].width
+        card_height = card_images[0].height
+        x_buffer = 0
+        y_buffer = 0
+        cards_per_width  = (width  - x_buffer) // card_width
+        cards_per_height = (height - y_buffer) // card_height
+        cards_per_page = cards_per_width * cards_per_height
+        sheet_num = 0
+        while card_images:
+            cards_to_print = card_images[:cards_per_page]
+            card_images = card_images[cards_per_page:]
+            sheet = Image.new('RGBA', (width, height))
+            sheet_drawer = ImageDraw.Draw(sheet)
+            card_index = 0
+            for x_card in range(cards_per_width):
+                for y_card in range(cards_per_height):
+                    if card_index >= len(cards_to_print): break
+                    x_offset = x_buffer + 2*x_card + x_card*card_width
+                    y_offset = y_buffer + 2*y_card + y_card*card_height
+                    sheet.paste(cards_to_print[card_index], (x_offset, y_offset))
+                    card_index += 1
+
+                # Drawing cutting lines
+                cut_x = x_offset-2
+                cut_y = y_offset-2
+                sheet_drawer.line((cut_x, cut_y, card_width, cut_y), fill=(0, 0, 0, 255))
+                sheet_drawer.line((cut_x, cut_y, cut_x, card_height), fill=(0, 0, 0, 255))
+
+                if card_index >= len(cards_to_print): break
+
+            if not os.path.exists(f'./paper_sheets/'):
+                os.mkdir(f'./paper_sheets/')
+
+            sheet.save(f'./paper_sheets/{sheet_name}_{sheet_num}.png')
+            sheet_num += 1
+
+    @staticmethod
+    def mapCardsOnPaper():
+        regular_cards = []
+        power_cards = []
+        for set_num, card_list in cards_json.items():
+            for card_num, data in card_list.items():
+                card_path = f'./generated_cards/set{set_num}/{card_num}.png'
+                if not os.path.exists(card_path): continue
+                image = Image.open(card_path)
+                image = image.resize((801, 1126))
+                if data['description']: power_cards.append(image)
+                else: regular_cards.append(image)
+
+        # 300 pixels per inch
+        height  = int(8.5 * 300)
+        width = int(11 * 300)
+        SheetGenerator.generateSheets(regular_cards, width, height, 'reg')
+        SheetGenerator.generateSheets(power_cards, width, height, 'pow')
 
 with open('scrape/new_cards.json', 'r') as file:
     cards_json = json.load(file)
-
-# title_font  = ImageFont.truetype('./fonts/candombe.otf', 75)
-# flavor_font = ImageFont.truetype('./fonts/candombe.otf', 37)
-title_font  = ImageFont.truetype('./fonts/boogaloo.ttf', 44)
-flavor_font = ImageFont.truetype('./fonts/boogaloo.ttf', 30)
-
-# Some cards need slight offsets. This is a generic template of those offsets
-tiny_down = 25
-low_down = 50
-med_down = 100
-high_down = 150
-tiny_up = -25
-low_up = -50
-med_up = -100
-high_up = -150
-offset_lookup = {
-    '1': {
-        '2': med_down,
-        '4': low_down,
-        '7': low_down,
-        '13': low_down,
-        '62': low_down,
-        '64': low_down,
-        '71': med_up,
-        '73': low_up,
-        '74': tiny_up,
-        '75': low_up,
-        '76': low_up,
-        '90': low_up,
-    },
-    '2': {
-        '4': med_down,
-    },
-    '3': {
-        '2': low_down,
-        '6': low_down,
-        '7': low_down,
-        '11': low_down,
-        '25': low_down,
-        '27': low_down,
-        '28': low_down,
-        '30': low_down,
-        '31': med_down,
-        '32': low_down,
-        '35': low_down,
-        '45': low_down,
-        '46': low_down,
-        '53': med_up,
-        '54': med_up,
-        '55': med_up,
-        '56': low_down,
-        '57': med_down,
-    },
-    '4': {
-        '2': low_down,
-        '7': low_down,
-        '8': low_down,
-        '12': low_down,
-        '17': med_down,
-        '19': low_down,
-        '21': low_down,
-        '22': low_down,
-        '26': med_down,
-        '28': low_down,
-        '33': low_down,
-        '37': low_down,
-        '39': low_down,
-        '42': low_down,
-        '60': low_down,
-    },
-    '5': {
-        '4': low_down,
-        '19': low_down,
-        '23': low_down,
-        '24': low_down,
-        '26': low_down,
-        '27': low_down,
-    },
-    '6': {
-        '8': low_down,
-        '11': med_down,
-        '20': med_down,
-        '23': med_down,
-        '25': med_down,
-        '27': med_down,
-        '28': med_down,
-        '35': low_down,
-        '37': med_down,
-        '38': low_down,
-        '42': low_down,
-        '44': low_down,
-        '48': low_down,
-        '53': low_down,
-        '55': low_down,
-        '56': low_down,
-        '61': low_down,
-        '67': low_down,
-        '70': low_down,
-        '74': low_down,
-        '75': low_down,
-        '77': low_down,
-        '79': low_down,
-        '81': med_up,
-        '87': low_down,
-        '88': low_down,
-        '92': low_down,
-        '94': low_down,
-        '95': low_down,
-    },
-    '7': {
-        '2': low_down,
-        '3': low_down,
-        '5': low_down,
-        '7': med_down,
-        '15': low_down,
-        '17': low_down,
-        '18': low_down,
-        '20': med_down,
-        '22': low_down,
-        '34': low_down,
-        '38': low_down,
-        '42': low_down,
-        '44': low_down,
-        '48': low_down,
-        '49': low_down,
-        '53': low_down,
-        '55': low_down,
-        '57': low_down,
-        '58': low_down,
-        '61': low_down,
-        '62': low_down,
-        '64': low_down,
-        '68': low_down,
-        '73': low_down,
-        '74': low_down,
-        '81': low_down,
-        '82': med_down,
-        '85': low_down,
-        '86': low_down,
-        '87': low_down,
-        '88': low_down,
-        '90': low_down,
-        '91': low_down,
-        '107': low_down,
-        '115': med_down,
-        '117': low_down,
-        '119': tiny_down,
-        '120': tiny_down,
-        '124': low_up,
-        '136': med_down,
-        '139': low_up,
-        '140': low_down,
-        '143': low_up,
-        '146': low_up,
-    },
-    '8': {},
-}
 
 for set_num, card_list in cards_json.items():
     for card_num, data in card_list.items():
         
         # Custom penguin card
         if data['label'].lower() == 'customize your penguin':
-            customizePenguin()
+            CardCreator.customizePenguin(data, set_num, card_num)
             continue
 
         # NOTE This is purely here to filter out any
         # unwanted cards for the sake of quick generation
         # Adjust this however you would like for testing generation
-        if set_num != '5': continue
+        continue
 
         # Creating normal card
-        regularCardBuild(data, set_num, card_num)
+        CardCreator.regularCardBuild(data, set_num, card_num)
 
-mapCardsOnPaper()
+# SheetGenerator.mapCardsOnPaper()

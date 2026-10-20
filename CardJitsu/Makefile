@@ -22,7 +22,6 @@ download_swf_files: $(SWF_DIR)
 				;; \
 			esac; \
 		fi; \
-		echo "../../$(IMAGE_FILE_DIR)/$$card_number.png"; \
 		if [ ! -e "../../downloaded_cards/$${card_number}.png" ]; then \
 			cd ../../ruffle; \
 			cargo run --release --package=exporter -- --width 1024 --height 1024 ../$(SWF_DIR)/$$card_number.swf ../$(IMAGE_FILE_DIR)/$$card_number.png; \
@@ -37,12 +36,13 @@ $(SWF_DIR):
 	fi
 
 python_setup:
-	python3 -m venv venv
+	if [ ! -d ./venv ]; then \
+		python3 -m venv venv; \
+	fi
 	. venv/bin/activate && pip install -r requirements.txt
 	python3 generate.py
 
 clean:
 	rm -r ./files/swf_files
-	rm -r venv
 
 all: dependencies download_swf_files python_setup

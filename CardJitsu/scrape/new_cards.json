@@ -1593,7 +1593,7 @@
             "name": "CUSTOMIZE YOUR PENGUIN",
             "label": "CUSTOMIZE YOUR PENGUIN",
             "prompt": "CUSTOMIZE YOUR PENGUIN",
-            "color": "",
+            "color": "o",
             "value": "9",
             "asset": "",
             "description": "",
@@ -3029,6 +3029,7 @@
             "flavor_text": "\"Arr, me hearties! Ahoy! Stand smartly sailors, for you be in the company of the fearless Captain Rockhopper, the best pirate that ever sailed the seven seas. Me and Yarr be hoping to see ye all soon! Arr harr!\""
         },
         "61": {
+            "png_override": "9017",
             "card_id": "61",
             "set_id": "3",
             "power_id": "3",
@@ -3044,6 +3045,7 @@
             "flavor_text": ""
         },
         "62": {
+            "png_override": "954",
             "card_id": "62",
             "set_id": "3",
             "power_id": "3",
@@ -3059,6 +3061,7 @@
             "flavor_text": ""
         },
         "63": {
+            "png_override": "9004",
             "card_id": "63",
             "set_id": "3",
             "power_id": "3",
@@ -3074,6 +3077,7 @@
             "flavor_text": ""
         },
         "64": {
+            "png_override": "986",
             "card_id": "64",
             "set_id": "3",
             "power_id": "3",
@@ -3089,6 +3093,7 @@
             "flavor_text": ""
         },
         "65": {
+            "png_override": "994",
             "card_id": "65",
             "set_id": "3",
             "power_id": "3",
@@ -3104,6 +3109,7 @@
             "flavor_text": ""
         },
         "66": {
+            "png_override": "9013",
             "card_id": "66",
             "set_id": "3",
             "power_id": "3",
@@ -3119,6 +3125,7 @@
             "flavor_text": ""
         },
         "67": {
+            "png_override": "964",
             "card_id": "67",
             "set_id": "3",
             "power_id": "3",
@@ -3134,6 +3141,7 @@
             "flavor_text": ""
         },
         "68": {
+            "png_override": "942",
             "card_id": "68",
             "set_id": "3",
             "power_id": "3",
@@ -4111,6 +4119,7 @@
             "flavor_text": "\"ARR! Me Migrator's mighty cannon is known for many things. Its snowballs defend against icebergs. But in the past, it's also launched cake, candles and even me Puffle, Yarr!\""
         },
         "61": {
+            "png_override": "9032",
             "card_id": "61",
             "set_id": "4",
             "power_id": "3",
@@ -4126,6 +4135,7 @@
             "flavor_text": ""
         },
         "62": {
+            "png_override": "9038",
             "card_id": "62",
             "set_id": "4",
             "power_id": "3",
@@ -4141,6 +4151,7 @@
             "flavor_text": ""
         },
         "63": {
+            "png_override": "988",
             "card_id": "63",
             "set_id": "4",
             "power_id": "3",
@@ -4156,6 +4167,7 @@
             "flavor_text": ""
         },
         "64": {
+            "png_override": "997",
             "card_id": "64",
             "set_id": "4",
             "power_id": "3",
@@ -4171,6 +4183,7 @@
             "flavor_text": ""
         },
         "65": {
+            "png_override": "952",
             "card_id": "65",
             "set_id": "4",
             "power_id": "3",
@@ -4186,6 +4199,7 @@
             "flavor_text": ""
         },
         "66": {
+            "png_override": "9018",
             "card_id": "66",
             "set_id": "4",
             "power_id": "3",
@@ -4201,6 +4215,7 @@
             "flavor_text": ""
         },
         "67": {
+            "png_override": "998",
             "card_id": "67",
             "set_id": "4",
             "power_id": "3",
@@ -4216,6 +4231,7 @@
             "flavor_text": ""
         },
         "68": {
+            "png_override": "9010",
             "card_id": "68",
             "set_id": "4",
             "power_id": "3",
@@ -4665,7 +4681,7 @@
             "flavor_text": "To gain your  Fire Ninja Suit, you must practice Card-Jitsu Fire, then defeat the Sensei in the final challenge. Do you have what it takes to become a Fire Ninja?"
         },
         "28": {
-            "png_override": "428",
+            "png_override": "",
             "card_id": "28",
             "set_id": "5",
             "power_id": "4",
@@ -6203,6 +6219,7 @@
             "flavor_text": "The Knight's Quest is an adventure fit for any knight... or princess! Solve all the puzzles to discover untold treasures during the Medieval Party!"
         },
         "96": {
+            "png_override": "9033",
             "card_id": "96",
             "set_id": "6",
             "power_id": "3",
@@ -6218,6 +6235,7 @@
             "flavor_text": ""
         },
         "97": {
+            "png_override": "9034",
             "card_id": "97",
             "set_id": "6",
             "power_id": "3",
@@ -6233,6 +6251,7 @@
             "flavor_text": ""
         },
         "98": {
+            "png_override": "9035",
             "card_id": "98",
             "set_id": "6",
             "power_id": "3",
@@ -6248,6 +6267,7 @@
             "flavor_text": ""
         },
         "99": {
+            "png_override": "9037",
             "card_id": "99",
             "set_id": "6",
             "power_id": "3",
@@ -6263,6 +6283,7 @@
             "flavor_text": ""
         },
         "100": {
+            "png_override": "9039",
             "card_id": "100",
             "set_id": "6",
             "power_id": "3",
@@ -6278,6 +6299,7 @@
             "flavor_text": ""
         },
         "101": {
+            "png_override": "9046",
             "card_id": "101",
             "set_id": "6",
             "power_id": "3",
@@ -6293,6 +6315,7 @@
             "flavor_text": ""
         },
         "102": {
+            "png_override": "9047",
             "card_id": "102",
             "set_id": "6",
             "power_id": "3",
@@ -6308,6 +6331,7 @@
             "flavor_text": ""
         },
         "103": {
+            "png_override": "9051",
             "card_id": "103",
             "set_id": "6",
             "power_id": "3",
@@ -6323,6 +6347,7 @@
             "flavor_text": ""
         },
         "104": {
+            "png_override": "9053",
             "card_id": "104",
             "set_id": "6",
             "power_id": "3",
@@ -6338,6 +6363,7 @@
             "flavor_text": ""
         },
         "105": {
+            "png_override": "9055",
             "card_id": "105",
             "set_id": "6",
             "power_id": "3",
@@ -6353,6 +6379,7 @@
             "flavor_text": ""
         },
         "106": {
+            "png_override": "9057",
             "card_id": "106",
             "set_id": "6",
             "power_id": "3",
@@ -6368,6 +6395,7 @@
             "flavor_text": ""
         },
         "107": {
+            "png_override": "9059",
             "card_id": "107",
             "set_id": "6",
             "power_id": "3",
@@ -6383,6 +6411,7 @@
             "flavor_text": ""
         },
         "108": {
+            "png_override": "9060",
             "card_id": "108",
             "set_id": "6",
             "power_id": "3",
@@ -6398,6 +6427,7 @@
             "flavor_text": ""
         },
         "109": {
+            "png_override": "9061",
             "card_id": "109",
             "set_id": "6",
             "power_id": "3",
@@ -6413,6 +6443,7 @@
             "flavor_text": ""
         },
         "110": {
+            "png_override": "9062",
             "card_id": "110",
             "set_id": "6",
             "power_id": "3",

@@ -1505,6 +1505,7 @@
             "flavor_text": "\"To be as the moon amongst the shadows, one must follow the code of honor and loyalty. Each movement must be as precise as a dance. Patience is both rewarded and a reward.\""
         },
         "95": {
+            "penguin_color": "blue",
             "png_override": "953",
             "card_id": "95",
             "set_id": "1",
@@ -1521,6 +1522,7 @@
             "flavor_text": ""
         },
         "96": {
+            "penguin_color": "dark_green",
             "png_override": "969",
             "card_id": "96",
             "set_id": "1",
@@ -1537,6 +1539,7 @@
             "flavor_text": ""
         },
         "97": {
+            "penguin_color": "orange",
             "png_override": "937",
             "card_id": "97",
             "set_id": "1",
@@ -1553,6 +1556,7 @@
             "flavor_text": ""
         },
         "98": {
+            "penguin_color": "yellow",
             "png_override": "987",
             "card_id": "98",
             "set_id": "1",
@@ -1569,6 +1573,7 @@
             "flavor_text": ""
         },
         "99": {
+            "penguin_color": "pink",
             "png_override": "980",
             "card_id": "99",
             "set_id": "1",
@@ -1585,6 +1590,7 @@
             "flavor_text": ""
         },
         "100": {
+            "penguin_color": "pink",
             "png_override": "939",
             "card_id": "100",
             "set_id": "1",
@@ -1601,6 +1607,7 @@
             "flavor_text": ""
         },
         "101": {
+            "penguin_color": "black",
             "png_override": "919",
             "card_id": "101",
             "set_id": "1",
@@ -1617,6 +1624,7 @@
             "flavor_text": ""
         },
         "102": {
+            "penguin_color": "brown",
             "png_override": "912",
             "card_id": "102",
             "set_id": "1",
@@ -1633,6 +1641,7 @@
             "flavor_text": ""
         },
         "103": {
+            "penguin_color": "brown",
             "png_override": "932",
             "card_id": "103",
             "set_id": "1",
@@ -1649,6 +1658,7 @@
             "flavor_text": ""
         },
         "104": {
+            "penguin_color": "peach",
             "png_override": "978",
             "card_id": "104",
             "set_id": "1",
@@ -1665,6 +1675,7 @@
             "flavor_text": ""
         },
         "105": {
+            "penguin_color": "dark_green",
             "png_override": "963",
             "card_id": "105",
             "set_id": "1",
@@ -1681,6 +1692,7 @@
             "flavor_text": ""
         },
         "106": {
+            "penguin_color": "light_blue",
             "png_override": "974",
             "card_id": "106",
             "set_id": "1",
@@ -1697,6 +1709,7 @@
             "flavor_text": ""
         },
         "107": {
+            "penguin_color": "green",
             "png_override": "984",
             "card_id": "107",
             "set_id": "1",
@@ -1713,6 +1726,7 @@
             "flavor_text": ""
         },
         "108": {
+            "penguin_color": "lime_green",
             "png_override": "982",
             "card_id": "108",
             "set_id": "1",
@@ -1729,6 +1743,7 @@
             "flavor_text": ""
         },
         "109": {
+            "penguin_color": "blue",
             "png_override": "913",
             "card_id": "109",
             "set_id": "1",
@@ -1745,6 +1760,7 @@
             "flavor_text": ""
         },
         "110": {
+            "penguin_color": "red",
             "png_override": "971",
             "card_id": "110",
             "set_id": "1",
@@ -2065,6 +2081,182 @@
             "description": "",
             "is_active": "1",
             "flavor_text": "\"I'm telling ya, it was absolutely massive! At least twice the size of a penguin and it had these huge claws like a crab. I was shaking in my snow boots!\""
+        },
+        "20": {
+            "png_override": "36",
+            "card_id": "20",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "f",
+            "name": "BLACK PUFFLE",
+            "label": "BLACK PUFFLE",
+            "prompt": "BLACK PUFFLE",
+            "color": "r",
+            "value": "5",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"Turbo is my black puffle. It rolls its eyes a lot,\" replies the penguin as he feeds his pet a flipper full of Puffle O's. \"It really gets fired up when I take it out for a walk.\""
+        },
+        "21": {
+            "png_override": "38",
+            "card_id": "21",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "BLUE PUFFLE",
+            "label": "BLUE PUFFLE",
+            "prompt": "BLUE PUFFLE",
+            "color": "b",
+            "value": "2",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"As an employee, I value the blue puffles,\" replies the staff member. \"They are loyal, easy to take care of, and fun to play ball with. You can't go wrong with a blue puffle.\""
+        },
+        "22": {
+            "png_override": "39",
+            "card_id": "22",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "PINK PUFFLE",
+            "label": "PINK PUFFLE",
+            "prompt": "PINK PUFFLE",
+            "color": "b",
+            "value": "5",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"This is my pink puffle, Cutie! I named it that because I think its eyes are sooo adorable,\" continues the ballet dancer. \"Plus it matches my outfit!\""
+        },
+        "23": {
+            "png_override": "40",
+            "card_id": "23",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "GREEN PUFFLE",
+            "label": "GREEN PUFFLE",
+            "prompt": "GREEN PUFFLE",
+            "color": "g",
+            "value": "4",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"My puffle Greenie is the silliest puffle I've ever met, which is why we get along so well,\" she giggles. \"I love it when it plays on its unicycle - it's so funny!\""
+        },
+        "24": {
+            "png_override": "41",
+            "card_id": "24",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "PUFFLE FURNITURE",
+            "label": "PUFFLE FURNITURE",
+            "prompt": "PUFFLE FURNITURE",
+            "color": "o",
+            "value": "6",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"No igloo would be complete without accessories for your cute little puffle pets,\" the decorator explains. \"Puffles love having furniture just as much as penguins!\""
+        },
+        "25": {
+            "png_override": "42",
+            "card_id": "25",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "PURPLE PUFFLE",
+            "label": "PURPLE PUFFLE",
+            "prompt": "PURPLE PUFFLE",
+            "color": "p",
+            "value": "3",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"Oh! Look at that one over there blowing bubbles! That one is sooo cute - it should be my pet,\" she exclaims. \"I'll name it Princess Purple because I love princesses and purple!\""
+        },
+        "26": {
+            "png_override": "43",
+            "card_id": "26",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "RED PUFFLE",
+            "label": "RED PUFFLE",
+            "prompt": "RED PUFFLE",
+            "color": "r",
+            "value": "5",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"This is my sidekick on my adventures. I named it Fireball because it's so fast when it goes flying out of its cannon like whoooosh! Look, it's going again!\""
+        },
+        "27": {
+            "png_override": "44",
+            "card_id": "27",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "YELLOW PUFFLE",
+            "label": "YELLOW PUFFLE",
+            "prompt": "YELLOW PUFFLE",
+            "color": "y",
+            "value": "4",
+            "asset": "",
+            "description": "",
+            "is_active": "1",
+            "flavor_text": "\"I knew I wanted a yellow puffle from the moment I saw it in the Forest at Halloween,\" she replies. \"My puffle Lemon likes to paint just like I do.\""
+        },
+        "28": {
+            "png_override": "75",
+            "card_id": "28",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "f",
+            "name": "THIN ICE",
+            "label": "THIN ICE",
+            "prompt": "THIN ICE",
+            "color": "p",
+            "value": "11",
+            "asset": "",
+            "description": "WHEN THIS IS SCORED, DISCARD ONE OPPONENT'S RED CARD.",
+            "is_active": "1",
+            "flavor_text": "\"My favorite part of Thin Ice is the music. I want it in my igloo because I like how it goes 'beep-ba-beep-beep.' The black puffle in it looks really funny, too.\""
+        },
+        "29": {
+            "png_override": "82",
+            "card_id": "29",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "s",
+            "name": "PUFFLE ROUNDUP",
+            "label": "PUFFLE ROUNDUP",
+            "prompt": "PUFFLE ROUNDUP",
+            "color": "g",
+            "value": "10",
+            "asset": "",
+            "description": "WHEN THIS IS SCORED, DISCARD ONE OPPONENT'S WATER CARD.",
+            "is_active": "1",
+            "flavor_text": "\"Okay, I just need to catch a few more for the Pet Shop. Easy now...steady...steady...\" says the penguin, thinking out loud. \"It takes real concentration to do this!\""
+        },
+        "30": {
+            "png_override": "90",
+            "card_id": "30",
+            "set_id": "2",
+            "power_id": "0",
+            "element": "w",
+            "name": "AQUA GRABBER",
+            "label": "AQUA GRABBER",
+            "prompt": "AQUA GRABBER",
+            "color": "o",
+            "value": "10",
+            "asset": "",
+            "description": "WHEN THIS IS SCORED, DISCARD ONE OPPONENT'S FIRE CARD.",
+            "is_active": "1",
+            "flavor_text": "\"I've taken the Aqua Grabber out on many deep sea salvage missions,\" proclaims the purple penguin. \"My pink puffle helps me find the really rare treasures.\""
         }
     },
     "3": {
@@ -3029,6 +3221,7 @@
             "flavor_text": "\"Arr, me hearties! Ahoy! Stand smartly sailors, for you be in the company of the fearless Captain Rockhopper, the best pirate that ever sailed the seven seas. Me and Yarr be hoping to see ye all soon! Arr harr!\""
         },
         "61": {
+            "penguin_color": "orange",
             "png_override": "9017",
             "card_id": "61",
             "set_id": "3",
@@ -3045,6 +3238,7 @@
             "flavor_text": ""
         },
         "62": {
+            "penguin_color": "light_blue",
             "png_override": "954",
             "card_id": "62",
             "set_id": "3",
@@ -3061,6 +3255,7 @@
             "flavor_text": ""
         },
         "63": {
+            "penguin_color": "yellow",
             "png_override": "9004",
             "card_id": "63",
             "set_id": "3",
@@ -3077,6 +3272,7 @@
             "flavor_text": ""
         },
         "64": {
+            "penguin_color": "red",
             "png_override": "986",
             "card_id": "64",
             "set_id": "3",
@@ -3093,6 +3289,7 @@
             "flavor_text": ""
         },
         "65": {
+            "penguin_color": "pink",
             "png_override": "994",
             "card_id": "65",
             "set_id": "3",
@@ -3109,6 +3306,7 @@
             "flavor_text": ""
         },
         "66": {
+            "penguin_color": "lime_green",
             "png_override": "9013",
             "card_id": "66",
             "set_id": "3",
@@ -3125,6 +3323,7 @@
             "flavor_text": ""
         },
         "67": {
+            "penguin_color": "black",
             "png_override": "964",
             "card_id": "67",
             "set_id": "3",
@@ -3141,6 +3340,7 @@
             "flavor_text": ""
         },
         "68": {
+            "penguin_color": "blue",
             "png_override": "942",
             "card_id": "68",
             "set_id": "3",
@@ -4119,6 +4319,7 @@
             "flavor_text": "\"ARR! Me Migrator's mighty cannon is known for many things. Its snowballs defend against icebergs. But in the past, it's also launched cake, candles and even me Puffle, Yarr!\""
         },
         "61": {
+            "penguin_color": "black",
             "png_override": "9032",
             "card_id": "61",
             "set_id": "4",
@@ -4135,6 +4336,7 @@
             "flavor_text": ""
         },
         "62": {
+            "penguin_color": "brown",
             "png_override": "9038",
             "card_id": "62",
             "set_id": "4",
@@ -4151,6 +4353,7 @@
             "flavor_text": ""
         },
         "63": {
+            "penguin_color": "blue",
             "png_override": "988",
             "card_id": "63",
             "set_id": "4",
@@ -4167,6 +4370,7 @@
             "flavor_text": ""
         },
         "64": {
+            "penguin_color": "pink",
             "png_override": "997",
             "card_id": "64",
             "set_id": "4",
@@ -4183,6 +4387,7 @@
             "flavor_text": ""
         },
         "65": {
+            "penguin_color": "light_blue",
             "png_override": "952",
             "card_id": "65",
             "set_id": "4",
@@ -4199,6 +4404,7 @@
             "flavor_text": ""
         },
         "66": {
+            "penguin_color": "yellow",
             "png_override": "9018",
             "card_id": "66",
             "set_id": "4",
@@ -4215,6 +4421,7 @@
             "flavor_text": ""
         },
         "67": {
+            "penguin_color": "green",
             "png_override": "998",
             "card_id": "67",
             "set_id": "4",
@@ -4231,6 +4438,7 @@
             "flavor_text": ""
         },
         "68": {
+            "penguin_color": "red",
             "png_override": "9010",
             "card_id": "68",
             "set_id": "4",
@@ -4681,6 +4889,7 @@
             "flavor_text": "To gain your  Fire Ninja Suit, you must practice Card-Jitsu Fire, then defeat the Sensei in the final challenge. Do you have what it takes to become a Fire Ninja?"
         },
         "28": {
+            "penguin_color": "black",
             "png_override": "",
             "card_id": "28",
             "set_id": "5",
@@ -6219,6 +6428,7 @@
             "flavor_text": "The Knight's Quest is an adventure fit for any knight... or princess! Solve all the puzzles to discover untold treasures during the Medieval Party!"
         },
         "96": {
+            "penguin_color": "blue",
             "png_override": "9033",
             "card_id": "96",
             "set_id": "6",
@@ -6235,6 +6445,7 @@
             "flavor_text": ""
         },
         "97": {
+            "penguin_color": "green",
             "png_override": "9034",
             "card_id": "97",
             "set_id": "6",
@@ -6251,6 +6462,7 @@
             "flavor_text": ""
         },
         "98": {
+            "penguin_color": "orange",
             "png_override": "9035",
             "card_id": "98",
             "set_id": "6",
@@ -6267,6 +6479,7 @@
             "flavor_text": ""
         },
         "99": {
+            "penguin_color": "yellow",
             "png_override": "9037",
             "card_id": "99",
             "set_id": "6",
@@ -6283,6 +6496,7 @@
             "flavor_text": ""
         },
         "100": {
+            "penguin_color": "pink",
             "png_override": "9039",
             "card_id": "100",
             "set_id": "6",
@@ -6299,6 +6513,7 @@
             "flavor_text": ""
         },
         "101": {
+            "penguin_color": "black",
             "png_override": "9046",
             "card_id": "101",
             "set_id": "6",
@@ -6315,6 +6530,7 @@
             "flavor_text": ""
         },
         "102": {
+            "penguin_color": "dark_purple",
             "png_override": "9047",
             "card_id": "102",
             "set_id": "6",
@@ -6331,6 +6547,7 @@
             "flavor_text": ""
         },
         "103": {
+            "penguin_color": "brown",
             "png_override": "9051",
             "card_id": "103",
             "set_id": "6",
@@ -6347,6 +6564,7 @@
             "flavor_text": ""
         },
         "104": {
+            "penguin_color": "red",
             "png_override": "9053",
             "card_id": "104",
             "set_id": "6",
@@ -6363,6 +6581,7 @@
             "flavor_text": ""
         },
         "105": {
+            "penguin_color": "green",
             "png_override": "9055",
             "card_id": "105",
             "set_id": "6",
@@ -6379,6 +6598,7 @@
             "flavor_text": ""
         },
         "106": {
+            "penguin_color": "blue",
             "png_override": "9057",
             "card_id": "106",
             "set_id": "6",
@@ -6395,6 +6615,7 @@
             "flavor_text": ""
         },
         "107": {
+            "penguin_color": "lime_green",
             "png_override": "9059",
             "card_id": "107",
             "set_id": "6",
@@ -6411,6 +6632,7 @@
             "flavor_text": ""
         },
         "108": {
+            "penguin_color": "red",
             "png_override": "9060",
             "card_id": "108",
             "set_id": "6",
@@ -6427,6 +6649,7 @@
             "flavor_text": ""
         },
         "109": {
+            "penguin_color": "pink",
             "png_override": "9061",
             "card_id": "109",
             "set_id": "6",
@@ -6443,6 +6666,7 @@
             "flavor_text": ""
         },
         "110": {
+            "penguin_color": "black",
             "png_override": "9062",
             "card_id": "110",
             "set_id": "6",

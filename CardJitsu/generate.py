@@ -1,10 +1,11 @@
 from PIL import Image, ImageDraw, ImageFont
 import json
 import os
+import numpy as np
 
 set_count = {
     '1': 110,
-    '2': 19,
+    '2': 30,
     '3': 68,
     '4': 68,
     '5': 28,
@@ -13,26 +14,50 @@ set_count = {
     '8': 4,
 }
 
-color_key = {
+# Setting up the color key
+def convertImageColor(
+    image: Image,
+    from_color: tuple[int, int, int],
+    to_color: tuple[int, int, int]
+) -> Image:
+    data = np.array(image)
+    red, green, blue, _ = data.T
+    white_areas = (red == from_color[0]) & (blue == from_color[2]) & (green == from_color[1])
+    data[..., :-1][white_areas.T] = to_color
+    return Image.fromarray(data)
+
+def setTriColor(top, mid, bot, card_type) -> Image:
+    image = Image.open(f'./files/Basic/bottom_background_{card_type}.png')
+    image = convertImageColor(image, (238, 238, 238), top)
+    image = convertImageColor(image, (196, 196, 196), mid)
+    image = convertImageColor(image, (132, 132, 132), bot)
+    return image
+
+def setTopLeft(k1) -> Image:
+    image = Image.open('./files/Basic/top_left_background.png')
+    image = convertImageColor(image, (53, 53, 53), k1)
+    return image
+
+image_key = {
     'tri_color': {
         'regular': {
-            'f': None,
-            's': None,
-            'w': None,
+            'f': setTriColor((230, 130, 55),  (229,  90,  59), (219,  42,  50), 'regular'),
+            's': setTriColor((244, 244, 246), (230, 233, 234), (217, 220, 221), 'regular'),
+            'w': setTriColor(( 67, 127, 182), ( 65, 102, 165), ( 55,  69, 128), 'regular'),
         },
         'custom': {
-            'f': None,
-            's': None,
-            'w': None,
+            'f': setTriColor((230, 130,  55), (229,  90,  59), (219,  42,  50), 'custom'),
+            's': setTriColor((244, 244, 246), (230, 233, 234), (217, 220, 221), 'custom'),
+            'w': setTriColor(( 67, 127, 182), ( 65, 102, 165), ( 55,  69, 128), 'custom'),
         },
     },
     'top_left': {
-        'r': None,
-        'o': None,
-        'y': None,
-        'g': None,
-        'b': None,
-        'p': None,
+        'r': setTopLeft((227, 60, 37)),
+        'o': setTopLeft((248, 149, 43)),
+        'y': setTopLeft((251, 234, 44)),
+        'g': setTopLeft((98, 184, 71)),
+        'b': setTopLeft((16, 72, 160)),
+        'p': setTopLeft((163, 153, 202)),
     },
     'penguin_set': {
         '1':    Image.open('./files/Set/1.png'),
@@ -85,14 +110,6 @@ color_key = {
             's': Image.open('./files/CardType/s/symbol.png'),
         }
     },
-    'abilities': {
-        'block': {},
-        'convert': {},
-        'discard_all': {},
-        'discard_one': {},
-        'modify': {},
-        '': {},
-    },
     'basic': {
         'power_outline':        Image.open('./files/Basic/power_card_outline.png'),
         'card_outline_regular': Image.open('./files/Basic/card_outline_regular.png'),
@@ -100,48 +117,6 @@ color_key = {
         'power_bg':             Image.open('./files/Basic/power_card_text_background.png'),
     }
 }
-
-# Setting up the color key
-def setTriColor(key, k1, k2, k3, card_type):
-    bottom_background = Image.open(f'./files/Basic/bottom_background_{card_type}.png')
-    image = bottom_background.load()
-    for x in range(bottom_background.width):
-        for y in range(bottom_background.height):
-            if image[x, y][0] == 238:
-                bottom_background.putpixel((x, y), k1) 
-            if image[x, y][0] == 196: 
-                bottom_background.putpixel((x, y), k2) 
-            if image[x, y][0] == 132: 
-                bottom_background.putpixel((x, y), k3)
-
-    color_key['tri_color'][card_type][key] = bottom_background
-
-def setTopLeft(key, k1):
-    bottom_background = Image.open('./files/Basic/top_left_background.png')
-    image = bottom_background.load()
-    for x in range(bottom_background.width):
-        for y in range(bottom_background.height):
-            if image[x, y][0] == 53:
-                bottom_background.putpixel((x, y), k1)
-
-    color_key['top_left'][key] = bottom_background
-
-# Setting up the bottom color images
-setTriColor('f', (230, 130, 55),  (229, 90, 59),   (219, 42, 50), 'regular')
-setTriColor('s', (244, 244, 246), (230, 233, 234), (217, 220, 221), 'regular')
-setTriColor('w', (67, 127, 182),  (65, 102, 165),  (55, 69, 128), 'regular')
-
-setTriColor('f', (230, 130, 55),  (229, 90, 59),   (219, 42, 50), 'custom')
-setTriColor('s', (244, 244, 246), (230, 233, 234), (217, 220, 221), 'custom')
-setTriColor('w', (67, 127, 182),  (65, 102, 165),  (55, 69, 128), 'custom')
-
-# Setting up the top left colors
-setTopLeft('p', (163, 153, 202))
-setTopLeft('o', (248, 149, 43))
-setTopLeft('g', (98, 184, 71))
-setTopLeft('y', (251, 234, 44))
-setTopLeft('b', (16, 72, 160))
-setTopLeft('r', (227, 60, 37))
 
 class CardCreator():
 
@@ -200,6 +175,9 @@ class CardCreator():
         },
         '2': {
             '4': MED_DOWN,
+            '21': LOW_DOWN,
+            '23': LOW_DOWN,
+            '30': LOW_UP
         },
         '3': {
             '2': LOW_DOWN,
@@ -354,11 +332,11 @@ class CardCreator():
     @staticmethod
     def mapPowerCard(image: Image, white_mask: Image, data: dict):
         # Drawing Black Ability Background
-        ability_bg = color_key['basic']['power_bg'].copy()
+        ability_bg = image_key['basic']['power_bg'].copy()
         image.paste(ability_bg, mask=ability_bg)
 
         # Ability white bar to mask
-        ability_outline = color_key['basic']['power_outline'].copy()
+        ability_outline = image_key['basic']['power_outline'].copy()
         white_mask.paste(ability_outline, mask=ability_outline)
 
         mask_data = white_mask.load()
@@ -439,11 +417,11 @@ class CardCreator():
             image.paste(card_fix, mask=card_fix)
 
         # Drawing the bottom 3 colors based on the element
-        color_background = color_key['tri_color']['regular'][data['element']].copy()
+        color_background = image_key['tri_color']['regular'][data['element']].copy()
         image.paste(color_background, mask=color_background)
 
         # Top Left Color
-        color_top_left = color_key['top_left'][data['color']].copy()
+        color_top_left = image_key['top_left'][data['color']].copy()
         image.paste(color_top_left, mask=color_top_left)
 
         # Symbol and number shadow to mask
@@ -451,9 +429,9 @@ class CardCreator():
 
         # Drawing the Set Penguin
         if data.get('rare'):
-            penguin_set = color_key['penguin_set']['rare'].copy()
+            penguin_set = image_key['penguin_set']['rare'].copy()
         else:
-            penguin_set = color_key['penguin_set'][set_num].copy()
+            penguin_set = image_key['penguin_set'][set_num].copy()
         
         if data.get('rare') and data.get('description'):
             white_mask.paste(penguin_set, mask=penguin_set)
@@ -461,13 +439,13 @@ class CardCreator():
             image.paste(penguin_set, mask=penguin_set)
 
         # Adding card frame to mask
-        card_outline = color_key['basic']['card_outline'].copy()
+        card_outline = image_key['basic']['card_outline_regular'].copy()
         white_mask.paste(card_outline, mask=card_outline)
 
         # Adding element and power background to mask
-        element_mask = color_key['symbols']['mask'][data['element']].copy()
+        element_mask = image_key['symbols']['mask'][data['element']].copy()
         white_mask.paste(element_mask, mask=element_mask)
-        power_mask = color_key['numbers']['mask'][data['value']].copy()
+        power_mask = image_key['numbers']['mask'][data['value']].copy()
         white_mask.paste(power_mask, mask=power_mask)
 
         # Card title to mask if not snow, otherwise, black text to original
@@ -507,9 +485,9 @@ class CardCreator():
             image.paste(white_mask, mask=white_mask)
 
         # Adding Symbol and Power images
-        element_mask = color_key['symbols']['symbol'][data['element']].copy()
+        element_mask = image_key['symbols']['symbol'][data['element']].copy()
         image.paste(element_mask, mask=element_mask)
-        power_mask = color_key['numbers']['number'][data['value']].copy()
+        power_mask = image_key['numbers']['number'][data['value']].copy()
         image.paste(power_mask, mask=power_mask)
 
         # TODO See what the cards would look like borderless.
@@ -530,7 +508,7 @@ class CardCreator():
         # Opening the card image
         image = CardCreator.getBaseImage()
 
-        if not data.get('png_override'):
+        if not data.get('png_override') or not data.get('penguin_color'):
             print('CARD FAILED THE VIBE CHECK!')
             return
 
@@ -540,36 +518,37 @@ class CardCreator():
 
         # TODO Pasting the penguin based on penguin color
         penguin_color = Image.open('./files/Basic/penguin_color_mask.png')
+        penguin_color = convertImageColor(penguin_color, (178, 178, 178), CardCreator.COLOR_LOOKUP[data['penguin_color']])
         penguin_overlay = Image.open('./files/Basic/penguin_template.png')
         image.alpha_composite(penguin_color)
         image.alpha_composite(penguin_overlay)
 
         # Drawing the bottom 3 colors based on the element
-        color_background = color_key['tri_color']['custom'][data['element']].copy()
+        color_background = image_key['tri_color']['custom'][data['element']].copy()
         image.paste(color_background, mask=color_background)
 
         # Top Left Color
-        color_top_left = color_key['top_left'][data['color']].copy()
+        color_top_left = image_key['top_left'][data['color']].copy()
         image.paste(color_top_left, mask=color_top_left)
 
         # Drawing the Set Penguin
-        penguin_set = color_key['penguin_set'][set_num].copy()
+        penguin_set = image_key['penguin_set'][set_num].copy()
         image.paste(penguin_set, mask=penguin_set)
 
         # Adding card frame to mask
-        card_outline = color_key['basic']['card_outline_custom'].copy()
+        card_outline = image_key['basic']['card_outline_custom'].copy()
         image.paste(card_outline, mask=card_outline)
 
         # Adding element and power background to mask
-        element_mask = color_key['symbols']['mask'][data['element']].copy()
+        element_mask = image_key['symbols']['mask'][data['element']].copy()
         image.paste(element_mask, mask=element_mask)
-        power_mask = color_key['numbers']['mask'][data['value']].copy()
+        power_mask = image_key['numbers']['mask'][data['value']].copy()
         image.paste(power_mask, mask=power_mask)
 
         # Adding Symbol and Power images
-        element_mask = color_key['symbols']['symbol'][data['element']].copy()
+        element_mask = image_key['symbols']['symbol'][data['element']].copy()
         image.paste(element_mask, mask=element_mask)
-        power_mask = color_key['numbers']['number'][data['value']].copy()
+        power_mask = image_key['numbers']['number'][data['value']].copy()
         image.paste(power_mask, mask=power_mask)
 
         # Card title to mask if not snow, otherwise, black text to original
@@ -650,18 +629,19 @@ with open('scrape/new_cards.json', 'r') as file:
 
 for set_num, card_list in cards_json.items():
     for card_num, data in card_list.items():
-        
+
+        # NOTE This is purely here to filter out any
+        # unwanted cards for the sake of quick generation
+        # Adjust this however you would like for testing generation
+        # if set_num != '2': continue
+
         # Custom penguin card
         if data['label'].lower() == 'customize your penguin':
             CardCreator.customizePenguin(data, set_num, card_num)
             continue
 
-        # NOTE This is purely here to filter out any
-        # unwanted cards for the sake of quick generation
-        # Adjust this however you would like for testing generation
-        continue
-
         # Creating normal card
         CardCreator.regularCardBuild(data, set_num, card_num)
 
-# SheetGenerator.mapCardsOnPaper()
+# TODO speed up, slow poke
+SheetGenerator.mapCardsOnPaper()

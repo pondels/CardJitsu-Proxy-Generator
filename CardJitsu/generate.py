@@ -571,31 +571,24 @@ class SheetGenerator():
         # How much of a border do you want from the edge of the page
         card_width = card_images[0].width
         card_height = card_images[0].height
-        x_buffer = 0
-        y_buffer = 0
-        cards_per_width  = (width  - x_buffer) // card_width
-        cards_per_height = (height - y_buffer) // card_height
+        cards_per_width  = width // card_width
+        cards_per_height = height // card_height
         cards_per_page = cards_per_width * cards_per_height
+        cards_width = (cards_per_width * card_width)
+        cards_height = (cards_per_height * card_height)
         sheet_num = 0
         while card_images:
             cards_to_print = card_images[:cards_per_page]
             card_images = card_images[cards_per_page:]
-            sheet = Image.new('RGBA', (width, height))
-            sheet_drawer = ImageDraw.Draw(sheet)
+            sheet = Image.new('RGBA', (cards_width, cards_height))
             card_index = 0
             for x_card in range(cards_per_width):
                 for y_card in range(cards_per_height):
                     if card_index >= len(cards_to_print): break
-                    x_offset = x_buffer + 2*x_card + x_card*card_width
-                    y_offset = y_buffer + 2*y_card + y_card*card_height
+                    x_offset = x_card*card_width
+                    y_offset = y_card*card_height
                     sheet.paste(cards_to_print[card_index], (x_offset, y_offset))
                     card_index += 1
-
-                # Drawing cutting lines
-                cut_x = x_offset-2
-                cut_y = y_offset-2
-                sheet_drawer.line((cut_x, cut_y, card_width, cut_y), fill=(0, 0, 0, 255))
-                sheet_drawer.line((cut_x, cut_y, cut_x, card_height), fill=(0, 0, 0, 255))
 
                 if card_index >= len(cards_to_print): break
 
@@ -614,13 +607,13 @@ class SheetGenerator():
                 card_path = f'./generated_cards/set{set_num}/{card_num}.png'
                 if not os.path.exists(card_path): continue
                 image = Image.open(card_path)
-                image = image.resize((801, 1126))
                 if data['description']: power_cards.append(image)
                 else: regular_cards.append(image)
 
         # 300 pixels per inch
-        height  = int(8.5 * 300)
-        width = int(11 * 300)
+        # Cutting off the edges
+        height = int(8.5 * 300)
+        width  = int(11  * 300)
         SheetGenerator.generateSheets(regular_cards, width, height, 'reg')
         SheetGenerator.generateSheets(power_cards, width, height, 'pow')
 
@@ -633,7 +626,7 @@ for set_num, card_list in cards_json.items():
         # NOTE This is purely here to filter out any
         # unwanted cards for the sake of quick generation
         # Adjust this however you would like for testing generation
-        # if set_num != '2': continue
+        continue
 
         # Custom penguin card
         if data['label'].lower() == 'customize your penguin':
